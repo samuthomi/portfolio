@@ -109,16 +109,35 @@ a:hover {
     align-items: center;
 }
 
+.nav-container.nav-split {
+    justify-content: center;
+    gap: var(--spacing-lg);
+}
+
 .nav-logo {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--color-text);
 }
 
+.nav-logo-shapes {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-shapes svg {
+    display: block;
+}
+
 .nav-links {
     display: flex;
     gap: var(--spacing-md);
     list-style: none;
+}
+
+.nav-links.nav-left,
+.nav-links.nav-right {
+    flex: 0 0 auto;
 }
 
 .nav-links a {
@@ -133,7 +152,115 @@ a:hover {
     color: var(--color-text);
 }
 
-/* Hero Section */
+/* Profile Section */
+.profile-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.profile-content {
+    max-width: 280px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    background: var(--color-hover);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.profile-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.profile-bio {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Portfolio Grid */
+.portfolio-section {
+    padding: var(--spacing-md) 0 var(--spacing-xl);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    max-width: 600px;
+}
+
+.portfolio-card {
+    aspect-ratio: 1;
+    background: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.portfolio-card:hover {
+    background: #e5e5e5;
+    opacity: 1;
+}
+
+.portfolio-shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Experience Section (Homepage) */
+.experience-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.experience-list {
+    max-width: 600px;
+}
+
+.experience-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.experience-row:first-child {
+    border-top: none;
+}
+
+.experience-row .experience-date {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.experience-row .experience-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.experience-row .experience-description {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Hero Section (legacy) */
 .hero {
     padding: var(--spacing-2xl) 0;
 }
@@ -407,32 +534,47 @@ a:hover {
         --spacing-xl: 3rem;
         --spacing-2xl: 4rem;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
+    .nav-container.nav-split {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
     .nav-links {
         gap: var(--spacing-sm);
     }
-    
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .experience-row {
+        grid-template-columns: 80px 1fr;
+        gap: var(--spacing-sm);
+    }
+
     .hero-subtitle {
         font-size: 1.125rem;
     }
-    
+
     .case-study-title {
         font-size: 1.5rem;
     }
-    
+
     .experience-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -443,20 +585,43 @@ a:hover {
     .container {
         padding: 0 var(--spacing-sm);
     }
-    
+
+    .nav-container.nav-split {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-logo-shapes {
+        order: -1;
+    }
+
+    .nav-links.nav-left,
+    .nav-links.nav-right {
+        justify-content: center;
+    }
+
     .nav-links {
         gap: 0.75rem;
     }
-    
+
     .nav-links a {
         font-size: 0.875rem;
     }
-    
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .experience-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+    }
+
     .social-links {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .social-link {
         justify-content: center;
     }

@@ -11,11 +11,19 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo">Samson Kirigua</a>
-                <ul class="nav-links">
+            <div class="nav-container nav-split">
+                <ul class="nav-links nav-left">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="index.html" class="nav-logo-shapes">
+                    <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="4" width="16" height="16" fill="#1a1a1a"/>
+                        <circle cx="40" cy="12" r="8" fill="#1a1a1a"/>
+                        <polygon points="72,20 80,20 76,4" fill="#1a1a1a"/>
+                    </svg>
+                </a>
+                <ul class="nav-links nav-right">
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -23,63 +31,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Profile Section -->
+    <section class="profile-section">
         <div class="container">
-            <div class="content">
-                <h1>Samson Kirigua</h1>
-                <p class="hero-subtitle">I help teams make better product decisions by uncovering real user friction and turning complex systems into mobile-first products with measurable customer value.</p>
-                <p class="hero-meta">Product design & UX strategy · Nairobi, Kenya · 8+ years across marketplaces, fintech, logistics, and growth platforms</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">
-                        <span>X (Twitter)</span>
-                    </a>
+            <div class="profile-content">
+                <div class="avatar">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="8" r="4" fill="#999"/>
+                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="#999"/>
+                    </svg>
                 </div>
+                <h1 class="profile-name">Samson Kirigua</h1>
+                <p class="profile-bio">Experienced designer specializing in digital and print media with a focus on clean, modern aesthetics. Passionate about elevating brands through compelling visual solutions and attentive to every detail.</p>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section class="section">
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
         <div class="container">
-            <div class="content">
-                <h2 class="section-title">My Work</h2>
-                
-                <div class="case-studies">
-                    <!-- Case Study 1 -->
-                    <article class="case-study-card">
-                        <div class="case-study-meta">2024</div>
-                        <h3 class="case-study-title">Shop Inventory App</h3>
-                        <p class="case-study-description">Enhancing Inventory Visibility for Agent Shops</p>
-                        <a href="case-study-inventory.html" class="case-study-link">View case study</a>
-                    </article>
+            <div class="portfolio-grid">
+                <a href="case-study-inventory.html" class="portfolio-card">
+                    <div class="portfolio-shape">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" stroke="#999" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="case-study-storefront.html" class="portfolio-card">
+                    <div class="portfolio-shape">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="16" stroke="#999" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="case-study-bank-transfer.html" class="portfolio-card">
+                    <div class="portfolio-shape">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <polygon points="24,8 40,40 8,40" stroke="#999" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Case Study 2 -->
-                    <article class="case-study-card">
-                        <div class="case-study-meta">2023</div>
-                        <h3 class="case-study-title">Seller Storefront</h3>
-                        <p class="case-study-description">Automating Sales Process and Fulfillments for Merchants</p>
-                        <a href="case-study-storefront.html" class="case-study-link">View case study</a>
-                    </article>
-
-                    <!-- Case Study 3 -->
-                    <article class="case-study-card">
-                        <div class="case-study-meta">2022</div>
-                        <h3 class="case-study-title">Pay by Bank Transfer</h3>
-                        <p class="case-study-description">Introducing Bank Transfer Payment Option in Nigeria</p>
-                        <a href="case-study-bank-transfer.html" class="case-study-link">View case study</a>
-                    </article>
-
-                    <!-- Case Study 4 -->
-                    <article class="case-study-card">
-                        <div class="case-study-meta">2021</div>
-                        <h3 class="case-study-title">User Verification Platform</h3>
-                        <p class="case-study-description">KYC Verification Platform for Sendy Partners and Customers</p>
-                        <a href="case-study-verification.html" class="case-study-link">View case study</a>
-                    </article>
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="experience-list">
+                <div class="experience-row">
+                    <div class="experience-date">2025–Present</div>
+                    <div class="experience-details">
+                        <h3 class="experience-title">Senior Product Design Consultant, African Management Institute</h3>
+                        <p class="experience-description">Leading strategic UX initiatives across AMI's operations in multiple African countries. Focus on solving revenue-impacting problems through strategic design.</p>
+                    </div>
+                </div>
+                <div class="experience-row">
+                    <div class="experience-date">2023–2024</div>
+                    <div class="experience-details">
+                        <h3 class="experience-title">Product Design Lead, KOKO Networks</h3>
+                        <p class="experience-description">Led product design for inventory management systems and mobile-first experiences serving distributed retail networks.</p>
+                    </div>
+                </div>
+                <div class="experience-row">
+                    <div class="experience-date">2020–2023</div>
+                    <div class="experience-details">
+                        <h3 class="experience-title">Product Designer, Sendy Limited</h3>
+                        <p class="experience-description">Designed payment systems, seller storefronts, and verification platforms for logistics marketplace operations across Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
+                    </div>
                 </div>
             </div>
         </div>
