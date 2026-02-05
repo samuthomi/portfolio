@@ -7,23 +7,24 @@
 
 :root {
     --color-bg: #ffffff;
-    --color-text: #1a1a1a;
+    --color-text: #000000;
     --color-text-light: #666666;
-    --color-accent: #0066ff;
-    --color-border: #e5e5e5;
+    --color-accent: #09f;
+    --color-border: #eeeeee;
     --color-hover: #f5f5f5;
-    
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --color-card-bg: #f5f5f5;
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
     
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
-    --spacing-xl: 4rem;
-    --spacing-2xl: 6rem;
-    
-    --max-width: 1200px;
+    --spacing-xl: 5rem;
+    --spacing-2xl: 5rem;
+
+    --max-width: 960px;
     --content-width: 800px;
 }
 
@@ -110,8 +111,7 @@ a:hover {
 }
 
 .nav-container.nav-split {
-    justify-content: center;
-    gap: var(--spacing-lg);
+    justify-content: space-between;
 }
 
 .nav-logo {
@@ -126,6 +126,15 @@ a:hover {
 }
 
 .nav-logo-shapes svg {
+    display: block;
+}
+
+.nav-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-avatar svg {
     display: block;
 }
 
@@ -199,7 +208,7 @@ a:hover {
 }
 
 .portfolio-card {
-    aspect-ratio: 1;
+    aspect-ratio: 3/4;
     background: #f0f0f0;
     border-radius: 8px;
     display: flex;
@@ -219,6 +228,68 @@ a:hover {
     justify-content: center;
 }
 
+/* My Work Section */
+.work-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.work-section h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 800px;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+}
+
+.work-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.work-year {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.work-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.work-card p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.work-link {
+    font-size: 0.9375rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.work-link:hover {
+    opacity: 0.7;
+}
+
 /* Experience Section (Homepage) */
 .experience-section {
     padding: var(--spacing-xl) 0;
@@ -232,12 +303,14 @@ a:hover {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: var(--spacing-md);
-    padding: var(--spacing-md) 0;
-    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
 }
 
-.experience-row:first-child {
-    border-top: none;
+.experience-row:last-child {
+    margin-bottom: 0;
 }
 
 .experience-row .experience-date {
@@ -560,6 +633,11 @@ a:hover {
     .experience-row {
         grid-template-columns: 80px 1fr;
         gap: var(--spacing-sm);
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .hero-subtitle {
