@@ -37,7 +37,7 @@
             <div class="content">
                 <h1>Let's connect</h1>
                 <p>Open to collaborations, product design opportunities, and consulting projects.</p>
-                <a href="mailto:samsonkirigua@gmail.com" class="contact-email">samsonkirigua@gmail.com</a>
+                <a class="contact-email" data-user="hello" data-domain="samsonkirigua.com"></a>
                 <div class="contact-links">
                     <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X (Twitter)</a>
@@ -68,6 +68,15 @@
         document.querySelector('.nav-toggle')?.addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('open');
         });
+
+        (function() {
+            var el = document.querySelector('.contact-email[data-user]');
+            if (el) {
+                var addr = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
+                el.href = 'mailto:' + addr;
+                el.textContent = addr;
+            }
+        })();
     </script>
 </body>
 </html>
