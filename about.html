@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -32,20 +31,26 @@
         </div>
     </nav>
 
-    <!-- About Content -->
-    <section class="section">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
             <div class="content">
                 <h1>About</h1>
-                <div class="about-content">
-                    <p>I help teams figure out what's actually getting in the way for users and build mobile products that actually work.</p>
+            </div>
+        </div>
+    </section>
 
-                    <p>I've spent the last 8+ years working on marketplaces, fintech, logistics, and growth platforms. A lot of that work happened in situations where mistakes are expensive. I've learned that design is usually the easy part. The hard part is figuring out what's really broken—a drop-off, too much complexity, incentives that don't line up—and getting everyone to agree that's what we should fix.</p>
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="content">
+                <p>I help teams figure out what's actually getting in the way for users and build mobile products that actually work.</p>
 
-                    <p>My work spans product strategy, UX, and delivery. Teams usually bring me in when things have gotten messy or progress has stalled. I help cut through the noise, figure out what actually matters, and move forward.</p>
+                <p>I've spent the last 8+ years working on marketplaces, fintech, logistics, and growth platforms. A lot of that work happened in situations where mistakes are expensive. I've learned that design is usually the easy part. The hard part is figuring out what's really broken—a drop-off, too much complexity, incentives that don't line up—and getting everyone to agree that's what we should fix.</p>
 
-                    <p>I care about results that stick. Better conversion rates, less friction, more trust, products that work in the real world. Most of what I'm doing now is building for mobile-first users at scale.</p>
-                </div>
+                <p>My work spans product strategy, UX, and delivery. Teams usually bring me in when things have gotten messy or progress has stalled. I help cut through the noise, figure out what actually matters, and move forward.</p>
+
+                <p>I care about results that stick. Better conversion rates, less friction, more trust, products that work in the real world. Most of what I'm doing now is building for mobile-first users at scale.</p>
             </div>
         </div>
     </section>
@@ -60,12 +65,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

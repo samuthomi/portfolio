@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -37,10 +36,10 @@
         <div class="container">
             <div class="content">
                 <h1>Shop Inventory App</h1>
-                <p class="hero-subtitle">Enhancing Inventory Visibility at Agent Shops</p>
-                <div class="meta">
-                    <span><strong>Team:</strong> 2 Product Designers, 1 Product Manager, 6 Developers</span>
-                    <span><strong>Timeline:</strong> Mar - Apr 2024 (8 weeks)</span>
+                <p class="case-study-subtitle">Enhancing inventory visibility at agent shops</p>
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Team:</strong> 2 Product Designers, 1 Product Manager, 6 Developers</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> Mar – Apr 2024 (8 weeks)</span>
                 </div>
             </div>
         </div>
@@ -52,13 +51,13 @@
             <div class="content">
                 <p>The inventory system wasn't failing because people didn't know how to use it. It was failing because it didn't match how stock was actually handled on the ground. This was an internal inventory management tool used by operations teams to track stock across multiple shops and warehouses. On paper, the system worked. In practice, it slowed everything down.</p>
 
-                <h2>The Problem</h2>
+                <h2>The problem</h2>
                 <p>Stock levels were hard to trust, simple questions required manual checks or analyst support, and teams spent more time reconciling data than acting on it. With these inefficiencies operations was continually becoming expensive—missed stock, delayed decisions, and growing operational friction. The product wasn't failing because of UI quality. It was failing because the system reflected how inventory was stored, not how teams actually worked.</p>
 
-                <h2>Context and Stakes</h2>
+                <h2>Context and stakes</h2>
                 <p>KOKO Networks has a high-volume inventory environment supporting daily operations across a distributed retail network. Errors were expensive: stock mismatches affected fulfilment, reporting, and trust between field agents and central teams. On paper, the system worked. In practice, it slowed everything down. Stock levels were hard to trust, simple questions required manual checks or analyst support, and teams spent more time reconciling data than acting on it. As the operation scaled, these inefficiencies became expensive—missed stock, delayed decisions, and growing operational friction.</p>
 
-                <h2>What Wasn't Working</h2>
+                <h2>What wasn't working</h2>
                 <p>Although the system was functionally capable, usability quality was poor:</p>
                 <ul>
                     <li>Critical actions were buried behind dense navigation and unclear labels</li>
@@ -68,7 +67,7 @@
                 </ul>
                 <p>As a result, the tool added friction to workflows that were meant to be fast, repeatable, and reliable.</p>
 
-                <h2>My Role</h2>
+                <h2>My role</h2>
                 <p>I was brought in to figure out why an essential internal tool was slowing teams down, despite having the right data and functionality underneath. My role sat between product, UX, and operations. I worked closely with internal users to understand how inventory decisions were actually made, where teams got stuck, and which parts of the system created the most friction.</p>
                 <p>Rather than redesigning everything, the focus was on:</p>
                 <ul>
@@ -77,8 +76,13 @@
                     <li>Making key features easier to discover and use without training or hand-holding</li>
                 </ul>
 
-                <h2>Key Decisions</h2>
-                <p>A critical decision was to prioritize clarity and task visibility over configurability. Instead of exposing everything the system could do, the experience was reshaped around:</p>
+                <h2>Key decisions</h2>
+
+                <div class="pull-quote">
+                    <p>A critical decision was to prioritize clarity and task visibility over configurability.</p>
+                </div>
+
+                <p>Instead of exposing everything the system could do, the experience was reshaped around:</p>
                 <ul>
                     <li>Making stock status immediately understandable</li>
                     <li>Clear entry points for critical tasks</li>
@@ -110,12 +114,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

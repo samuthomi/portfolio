@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aunty Jane Website - Samson Kirigua</title>
+    <meta name="description" content="Designing a website to support ladies get access to information on pregnancy, contraceptives and STDs, and ask questions in private.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <section class="case-study-header">
+        <div class="container">
+            <div class="content">
+                <h1>Aunty Jane Website</h1>
+                <p class="case-study-subtitle">Designing a website to support ladies get access to information on pregnancy, contraceptives and STDs, and ask questions in private</p>
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Year:</strong> 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+        <div class="container">
+            <div class="content">
+                <p>Aunty Jane is a platform designed to give women access to reliable, private information about pregnancy, contraceptives, and STDs. The goal was to create a safe, judgment-free space where users could learn and ask questions without stigma.</p>
+
+                <h2>The problem</h2>
+                <p>Access to reproductive health information remains a challenge for many women, particularly in contexts where these topics carry social stigma. Women often rely on fragmented, unreliable sources—or avoid seeking information altogether. The need was for a trusted, accessible platform that met users where they were: on their phones, in private.</p>
+
+                <h2>Approach</h2>
+                <p>The design prioritized privacy, clarity, and ease of access. The website needed to feel safe and approachable while delivering medically accurate content in plain, understandable language. Every design decision was made with the user's comfort and trust in mind—from the tone of the copy to the simplicity of navigation.</p>
+
+                <h2>Key design decisions</h2>
+                <ul>
+                    <li>Mobile-first design to match how the target audience primarily accessed the internet</li>
+                    <li>Warm, approachable visual language that avoided clinical coldness without being patronizing</li>
+                    <li>Clear information architecture that made it easy to find answers quickly</li>
+                    <li>Private Q&A functionality so users could ask sensitive questions without exposure</li>
+                </ul>
+
+                <h2>Outcome</h2>
+                <p>The website launched as a resource for women seeking private, reliable health information. The platform provided a much-needed bridge between medical knowledge and the women who needed it most, delivered in a format that respected their privacy and time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

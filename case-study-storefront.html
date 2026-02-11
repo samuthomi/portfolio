@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -37,12 +36,12 @@
         <div class="container">
             <div class="content">
                 <h1>Seller Storefront</h1>
-                <p class="hero-subtitle">Designing a self-checkout storefront sellers would trust and actually use</p>
-                <div class="meta">
-                    <span><strong>Role:</strong> Research, UX Design, UI Design and UX Writing</span>
-                    <span><strong>Tools:</strong> Figma, Miro</span>
-                    <span><strong>Team:</strong> 1 UX designer, 6 developers</span>
-                    <span><strong>Timeline:</strong> Sep - Dec 2023 (16 weeks)</span>
+                <p class="case-study-subtitle">Designing a self-checkout storefront sellers would trust and actually use</p>
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Role:</strong> Research, UX Design, UI Design and UX Writing</span>
+                    <span class="case-study-meta-item"><strong>Tools:</strong> Figma, Miro</span>
+                    <span class="case-study-meta-item"><strong>Team:</strong> 1 UX designer, 6 developers</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> Sep – Dec 2023 (16 weeks)</span>
                 </div>
             </div>
         </div>
@@ -52,72 +51,71 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <h2>Context and Stakes</h2>
+                <h2>Context and stakes</h2>
                 <p>A year after launching Sendy Fulfillment, sellers loved storing stock at fulfillment centers because it reduced delivery lead times and simplified operations. That success exposed the next opportunity: help sellers move from "stored inventory" to completed sales, without extra manual work.</p>
                 <p>The idea was a self-checkout storefront: sellers publish a simple web page showing items available in the warehouse, customers purchase directly, and Sendy handles delivery—automating the sales loop end-to-end.</p>
 
-                <h2>The Problem</h2>
-                <p>The proposal was solid in principle, but for this to work, sellers needed to trust it. Trust came down to two things:</p>
-                <ul>
-                    <li><strong>Stock accuracy:</strong> Shoppers purchasing items that weren't actually available would break trust instantly</li>
-                    <li><strong>Setup simplicity:</strong> Sellers wanted results fast—complicated flows or technical requirements were deal-breakers</li>
-                </ul>
-                <p>Add to that: many sellers weren't technical. They needed a storefront that worked immediately, required minimal maintenance, and gave them confidence that sales wouldn't break operations.</p>
+                <h2>What was actually blocking progress</h2>
 
-                <h2>Research and Discovery</h2>
-                <p>I started by talking to sellers already using Sendy Fulfillment. The conversations confirmed what we suspected: they wanted to reach more customers and close more sales, but managing multiple storefronts (Instagram, WhatsApp, their own sites) was exhausting. Inventory sync issues meant they often sold items they didn't have in stock—leading to cancellations, disappointed customers, and lost credibility.</p>
-                <p>A unified storefront with real-time inventory sounded ideal. But skepticism was high. "Will this actually work? What if my stock numbers are wrong?" Those doubts needed to be addressed in the design itself.</p>
+                <div class="pull-quote">
+                    <p>This wasn't a "design a storefront page" problem. The risk was shipping a storefront that didn't match how sellers build trust, price products, and close payments in the real world.</p>
+                </div>
 
-                <h2>Key Insights from Research</h2>
+                <p>We needed to validate:</p>
                 <ul>
-                    <li>Sellers were already juggling multiple sales channels and couldn't afford one more thing to manage</li>
-                    <li>Stock accuracy was non-negotiable—if the storefront showed items that weren't available, trust would collapse</li>
-                    <li>Speed mattered—if setup took more than a few minutes, adoption would stall</li>
-                    <li>Sellers needed confidence that the storefront would "just work" without constant monitoring</li>
+                    <li>Would sellers trust Sendy to collect payments?</li>
+                    <li>What payment options were non-negotiable?</li>
+                    <li>What must be configurable for sellers to run a real business?</li>
+                    <li>What is the smallest product that still works in-market?</li>
                 </ul>
 
-                <h2>My Role and Approach</h2>
-                <p>I led the design end-to-end: research, wireframes, prototypes, and final UI. The work was collaborative—regular check-ins with the product team, engineering, and sellers to validate direction and catch issues early.</p>
-                <p>The strategy wasn't to build a feature-rich platform. It was to build something sellers would actually use. That meant:</p>
+                <h2>Approach: validate direction before we build</h2>
+                <p>Because this was a new product concept, we started with a demo-first approach—prototype quickly, test with existing sellers, then let that feedback define what mattered for a first release.</p>
+
+                <h3>Demo 1 — Early signal, fast learning</h3>
+                <p>I built a rough mobile concept and turned it into an interactive prototype to test with five sellers.</p>
+                <p><strong>What we learned:</strong></p>
                 <ul>
-                    <li>Ruthless simplicity in setup</li>
-                    <li>Real-time inventory sync to prevent overselling</li>
-                    <li>Clear visibility into what was published and live</li>
-                    <li>Minimal ongoing maintenance</li>
+                    <li>Setup + checkout felt intuitive, but sellers wanted fewer steps.</li>
+                    <li>Sellers were excited about Sendy collecting payments through the storefront.</li>
+                    <li>Some wanted deeper branding/customization (background images, custom colors).</li>
+                </ul>
+                <p><strong>What changed after Demo 1:</strong></p>
+                <ul>
+                    <li>We tightened the flow around momentum: publish/share sooner, configure later.</li>
+                    <li>We treated "payment collection" as a value anchor worth designing around.</li>
                 </ul>
 
-                <h2>Design Decisions</h2>
-
-                <h3>1. One-Click Storefront Setup</h3>
-                <p>Instead of forcing sellers through a multi-step wizard, the storefront was automatically generated from their warehouse inventory. Sellers could publish immediately, then customize later if they wanted. This inverted the typical flow—bias toward action rather than configuration.</p>
-
-                <h3>2. Real-Time Stock Synchronization</h3>
-                <p>The storefront pulled inventory data directly from the fulfillment system. If an item sold out, it was automatically removed from the storefront. No manual updates required. This addressed the biggest trust barrier: "What if I oversell?"</p>
-
-                <h3>3. Clear Visual Feedback</h3>
-                <p>Sellers needed to know exactly what was live and visible to customers. The interface showed:</p>
+                <h3>Demo 2 — Higher fidelity, real constraints</h3>
+                <p>With more confidence in the direction, we tested a higher-fidelity prototype with 20 participants to shape the backlog for a first release.</p>
+                <p><strong>Key insights that reshaped the product:</strong></p>
                 <ul>
-                    <li>Current stock levels</li>
-                    <li>Which items were published</li>
-                    <li>Real-time sales updates</li>
+                    <li>Payment on Delivery (cash or mobile money) was crucial for customer trust.</li>
+                    <li>Sellers wanted flexible price configuration to pass fulfilment/delivery fees to customers (but it would require more dev time).</li>
+                    <li>Promotions mattered: discounts and bundling to drive sales.</li>
+                    <li>Sellers needed low stock notifications to manage demand and avoid failures.</li>
                 </ul>
-                <p>If something looked wrong, sellers could catch it immediately.</p>
 
-                <h3>4. Mobile-First Experience</h3>
-                <p>Most sellers managed their business from phones. The storefront had to work perfectly on mobile—fast load times, easy navigation, simple checkout. No desktop dependency.</p>
+                <h2>Key decisions</h2>
+                <p>This project became a sequence of product decisions, not a UI exercise:</p>
+                <p><strong>Optimize for seller momentum, not completeness</strong> — Reduce steps and get sellers to a shareable storefront quickly.</p>
+                <p><strong>Treat trust mechanisms as core</strong> — Payment on Delivery wasn't a "phase two" feature—it was foundational to adoption.</p>
+                <p><strong>Separate "must-have" from "expensive-to-build"</strong> — Pricing configuration was important, but we acknowledged the dev cost and planned it intentionally rather than sneaking it into v1.</p>
+                <p><strong>Bake growth into the product</strong> — Discounts and bundling weren't extras—they were how sellers sell.</p>
 
-                <h2>Outcomes</h2>
-                <p>The storefront launched to a small group of sellers initially. Early feedback was positive:</p>
+                <h2>Final design solution</h2>
+                <p>We finalized the design and handed off for development. The solution included:</p>
                 <ul>
-                    <li>Setup time averaged under 5 minutes</li>
-                    <li>Sellers reported confidence in stock accuracy</li>
-                    <li>Sales started happening without sellers needing to actively manage the storefront</li>
+                    <li>A desktop + mobile storefront where customers can browse and place orders.</li>
+                    <li>A new Storefront tab inside the Sendy Fulfillment app to manage catalog, customize the page, and share product/store links.</li>
                 </ul>
-                <p>The most telling sign: sellers started sharing their storefronts on social media, something they hadn't done consistently with other tools. That suggested the trust barrier had been cleared.</p>
 
-                <h2>What I Learned</h2>
-                <p>This project reinforced that trust is designed, not assumed. Sellers weren't going to trust a new storefront just because it existed. Every design decision—setup speed, real-time inventory, clear visibility—had to actively earn that trust.</p>
-                <p>It also showed the value of building for adoption, not features. A simpler tool that sellers actually used beat a powerful tool they ignored.</p>
+                <h2>Outcome</h2>
+                <p>The work was handed off, but it was never released due to layoffs and shifting business priorities.</p>
+                <p>Even without launch, we validated what would make a storefront viable in-market—trust, payment expectations, seller pricing needs, and lightweight setup—before investing heavily in build.</p>
+
+                <h2>Reflections</h2>
+                <p>Involving customers early and often helped us focus on problems that were meaningful to sellers—and avoid building something that looked good but wouldn't be adopted.</p>
             </div>
         </div>
     </section>
@@ -132,12 +130,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

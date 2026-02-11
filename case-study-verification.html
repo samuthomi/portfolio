@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -36,12 +35,12 @@
     <section class="case-study-header">
         <div class="container">
             <div class="content">
-                <h1>User Verification Platform</h1>
-                <p class="hero-subtitle">KYC Verification Platform for Sendy Partners and Customers</p>
-                <div class="meta">
-                    <span><strong>Role:</strong> Led all design initiatives for this project</span>
-                    <span><strong>Team:</strong> 1 Product Manager and 4 developers</span>
-                    <span><strong>Research Methods:</strong> Group interviews, Desktop research</span>
+                <h1>Verify App</h1>
+                <p class="case-study-subtitle">KYC verification platform for Sendy partners and customers</p>
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Role:</strong> Led all design initiatives for this project</span>
+                    <span class="case-study-meta-item"><strong>Team:</strong> 1 Product Manager and 4 developers</span>
+                    <span class="case-study-meta-item"><strong>Research:</strong> Group interviews, Desktop research</span>
                 </div>
             </div>
         </div>
@@ -51,11 +50,10 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <h2>Overview</h2>
                 <p>Verify app is a centralized KYC (Know Your Client) verification tool at Sendy. The Sendy operations team uses it to access and verify KYC data from vehicle owners, companies, and customers that require financing.</p>
                 <p>Verify app integrates all Sendy's onboarding processes to eliminate the need for each product team to build its own user verification tool and focus on core product and business processes.</p>
 
-                <h2>Business Challenges</h2>
+                <h2>Business challenges</h2>
                 <p>Sendy Transport started out as a single solution for moving goods, onboarding only one kind of Partner i.e. motorcycles.</p>
                 <p>Over time, new products like Sendy Supply (B2B marketplace), Sendy Freight and Sendy Credit financing were introduced to the platform which meant onboarding a larger set of customers and Partners.</p>
                 <p>Also Sendy was operating in four countries and this required us to have localized onboarding support for Kenya, Uganda, Nigeria and Côte d'Ivoire.</p>
@@ -64,17 +62,18 @@
                 <p>I chose group interviews because it was the most efficient way to ensure that we can collect a team's collective knowledge about onboarding and process challenges versus speaking to individual team members to minimize bias on certain issues and processes.</p>
                 <p>I also used desktop research to fill in the missing pieces from the group interviews. I reviewed process documents and team onboarding reports. It was also a great opportunity to view sample uploaded documents submitted by applicants.</p>
 
-                <h2>Key Research Findings</h2>
-                <ul>
-                    <li><strong>Poor User Experience:</strong> Sendy team members also had to jump between multiple admin apps to manage incoming applications and support onboarded Customers and Partners.</li>
-                    <li><strong>Onboarding was complex and long:</strong> Teams were taking 2-4 weeks to onboard new kinds of Partners and Customers beyond Sendy's original motorcycle riders. These included KYC verification that takes weeks for Lending Customers, 3PL fleet owners, Freight Truck companies.</li>
-                    <li><strong>Business risk was evident:</strong> Team members would resort to storing application documents in their Google Drives since there was no system or clear SOPs to store such files. In some cases, damage or lost goods insurance claims to reimburse Sendy could not be finalized because the supporting documents could not be traced on time which was a huge liability for the business.</li>
-                </ul>
+                <h3>Key research findings</h3>
+                <p><strong>Poor User Experience.</strong> Sendy team members also had to jump between multiple admin apps to manage incoming applications and support onboarded Customers and Partners.</p>
+                <p><strong>Onboarding was complex and long.</strong> Teams were taking 2-4 weeks to onboard new kinds of Partners and Customers beyond Sendy's original motorcycle riders. These included KYC verification that takes weeks for Lending Customers, 3PL fleet owners, Freight Truck companies.</p>
+                <p><strong>Business risk was evident.</strong> Team members would resort to storing application documents in their Google Drives since there was no system or clear SOPs to store such files. In some cases, damage or lost goods insurance claims to reimburse Sendy could not be finalized because the supporting documents could not be traced on time which was a huge liability for the business.</p>
 
-                <h2>Design Goal</h2>
-                <p>Design a centralized verification solution that all Sendy business units can integrate with to receive and verify applications from its users.</p>
+                <h2>Design goal</h2>
 
-                <h2>Design Solution Scope</h2>
+                <div class="pull-quote">
+                    <p>Design a centralized verification solution that all Sendy business units can integrate with to receive and verify applications from its users.</p>
+                </div>
+
+                <h2>Design solution scope</h2>
                 <p>Having understood the breadth of our KYC verification process, I shared the findings with my squad and we prioritized the following problems to solve for the initial version of this solution:</p>
                 <ul>
                     <li>How might our teams view all received applications and their verification stages?</li>
@@ -83,26 +82,40 @@
                     <li>How do we control access to applications based on the user that's logged in?</li>
                 </ul>
 
-                <h2>Solution Design Highlights</h2>
+                <h2>Solution design highlights</h2>
 
-                <h3>Solution 1 - Submitted Applications Lists and Verification Stages</h3>
+                <h3>Solution 1 — Submitted applications lists and verification stages</h3>
                 <p>I conducted a brainstorm session together with Operations team stakeholders and Product Managers across different teams to align on how we will collectively display submitted applications and the verification stages. Once I had clarity I was able to begin designing the main layout of the verification portal.</p>
 
-                <h3>Solution 2 - Application Status Communication via Web-hooks</h3>
+                <h3>Solution 2 — Application status communication via web-hooks</h3>
                 <p>Customers and Partners submitting applications through Sendy apps needed to know their application status. Upon consulting with our developers we agreed to provide this data to all Sendy customer facing apps via web-hooks.</p>
                 <p>We worked with designers in other product squads to align on how to display the onboarding status messages to Customers and Partners.</p>
 
-                <h3>Solution 3 - Correction Requests</h3>
+                <h3>Solution 3 — Correction requests</h3>
                 <p>We mapped a way for the verification team to inform applicants to correct submitted information. Errors notifications are sent to applicants to update information via an online form to continue the verification process.</p>
 
-                <h2>Project Outcomes</h2>
-                <ul>
-                    <li><strong>Better Onboarding Experience:</strong> We experienced shorter onboarding times for lending customers and logistics partners. For instance, KYC verification for customers requiring financing reduced from 1 week down to 24 hours after switching to this solution.</li>
-                    <li><strong>Improved Partner experience:</strong> We reduced customer support interactions by about 20% (600 calls a month) from partners who needed to correct KYC information or update expired documents.</li>
-                    <li><strong>Efficiency gains:</strong> Over 3,000+ applications collected and processed by Verify App within the first quarter since launching the app.</li>
-                    <li><strong>Reduced business risk:</strong> Verification for all business units happens on one platform ensuring there is minimal business risk and a central source of truth for verification data.</li>
-                    <li><strong>Scaling leverage:</strong> Any new business entity that Sendy launches can integrate with the service and have their customers verified using the same workflow.</li>
-                </ul>
+                <h2>Project outcomes</h2>
+
+                <div class="key-metrics">
+                    <div class="key-metric">
+                        <div class="key-metric-number">24hrs</div>
+                        <div class="key-metric-label">KYC verification time, down from 1 week</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">20%</div>
+                        <div class="key-metric-label">Reduction in support calls (600 calls/month)</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">3,000+</div>
+                        <div class="key-metric-label">Applications processed in first quarter</div>
+                    </div>
+                </div>
+
+                <p><strong>Better Onboarding Experience.</strong> We experienced shorter onboarding times for lending customers and logistics partners. For instance, KYC verification for customers requiring financing reduced from 1 week down to 24 hours after switching to this solution.</p>
+                <p><strong>Improved Partner experience.</strong> We reduced customer support interactions by about 20% (600 calls a month) from partners who needed to correct KYC information or update expired documents.</p>
+                <p><strong>Efficiency gains.</strong> Over 3,000+ applications collected and processed by Verify App within the first quarter since launching the app.</p>
+                <p><strong>Reduced business risk.</strong> Verification for all business units happens on one platform ensuring there is minimal business risk and a central source of truth for verification data.</p>
+                <p><strong>Scaling leverage.</strong> Any new business entity that Sendy launches can integrate with the service and have their customers verified using the same workflow.</p>
             </div>
         </div>
     </section>
@@ -117,12 +130,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

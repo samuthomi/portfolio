@@ -14,14 +14,13 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -33,19 +32,15 @@
     </nav>
 
     <!-- Contact Content -->
-    <section class="section contact-content">
+    <section class="contact-section">
         <div class="container">
             <div class="content">
                 <h1>Let's connect</h1>
                 <p>Open to collaborations, product design opportunities, and consulting projects.</p>
-                <a href="/cdn-cgi/l/email-protection#0e666b6262614e7d6f637d616065677c67697b6f206d6163" class="contact-email"><span class="__cf_email__" data-cfemail="82eae7eeeeedc2f1e3eff1edece9ebf0ebe5f7e3ace1edef">[email&#160;protected]</span></a>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">
-                        <span>X (Twitter)</span>
-                    </a>
+                <a href="mailto:samsonkirigua@gmail.com" class="contact-email">samsonkirigua@gmail.com</a>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X (Twitter)</a>
                 </div>
             </div>
         </div>
@@ -61,6 +56,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" 
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
