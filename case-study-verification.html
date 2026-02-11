@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Verification Platform - Samson Kirigua</title>
-    <meta name="description" content="KYC Verification Platform for Sendy Partners and Customers.">
+    <title>Verification Platform - Samson Kirigua</title>
+    <meta name="description" content="Four countries, multiple products, zero shared onboarding infrastructure. We built one.">
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
@@ -35,12 +35,27 @@
     <section class="case-study-header">
         <div class="container">
             <div class="content">
-                <h1>Verify App</h1>
-                <p class="case-study-subtitle">KYC verification platform for Sendy partners and customers</p>
+                <h1>Verification Platform</h1>
+                <p class="case-study-subtitle">Four countries, multiple products, zero shared onboarding infrastructure. We built one.</p>
+
+                <div class="key-metrics">
+                    <div class="key-metric">
+                        <div class="key-metric-number">24hrs</div>
+                        <div class="key-metric-label">KYC verification time, down from 1 week</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">20%</div>
+                        <div class="key-metric-label">reduction in support calls (~600 fewer calls/month)</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">3,000+</div>
+                        <div class="key-metric-label">applications processed in the first quarter</div>
+                    </div>
+                </div>
+
                 <div class="case-study-meta">
-                    <span class="case-study-meta-item"><strong>Role:</strong> Led all design initiatives for this project</span>
-                    <span class="case-study-meta-item"><strong>Team:</strong> 1 Product Manager and 4 developers</span>
-                    <span class="case-study-meta-item"><strong>Research:</strong> Group interviews, Desktop research</span>
+                    <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 1 Product Manager, 4 Engineers</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Led all design work — research, strategy, UX, and UI</span>
                 </div>
             </div>
         </div>
@@ -50,72 +65,51 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <p>Verify app is a centralized KYC (Know Your Client) verification tool at Sendy. The Sendy operations team uses it to access and verify KYC data from vehicle owners, companies, and customers that require financing.</p>
-                <p>Verify app integrates all Sendy's onboarding processes to eliminate the need for each product team to build its own user verification tool and focus on core product and business processes.</p>
+                <h2>The situation</h2>
+                <p>Sendy started as a single product — motorcycle delivery — onboarding one type of partner. By 2021, the platform had grown to include Sendy Supply (B2B marketplace), Sendy Freight, and Sendy Credit, each onboarding different types of partners and customers with different KYC requirements. And Sendy was operating across four countries: Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
+                <p>Each product team had built its own verification process. There was no shared system.</p>
 
-                <h2>Business challenges</h2>
-                <p>Sendy Transport started out as a single solution for moving goods, onboarding only one kind of Partner i.e. motorcycles.</p>
-                <p>Over time, new products like Sendy Supply (B2B marketplace), Sendy Freight and Sendy Credit financing were introduced to the platform which meant onboarding a larger set of customers and Partners.</p>
-                <p>Also Sendy was operating in four countries and this required us to have localized onboarding support for Kenya, Uganda, Nigeria and Côte d'Ivoire.</p>
+                <h2>What was breaking</h2>
+                <p>The fragmentation created three escalating problems.</p>
+                <p><strong>Operations teams were drowning.</strong> Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types — lending customers, 3PL fleet owners, freight companies — was taking two to four weeks.</p>
+                <p><strong>There was no source of truth.</strong> Team members stored application documents in personal Google Drives because there was no centralized system or clear process for document management.</p>
+                <p><strong>Business risk was accumulating.</strong> Insurance claims for damaged or lost goods couldn't be finalized because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.</p>
 
                 <h2>Research</h2>
-                <p>I chose group interviews because it was the most efficient way to ensure that we can collect a team's collective knowledge about onboarding and process challenges versus speaking to individual team members to minimize bias on certain issues and processes.</p>
-                <p>I also used desktop research to fill in the missing pieces from the group interviews. I reviewed process documents and team onboarding reports. It was also a great opportunity to view sample uploaded documents submitted by applicants.</p>
+                <p>I ran group interviews with operations teams — chosen deliberately over individual interviews because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.</p>
 
-                <h3>Key research findings</h3>
-                <p><strong>Poor User Experience.</strong> Sendy team members also had to jump between multiple admin apps to manage incoming applications and support onboarded Customers and Partners.</p>
-                <p><strong>Onboarding was complex and long.</strong> Teams were taking 2-4 weeks to onboard new kinds of Partners and Customers beyond Sendy's original motorcycle riders. These included KYC verification that takes weeks for Lending Customers, 3PL fleet owners, Freight Truck companies.</p>
-                <p><strong>Business risk was evident.</strong> Team members would resort to storing application documents in their Google Drives since there was no system or clear SOPs to store such files. In some cases, damage or lost goods insurance claims to reimburse Sendy could not be finalized because the supporting documents could not be traced on time which was a huge liability for the business.</p>
+                <h2>What I prioritized</h2>
+                <p>After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?</p>
+                <p>These weren't the only problems. But they were the ones that, if solved, would unlock the most operational capacity.</p>
 
-                <h2>Design goal</h2>
+                <h2>Key decisions</h2>
 
                 <div class="pull-quote">
-                    <p>Design a centralized verification solution that all Sendy business units can integrate with to receive and verify applications from its users.</p>
+                    <p>Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first — any Sendy product could connect to it and have their users verified through the same workflow.</p>
                 </div>
 
-                <h2>Design solution scope</h2>
-                <p>Having understood the breadth of our KYC verification process, I shared the findings with my squad and we prioritized the following problems to solve for the initial version of this solution:</p>
-                <ul>
-                    <li>How might our teams view all received applications and their verification stages?</li>
-                    <li>How might we notify applicants of the application progress and request corrections?</li>
-                    <li>How might we support workflows that require periodically uploads e.g. expiring driver's licenses?</li>
-                    <li>How do we control access to applications based on the user that's logged in?</li>
-                </ul>
+                <p><strong>Status communication via webhooks.</strong> Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.</p>
+                <p><strong>Make corrections self-service.</strong> Instead of routing every document error through support, we built a correction request flow — the verification team flags the issue, the applicant gets a notification with a link to an online form, and the process continues without a phone call.</p>
 
-                <h2>Solution design highlights</h2>
-
-                <h3>Solution 1 — Submitted applications lists and verification stages</h3>
-                <p>I conducted a brainstorm session together with Operations team stakeholders and Product Managers across different teams to align on how we will collectively display submitted applications and the verification stages. Once I had clarity I was able to begin designing the main layout of the verification portal.</p>
-
-                <h3>Solution 2 — Application status communication via web-hooks</h3>
-                <p>Customers and Partners submitting applications through Sendy apps needed to know their application status. Upon consulting with our developers we agreed to provide this data to all Sendy customer facing apps via web-hooks.</p>
-                <p>We worked with designers in other product squads to align on how to display the onboarding status messages to Customers and Partners.</p>
-
-                <h3>Solution 3 — Correction requests</h3>
-                <p>We mapped a way for the verification team to inform applicants to correct submitted information. Errors notifications are sent to applicants to update information via an online form to continue the verification process.</p>
-
-                <h2>Project outcomes</h2>
+                <h2>Outcome</h2>
 
                 <div class="key-metrics">
                     <div class="key-metric">
                         <div class="key-metric-number">24hrs</div>
-                        <div class="key-metric-label">KYC verification time, down from 1 week</div>
+                        <div class="key-metric-label">verification time (from 1 week)</div>
                     </div>
                     <div class="key-metric">
                         <div class="key-metric-number">20%</div>
-                        <div class="key-metric-label">Reduction in support calls (600 calls/month)</div>
+                        <div class="key-metric-label">reduction in support calls (~600/month)</div>
                     </div>
                     <div class="key-metric">
                         <div class="key-metric-number">3,000+</div>
-                        <div class="key-metric-label">Applications processed in first quarter</div>
+                        <div class="key-metric-label">applications in first quarter</div>
                     </div>
                 </div>
 
-                <p><strong>Better Onboarding Experience.</strong> We experienced shorter onboarding times for lending customers and logistics partners. For instance, KYC verification for customers requiring financing reduced from 1 week down to 24 hours after switching to this solution.</p>
-                <p><strong>Improved Partner experience.</strong> We reduced customer support interactions by about 20% (600 calls a month) from partners who needed to correct KYC information or update expired documents.</p>
-                <p><strong>Efficiency gains.</strong> Over 3,000+ applications collected and processed by Verify App within the first quarter since launching the app.</p>
-                <p><strong>Reduced business risk.</strong> Verification for all business units happens on one platform ensuring there is minimal business risk and a central source of truth for verification data.</p>
-                <p><strong>Scaling leverage.</strong> Any new business entity that Sendy launches can integrate with the service and have their customers verified using the same workflow.</p>
+                <p>KYC verification for financing customers dropped from one week to 24 hours. Support calls related to KYC corrections and document updates fell by roughly 20% — about 600 fewer calls per month. The system processed over 3,000 applications in its first quarter.</p>
+                <p>More importantly, Sendy now had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow — turning onboarding from a per-team cost into shared infrastructure.</p>
             </div>
         </div>
     </section>

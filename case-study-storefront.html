@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Storefront - Samson Kirigua</title>
-    <meta name="description" content="Designing a self-checkout storefront sellers would trust and actually use.">
+    <meta name="description" content="A new product that had to earn trust before it could earn revenue.">
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
@@ -36,12 +36,11 @@
         <div class="container">
             <div class="content">
                 <h1>Seller Storefront</h1>
-                <p class="case-study-subtitle">Designing a self-checkout storefront sellers would trust and actually use</p>
+                <p class="case-study-subtitle">A new product that had to earn trust before it could earn revenue.</p>
                 <div class="case-study-meta">
-                    <span class="case-study-meta-item"><strong>Role:</strong> Research, UX Design, UI Design and UX Writing</span>
-                    <span class="case-study-meta-item"><strong>Tools:</strong> Figma, Miro</span>
-                    <span class="case-study-meta-item"><strong>Team:</strong> 1 UX designer, 6 developers</span>
-                    <span class="case-study-meta-item"><strong>Timeline:</strong> Sep – Dec 2023 (16 weeks)</span>
+                    <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 6 Engineers</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep – Dec 2023)</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Research, product strategy, UX and UI design</span>
                 </div>
             </div>
         </div>
@@ -51,71 +50,43 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <h2>Context and stakes</h2>
-                <p>A year after launching Sendy Fulfillment, sellers loved storing stock at fulfillment centers because it reduced delivery lead times and simplified operations. That success exposed the next opportunity: help sellers move from "stored inventory" to completed sales, without extra manual work.</p>
-                <p>The idea was a self-checkout storefront: sellers publish a simple web page showing items available in the warehouse, customers purchase directly, and Sendy handles delivery—automating the sales loop end-to-end.</p>
+                <h2>The situation</h2>
+                <p>A year after launching Sendy Fulfillment, sellers had adopted warehouse storage because it cut delivery times and simplified their operations. That adoption created the next opportunity: help sellers move from stored inventory to completed sales without extra manual work.</p>
+                <p>The concept was a self-checkout storefront — sellers publish a product page from their warehouse inventory, customers buy directly, Sendy handles delivery. The full sales loop, automated.</p>
 
-                <h2>What was actually blocking progress</h2>
+                <h2>What was actually at risk</h2>
+                <p>This wasn't a "design a storefront page" brief. The risk was building something that didn't match how sellers actually build trust, set prices, and close payments in the real world.</p>
+                <p>Before we could design anything, we needed to validate: would sellers trust Sendy to collect payments on their behalf? What payment options were non-negotiable? What needed to be configurable for sellers to run a real business through this? And what was the smallest version that would still work in-market?</p>
 
-                <div class="pull-quote">
-                    <p>This wasn't a "design a storefront page" problem. The risk was shipping a storefront that didn't match how sellers build trust, price products, and close payments in the real world.</p>
-                </div>
-
-                <p>We needed to validate:</p>
-                <ul>
-                    <li>Would sellers trust Sendy to collect payments?</li>
-                    <li>What payment options were non-negotiable?</li>
-                    <li>What must be configurable for sellers to run a real business?</li>
-                    <li>What is the smallest product that still works in-market?</li>
-                </ul>
-
-                <h2>Approach: validate direction before we build</h2>
-                <p>Because this was a new product concept, we started with a demo-first approach—prototype quickly, test with existing sellers, then let that feedback define what mattered for a first release.</p>
-
-                <h3>Demo 1 — Early signal, fast learning</h3>
-                <p>I built a rough mobile concept and turned it into an interactive prototype to test with five sellers.</p>
-                <p><strong>What we learned:</strong></p>
-                <ul>
-                    <li>Setup + checkout felt intuitive, but sellers wanted fewer steps.</li>
-                    <li>Sellers were excited about Sendy collecting payments through the storefront.</li>
-                    <li>Some wanted deeper branding/customization (background images, custom colors).</li>
-                </ul>
-                <p><strong>What changed after Demo 1:</strong></p>
-                <ul>
-                    <li>We tightened the flow around momentum: publish/share sooner, configure later.</li>
-                    <li>We treated "payment collection" as a value anchor worth designing around.</li>
-                </ul>
-
-                <h3>Demo 2 — Higher fidelity, real constraints</h3>
-                <p>With more confidence in the direction, we tested a higher-fidelity prototype with 20 participants to shape the backlog for a first release.</p>
-                <p><strong>Key insights that reshaped the product:</strong></p>
-                <ul>
-                    <li>Payment on Delivery (cash or mobile money) was crucial for customer trust.</li>
-                    <li>Sellers wanted flexible price configuration to pass fulfilment/delivery fees to customers (but it would require more dev time).</li>
-                    <li>Promotions mattered: discounts and bundling to drive sales.</li>
-                    <li>Sellers needed low stock notifications to manage demand and avoid failures.</li>
-                </ul>
+                <h2>How we validated</h2>
+                <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach — prototype quickly, test with real sellers, let their feedback define the backlog.</p>
+                <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted branding customization.</p>
+                <p>What changed: we tightened the flow around momentum — publish first, configure later — and anchored the product around payment collection as the core value.</p>
+                <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Discounts and bundling weren't extras — they were how sellers actually sell.</p>
 
                 <h2>Key decisions</h2>
-                <p>This project became a sequence of product decisions, not a UI exercise:</p>
-                <p><strong>Optimize for seller momentum, not completeness</strong> — Reduce steps and get sellers to a shareable storefront quickly.</p>
-                <p><strong>Treat trust mechanisms as core</strong> — Payment on Delivery wasn't a "phase two" feature—it was foundational to adoption.</p>
-                <p><strong>Separate "must-have" from "expensive-to-build"</strong> — Pricing configuration was important, but we acknowledged the dev cost and planned it intentionally rather than sneaking it into v1.</p>
-                <p><strong>Bake growth into the product</strong> — Discounts and bundling weren't extras—they were how sellers sell.</p>
 
-                <h2>Final design solution</h2>
-                <p>We finalized the design and handed off for development. The solution included:</p>
-                <ul>
-                    <li>A desktop + mobile storefront where customers can browse and place orders.</li>
-                    <li>A new Storefront tab inside the Sendy Fulfillment app to manage catalog, customize the page, and share product/store links.</li>
-                </ul>
+                <div class="pull-quote">
+                    <p>This project became a sequence of product decisions, not a UI exercise.</p>
+                </div>
 
-                <h2>Outcome</h2>
-                <p>The work was handed off, but it was never released due to layoffs and shifting business priorities.</p>
-                <p>Even without launch, we validated what would make a storefront viable in-market—trust, payment expectations, seller pricing needs, and lightweight setup—before investing heavily in build.</p>
+                <p><strong>Optimize for seller momentum, not completeness.</strong> Reduce steps. Get sellers to a shareable storefront fast. Configuration could come later.</p>
+                <p><strong>Treat trust mechanisms as core infrastructure.</strong> Payment on Delivery wasn't a "phase two" feature. It was foundational to whether sellers would adopt the product at all.</p>
+                <p><strong>Separate "must-have" from "expensive-to-build."</strong> Pricing configuration was important, but we named the dev cost honestly and planned it intentionally rather than sneaking scope into v1.</p>
+                <p><strong>Bake growth into the product.</strong> Discounts and bundling weren't feature requests — they were how sellers drive revenue. Designing without them would have been designing for a market that doesn't exist.</p>
 
-                <h2>Reflections</h2>
-                <p>Involving customers early and often helped us focus on problems that were meaningful to sellers—and avoid building something that looked good but wouldn't be adopted.</p>
+                <h2>What shipped</h2>
+                <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalog, customize their page, and share links.</p>
+
+                <h2>What didn't ship</h2>
+                <p>The product was handed off for development but never released. Layoffs and shifting business priorities at Sendy killed the project before launch.</p>
+
+                <div class="pull-quote">
+                    <p>Even without a release, the work validated what a storefront needed to be viable in this market — trust, payment flexibility, lightweight setup, and seller-controlled pricing. That clarity was the real output.</p>
+                </div>
+
+                <h2>Reflection</h2>
+                <p>Involving sellers early and often kept us focused on problems that mattered to them. Without that signal, we would have built something that looked good but wouldn't have been adopted.</p>
             </div>
         </div>
     </section>
