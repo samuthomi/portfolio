@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Inventory App - Samson Kirigua</title>
-    <meta name="description" content="Enhancing inventory visibility at agent shops - A case study on improving internal inventory management tools.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Inventory Management Redesign - Samson Kirigua</title>
+    <meta name="description" content="The tool had the data. It just didn't match how anyone actually worked.">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -36,11 +35,12 @@
     <section class="case-study-header">
         <div class="container">
             <div class="content">
-                <h1>Shop Inventory App</h1>
-                <p class="hero-subtitle">Enhancing Inventory Visibility at Agent Shops</p>
-                <div class="meta">
-                    <span><strong>Team:</strong> 2 Product Designers, 1 Product Manager, 6 Developers</span>
-                    <span><strong>Timeline:</strong> Mar - Apr 2024 (8 weeks)</span>
+                <h1>Inventory Management Redesign</h1>
+                <p class="case-study-subtitle">The tool had the data. It just didn't match how anyone actually worked.</p>
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Team:</strong> 2 Product Designers, 1 Product Manager, 6 Engineers</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> 8 weeks (Mar – Apr 2024)</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Research, UX strategy, interaction design</span>
                 </div>
             </div>
         </div>
@@ -50,52 +50,35 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <p>The inventory system wasn't failing because people didn't know how to use it. It was failing because it didn't match how stock was actually handled on the ground. This was an internal inventory management tool used by operations teams to track stock across multiple shops and warehouses. On paper, the system worked. In practice, it slowed everything down.</p>
+                <h2>The situation</h2>
+                <p>KOKO Networks runs a high-volume retail operation — daily stock movements across a distributed network of agent shops and warehouses. The operations team had an inventory management tool that tracked everything. On paper, it worked.</p>
+                <p>In practice, it was slowing everyone down.</p>
+                <p>Stock levels were hard to trust. Simple questions — what do we have, where is it, what's missing — required manual checks or pulling in an analyst. Teams spent more time reconciling data than making decisions. And as the network scaled, these inefficiencies became directly expensive: missed stock, delayed replenishment, and growing friction between field agents and central teams.</p>
 
-                <h2>The Problem</h2>
-                <p>Stock levels were hard to trust, simple questions required manual checks or analyst support, and teams spent more time reconciling data than acting on it. With these inefficiencies operations was continually becoming expensive—missed stock, delayed decisions, and growing operational friction. The product wasn't failing because of UI quality. It was failing because the system reflected how inventory was stored, not how teams actually worked.</p>
+                <h2>Why it was broken</h2>
+                <p>The system was built around how inventory was stored in the database, not how operations teams actually thought about stock. The result:</p>
+                <p>Critical actions were buried behind dense navigation. Teams couldn't discover key insights without guidance. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.</p>
+                <p>The tool wasn't missing features. It was missing clarity.</p>
 
-                <h2>Context and Stakes</h2>
-                <p>KOKO Networks has a high-volume inventory environment supporting daily operations across a distributed retail network. Errors were expensive: stock mismatches affected fulfilment, reporting, and trust between field agents and central teams. On paper, the system worked. In practice, it slowed everything down. Stock levels were hard to trust, simple questions required manual checks or analyst support, and teams spent more time reconciling data than acting on it. As the operation scaled, these inefficiencies became expensive—missed stock, delayed decisions, and growing operational friction.</p>
+                <h2>What I did</h2>
+                <p>I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX, and operations — interviewing internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.</p>
+                <p>The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.</p>
 
-                <h2>What Wasn't Working</h2>
-                <p>Although the system was functionally capable, usability quality was poor:</p>
-                <ul>
-                    <li>Critical actions were buried behind dense navigation and unclear labels</li>
-                    <li>Teams struggled to discover key inventory insights without guidance</li>
-                    <li>Simple questions ("what stock do we have?", "where is it?", "what's missing?") required unnecessary effort</li>
-                    <li>The interface reflected the underlying system structure rather than how operations teams actually worked</li>
-                </ul>
-                <p>As a result, the tool added friction to workflows that were meant to be fast, repeatable, and reliable.</p>
+                <h2>Key decisions</h2>
 
-                <h2>My Role</h2>
-                <p>I was brought in to figure out why an essential internal tool was slowing teams down, despite having the right data and functionality underneath. My role sat between product, UX, and operations. I worked closely with internal users to understand how inventory decisions were actually made, where teams got stuck, and which parts of the system created the most friction.</p>
-                <p>Rather than redesigning everything, the focus was on:</p>
-                <ul>
-                    <li>Identifying which information and actions mattered most in daily workflows</li>
-                    <li>Reducing cognitive load in high-frequency tasks</li>
-                    <li>Making key features easier to discover and use without training or hand-holding</li>
-                </ul>
+                <div class="pull-quote">
+                    <p>Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.</p>
+                </div>
 
-                <h2>Key Decisions</h2>
-                <p>A critical decision was to prioritize clarity and task visibility over configurability. Instead of exposing everything the system could do, the experience was reshaped around:</p>
-                <ul>
-                    <li>Making stock status immediately understandable</li>
-                    <li>Clear entry points for critical tasks</li>
-                    <li>Predictable patterns that reduced cognitive load</li>
-                    <li>Surfacing exceptions and risks early</li>
-                </ul>
-                <p>Features that were technically powerful but rarely used were de-emphasized, while high-impact workflows were surfaced and simplified. That also meant saying no to flexibility that added complexity, and yes to opinionated views that helped teams act faster.</p>
+                <p><strong>Opinionated views over flexible ones.</strong> This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.</p>
+                <p><strong>Surface exceptions early.</strong> Rather than making teams hunt for problems, the redesign brought anomalies — low stock, mismatches, pending actions — to the surface where they could be caught before they became operational failures.</p>
 
                 <h2>Outcome</h2>
-                <p>The redesign improved:</p>
-                <ul>
-                    <li>Discoverability of key inventory actions</li>
-                    <li>Speed and confidence for day-to-day operational tasks</li>
-                    <li>Reducing the need for secondary tools or analyst intervention</li>
-                    <li>Overall usability quality without changing the underlying system</li>
-                </ul>
-                <p>More importantly, it shifted the tool from something teams worked around to something they could rely on.</p>
+                <p>The redesign improved discoverability of key inventory actions, increased speed and confidence on day-to-day tasks, and reduced the team's dependence on analysts and secondary tools — all without changing the underlying system.</p>
+
+                <div class="pull-quote">
+                    <p>More importantly, it shifted the tool from something teams worked around to something they relied on.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -110,12 +93,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

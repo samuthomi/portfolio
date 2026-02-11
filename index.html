@@ -4,120 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samson Kirigua - Product Designer & UX Strategist</title>
-    <meta name="description" content="Product design & UX strategy. Helping teams make better product decisions by uncovering real user friction and turning complex systems into mobile-first products.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="I help teams make better product decisions by uncovering real user friction and turning complex systems into mobile-first products with measurable customer value.">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Profile Section -->
-    <section class="profile-section">
+    <!-- Navigation -->
+    <nav class="nav">
         <div class="container">
-            <div class="profile-content">
-                <div class="avatar">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="8" r="4" fill="#999"/>
-                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="#999"/>
-                    </svg>
-                </div>
-                <h1 class="profile-name">Samson Kirigua</h1>
-                <p class="profile-bio">Experienced designer specializing in digital and print media with a focus on clean, modern aesthetics. Passionate about elevating brands through compelling visual solutions and attentive to every detail.</p>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-headline">I design the systems behind the screens — payment flows, operational tools, and mobile products that work under real constraints across African markets.</h1>
+            <p class="hero-meta">
+                <span>Product design</span>
+                <span>Nairobi, Kenya</span>
+                <span>8+ years across fintech, logistics, and marketplaces</span>
+            </p>
+            <div class="hero-links">
+                <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="portfolio-section">
+    <!-- Case Studies -->
+    <section class="case-studies-section">
         <div class="container">
-            <div class="portfolio-grid">
-                <a href="case-study-inventory.html" class="portfolio-card">
-                    <div class="portfolio-shape">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <rect x="8" y="8" width="48" height="48" stroke="#999" stroke-width="2" fill="none"/>
-                        </svg>
+            <h2>Selected work</h2>
+            <div class="case-studies-list">
+                <a href="case-study-inventory.html" class="case-study-entry">
+                    <div class="case-study-entry-inner">
+                        <span class="case-study-year">2024</span>
+                        <h3>Inventory Management Redesign</h3>
+                        <p>An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                        <span class="case-study-arrow">View case study</span>
                     </div>
                 </a>
-                <a href="case-study-storefront.html" class="portfolio-card">
-                    <div class="portfolio-shape">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <circle cx="32" cy="32" r="24" stroke="#999" stroke-width="2" fill="none"/>
-                        </svg>
+                <a href="case-study-storefront.html" class="case-study-entry">
+                    <div class="case-study-entry-inner">
+                        <span class="case-study-year">2023</span>
+                        <h3>Seller Storefront</h3>
+                        <p>Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                        <span class="case-study-arrow">View case study</span>
                     </div>
                 </a>
-                <a href="case-study-bank-transfer.html" class="portfolio-card">
-                    <div class="portfolio-shape">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <polygon points="32,8 56,56 8,56" stroke="#999" stroke-width="2" fill="none"/>
-                        </svg>
+                <a href="case-study-bank-transfer.html" class="case-study-entry">
+                    <div class="case-study-entry-inner">
+                        <span class="case-study-year">2022</span>
+                        <h3>Pay by Bank Transfer</h3>
+                        <p>Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
+                        <span class="case-study-arrow">View case study</span>
                     </div>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience-section">
-        <div class="container">
-            <div class="experience-list">
-                <div class="experience-row">
-                    <div class="experience-date">2025–Present</div>
-                    <div class="experience-details">
-                        <h3 class="experience-title">Senior Product Design Consultant, African Management Institute</h3>
-                        <p class="experience-description">Leading strategic UX initiatives across AMI's operations in multiple African countries. Focus on solving revenue-impacting problems through strategic design.</p>
+                <a href="case-study-verification.html" class="case-study-entry">
+                    <div class="case-study-entry-inner">
+                        <span class="case-study-year">2021</span>
+                        <h3>Verification Platform</h3>
+                        <p>Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
+                        <span class="case-study-arrow">View case study</span>
                     </div>
-                </div>
-                <div class="experience-row">
-                    <div class="experience-date">2023–2024</div>
-                    <div class="experience-details">
-                        <h3 class="experience-title">Product Design Lead, KOKO Networks</h3>
-                        <p class="experience-description">Led product design for inventory management systems and mobile-first experiences serving distributed retail networks.</p>
-                    </div>
-                </div>
-                <div class="experience-row">
-                    <div class="experience-date">2020–2023</div>
-                    <div class="experience-details">
-                        <h3 class="experience-title">Product Designer, Sendy Limited</h3>
-                        <p class="experience-description">Designed payment systems, seller storefronts, and verification platforms for logistics marketplace operations across Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Work Section -->
-    <section class="work-section">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="work-grid">
-                <article class="work-card">
-                    <div class="work-image"></div>
-                    <span class="work-year">2024</span>
-                    <h3>Shop Inventory App</h3>
-                    <p>Enhancing Inventory Visibility for Agent Shops</p>
-                    <a href="case-study-inventory.html" class="work-link">View case study</a>
-                </article>
-                <article class="work-card">
-                    <div class="work-image"></div>
-                    <span class="work-year">2023</span>
-                    <h3>Seller Storefronts</h3>
-                    <p>Building Trust Through Transparent Seller Profiles</p>
-                    <a href="case-study-storefront.html" class="work-link">View case study</a>
-                </article>
-                <article class="work-card">
-                    <div class="work-image"></div>
-                    <span class="work-year">2022</span>
-                    <h3>Bank Transfer Payments</h3>
-                    <p>Simplifying B2B Payment Reconciliation</p>
-                    <a href="case-study-bank-transfer.html" class="work-link">View case study</a>
-                </article>
-                <article class="work-card">
-                    <div class="work-image"></div>
-                    <span class="work-year">2021</span>
-                    <h3>Driver Verification</h3>
-                    <p>Streamlining Onboarding for Logistics Partners</p>
-                    <a href="case-study-verification.html" class="work-link">View case study</a>
-                </article>
+                </a>
             </div>
         </div>
     </section>
@@ -132,12 +98,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

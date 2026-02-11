@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay by Bank Transfer - Samson Kirigua</title>
-    <meta name="description" content="Introducing bank transfer payment option in Nigeria.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Nigerian merchants didn't trust card payments. We gave them an alternative that worked.">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -37,11 +36,23 @@
         <div class="container">
             <div class="content">
                 <h1>Pay by Bank Transfer</h1>
-                <p class="hero-subtitle">Introducing Bank Transfer Payment Option in Nigeria</p>
-                <div class="meta">
-                    <span><strong>Role:</strong> Research, UX Design, UI Design, and UX Writing</span>
-                    <span><strong>Tools:</strong> Figma, Miro, Google Sheets</span>
-                    <span><strong>Timeline:</strong> Oct 2021 - Jan 2022 (16 weeks)</span>
+                <p class="case-study-subtitle">Nigerian merchants didn't trust card payments. We gave them an alternative that worked.</p>
+
+                <div class="key-metrics">
+                    <div class="key-metric">
+                        <div class="key-metric-number">90%</div>
+                        <div class="key-metric-label">payment success rate</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">200+</div>
+                        <div class="key-metric-label">merchants using the method within 30 days of launch</div>
+                    </div>
+                </div>
+
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 1 Product Manager, 4 Engineers</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> 12 weeks (Jul – Sep 2022)</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Research, UX design, UI design, UX writing</span>
                 </div>
             </div>
         </div>
@@ -51,67 +62,51 @@
     <section class="case-study-content">
         <div class="container">
             <div class="content">
-                <h2>Overview</h2>
-                <p>In 2021, Sendy launched in Nigeria. During market research, we learned that a significant portion of Nigerians preferred bank transfers over cash-on-delivery or card payments. However, Sendy's Nigerian customers could only pay via cash on delivery or with card payments, leading to two problems:</p>
-                <ul>
-                    <li><strong>Payment friction:</strong> Customers who preferred bank transfers were forced into payment methods they didn't trust or find convenient</li>
-                    <li><strong>Lost orders:</strong> Some customers abandoned purchases entirely rather than use unfamiliar payment methods</li>
-                </ul>
-                <p>The opportunity was clear: enable bank transfer payments to match customer preferences and reduce checkout friction.</p>
+                <h2>The situation</h2>
+                <p>Sendy had expanded into Nigeria and merchants were adopting the platform quickly for deliveries. But payments were a friction point. Card payments — the primary method available — had reliability issues that merchants knew from experience. Mobile money, unlike in Kenya, wasn't widely adopted in Nigeria for business transactions.</p>
+                <p>We partnered with OnePipe, a Nigerian fintech, to introduce bank transfers as an alternative payment method. The goal was simple: give merchants a payment option they already trusted.</p>
 
-                <h2>The Challenge</h2>
-                <p>Bank transfer payments weren't straightforward to implement. Unlike card payments with instant confirmation, bank transfers could take time to process, creating uncertainty for both customers and Sendy's operations team. The design challenge was threefold:</p>
-                <ul>
-                    <li>Make the bank transfer process simple and trustworthy</li>
-                    <li>Handle payment confirmation delays without frustrating customers</li>
-                    <li>Ensure operations could track and verify payments efficiently</li>
-                </ul>
+                <h2>What we learned from merchants</h2>
+                <p>I led remote research with 8 Nigerian merchants — a new challenge, since I was designing from Nairobi for users in Lagos. Scheduling was unpredictable; merchants were often on the move or rescheduled last minute. My teammates in Nigeria were critical for recruiting participants and navigating the logistics.</p>
+                <p>The findings were clear. Most of our merchants were early-stage entrepreneurs who valued Sendy because it removed logistics complexity from their businesses. Every merchant preferred bank transfers over card payments — they'd been burned by failed card transactions before. Two specifically mentioned preferring PayPal deposits to debit cards because of higher success rates.</p>
+                <p>The signal was unambiguous: bank transfers weren't just a nice-to-have. They were what merchants expected.</p>
 
-                <h2>Research Phase</h2>
-                <p>I conducted remote interviews with Nigerian customers to understand their payment behaviors and preferences. Key findings:</p>
-                <ul>
-                    <li>Bank transfers were preferred because they felt more secure and familiar compared to entering card details online</li>
-                    <li>Customers were comfortable with the slight delay in payment confirmation—it was the norm</li>
-                    <li>Clear instructions and status updates were critical—customers needed to know what to do and when their payment was confirmed</li>
-                </ul>
-                <p>The research confirmed demand but also highlighted the importance of clarity throughout the process. Customers needed to understand exactly how bank transfer payments worked and what to expect.</p>
+                <h2>Solution approach</h2>
+                <p>The solution needed to cover three things: onboarding merchants to a virtual bank account (required by Nigerian banking regulations), verifying phone numbers for compliance, and designing the top-up and checkout flows.</p>
+                <p>We mapped user flows across all three areas and shared them with product squads, finance stakeholders, and OnePipe to align before building. This step caught problems early — unclear KYC requirements, the need for better onboarding guidance on how bank transfers work, and potential confirmation delays that could erode the trust we were trying to build.</p>
+                <p>We skipped wireframes — time was tight, and the flow discussions had already created enough shared understanding to move directly to UI design for mobile and web.</p>
 
-                <h2>Design Process</h2>
+                <h2>What broke during beta</h2>
+                <p>We ran a beta with five merchants. Two issues surfaced immediately.</p>
+                <p><strong>Confirmation delays.</strong> OnePipe had promised instant transfer confirmations. In practice, some took longer. Merchants sat staring at a screen not knowing if their payment went through — exactly the trust problem we were trying to solve. We added a countdown screen to set expectations and reduce anxiety.</p>
+                <p><strong>Unnecessary blocking on insufficient funds.</strong> The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating and unnecessary — it added a step that didn't need to exist. We revised the flow so merchants could hit "Confirm Order" and only saw a prompt if funds were actually insufficient.</p>
 
-                <h3>Understanding Requirements</h3>
-                <p>Working with the product team and our payment partner (OnePipe), we mapped out the technical requirements:</p>
-                <ul>
-                    <li>Onboarding new customers for a virtual bank account</li>
-                    <li>Ensuring users verify phone numbers as required by Nigerian banking regulations</li>
-                    <li>Mapping journeys for virtual bank account top-up and customer checkout</li>
-                </ul>
-                <p>Our design goal was to create an account-to-account transfer experience that enables customers to confirm payments instantly.</p>
+                <h2>Key decisions</h2>
 
-                <h3>User Flows</h3>
-                <p>We prepared user flows to address all three areas our solution needed to cover and shared them with all product squads, finance stakeholders, and partners (OnePipe) to ensure alignment.</p>
-                <p>Creating the user flows was helpful because it helped the team spot challenges with:</p>
-                <ul>
-                    <li><strong>KYC Verification Enhancements:</strong> Initially, certain details were unclear, but by developing structured flows, the team and stakeholders aligned on the requirements. The emphasis was on ensuring a positive experience during virtual account setup.</li>
-                    <li><strong>Payment Method Onboarding:</strong> The flow analysis revealed the necessity of providing clear onboarding information to swiftly acquaint users with how Pay by Bank operates, encouraging them to adopt this option.</li>
-                    <li><strong>Addressing Payment Confirmation Delays:</strong> By identifying potential reasons for delays in payment confirmation, we could inform customers of possible challenges and guide them on resolving issues promptly.</li>
-                </ul>
+                <div class="pull-quote">
+                    <p>Design for trust recovery, not just trust. The countdown timer wasn't in any spec. It came from watching real merchants lose confidence during a delay we hadn't anticipated. Designing for payment trust means designing for the moment things feel uncertain, not just the moment they succeed.</p>
+                </div>
 
-                <h3>UI Design</h3>
-                <p>We bypassed the wireframing phase due to time constraints in preparing UI designs. However, significant clarity and alignment were achieved during the user flow discussions.</p>
-                <p>We developed interface screens to accommodate both mobile and web platforms for this solution.</p>
+                <p><strong>Remove friction that exists to protect the system, not the user.</strong> The insufficient funds block protected Sendy from failed transactions. But from the merchant's perspective, it was a wall. We shifted the check to a less disruptive moment without adding risk.</p>
 
-                <h2>Beta Testing & Release</h2>
-                <p>We enlisted five customers and launched a beta version of the payment method to gather feedback on their user experience. During this phase, we identified several issues:</p>
-                <ul>
-                    <li><strong>Challenges with Bank Transfer Confirmations:</strong> Some customers experienced frustration due to delays in bank transfer confirmations, leading to uncertainty. Initially overlooked as our Partner had promised instant confirmation, we addressed this by introducing a screen with a countdown to manage customer expectations regarding confirmation times.</li>
-                    <li><strong>Enhancements for Insufficient Funds Scenarios:</strong> Previously, customers were unable to proceed with their orders if funds were insufficient, a restriction that was frustrating our test customers and we realized that it was creating an extra step for customers that wasn't necessary. To resolve this, we revised the flow to allow users to click on the 'Confirm Order' button, triggering a prompt only if funds were inadequate.</li>
-                </ul>
-                <p>Following the design enhancements, we shared the updates for implementation. After a two-week sprint, we successfully rolled out Pay by Bank to customers in Nigeria.</p>
+                <h2>Outcome</h2>
 
-                <h2>Learnings</h2>
-                <p>Conducting remote interviews with customers was a new experience for me. The logistics differed significantly from meeting participants in person, and I am incredibly grateful to my team members in Nigeria for their invaluable assistance in recruiting participants.</p>
-                <p>I also learned that remote interviews require a flexible approach to scheduling, as participants are likely to request rescheduling hours or even days later.</p>
-                <p>Working on payment systems provided me with a wealth of knowledge, as this payment method was a new concept for me. It challenged me to lead design efforts to create a user-friendly experience for individuals in a different part of the world.</p>
+                <div class="key-metrics">
+                    <div class="key-metric">
+                        <div class="key-metric-number">90%</div>
+                        <div class="key-metric-label">success rate</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">200+</div>
+                        <div class="key-metric-label">merchants actively using within 30 days</div>
+                    </div>
+                </div>
+
+                <p>Pay by Bank launched to Nigerian merchants after a two-week development sprint following the beta fixes. Within the first month, over 200 merchants were actively using bank transfers with a 90% success rate — significantly higher than the card payment experience it complemented.</p>
+
+                <h2>Reflection</h2>
+                <p>This was my first time leading design for a payment system in a market I wasn't physically in. The remote research was harder than expected — not because the insights were different, but because the logistics of reaching busy merchants in Lagos from Nairobi required more flexibility and more trust in teammates on the ground.</p>
+                <p>The biggest lesson: payment methods aren't features. They're trust infrastructure. Getting the happy path right is the easy part. The real design work is in what happens when confirmation is slow, funds are short, or the merchant's past experience with digital payments has been bad.</p>
             </div>
         </div>
     </section>
@@ -126,12 +121,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

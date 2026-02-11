@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Samson Kirigua</title>
     <meta name="description" content="Samson Kirigua's professional experience in product design and UX strategy.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <div class="nav-container nav-split">
-                <a href="index.html" class="nav-avatar">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#f5f5f5"/>
-                        <circle cx="20" cy="14" r="6" fill="#999"/>
-                        <path d="M8 34c0-6 6-9 12-9s12 3 12 9" fill="#999"/>
-                    </svg>
-                </a>
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -32,17 +31,24 @@
         </div>
     </nav>
 
-    <!-- Resume Content -->
-    <section class="section">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
             <div class="content">
                 <h1>Resume</h1>
-                <p class="hero-subtitle">8+ years designing mobile-first products across marketplaces, fintech, logistics, and growth platforms in African markets.</p>
+                <p class="resume-intro">8+ years designing mobile-first products across marketplaces, fintech, logistics, and growth platforms in African markets.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Resume Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="content">
                 <!-- Experience Section -->
                 <div class="resume-section">
                     <h2>Experience</h2>
-                    
+
                     <div class="experience-item">
                         <div class="experience-header">
                             <h3 class="experience-title">Senior Product Design Consultant</h3>
@@ -73,14 +79,14 @@
 
                 <!-- Skills Section -->
                 <div class="resume-section">
-                    <h2>Skills & Expertise</h2>
-                    <p class="experience-description">Product Strategy • UX Research • Mobile-First Design • Payment Systems • Internal Tools • Design Systems • Cross-functional Leadership • Stakeholder Management • Market Research • User Testing • Prototyping</p>
+                    <h2>Skills & expertise</h2>
+                    <p class="skills-list">Product Strategy · UX Research · Mobile-First Design · Payment Systems · Internal Tools · Design Systems · Cross-functional Leadership · Stakeholder Management · Market Research · User Testing · Prototyping</p>
                 </div>
 
                 <!-- Tools Section -->
                 <div class="resume-section">
                     <h2>Tools</h2>
-                    <p class="experience-description">Figma • Miro • Google Sheets • User Testing Platforms • Analytics Tools</p>
+                    <p class="skills-list">Figma · Miro · Google Sheets · User Testing Platforms · Analytics Tools</p>
                 </div>
             </div>
         </div>
@@ -96,12 +102,18 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/samsonmuthomi" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://x.com/samuthomi" class="social-link" target="_blank" rel="noopener">X</a>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
