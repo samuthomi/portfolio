@@ -17,7 +17,7 @@
     --color-border: #E5E4E0;
 
     /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-sans: 'General Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
     /* Type Scale — clamp-based responsive sizing */
     --text-hero: clamp(2.25rem, 4vw, 3rem);
