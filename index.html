@@ -14,9 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samson Kirigua - Product Designer & UX Strategist</title>
     <meta name="description" content="I help teams make better product decisions by uncovering real user friction and turning complex systems into mobile-first products with measurable customer value.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,22 +28,24 @@
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="nav-name">Samson Kirigua</a>
-                <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container">
             <h1 class="hero-name">Samson Kirigua</h1>
-            <p class="hero-headline">I design the systems behind the screens — payment flows, operational tools, and mobile products that work under real constraints across African markets.</p>
+            <p class="hero-tagline">I design the systems behind the screens — payment flows, operational tools, and mobile products that work under real constraints across African markets.</p>
             <p class="hero-meta">
                 <span>Product design</span>
                 <span>Nairobi, Kenya</span>
@@ -53,43 +58,118 @@
         </div>
     </section>
 
+    <!-- About -->
+    <section class="home-about reveal" id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="content">
+                <p>I figure out what's actually broken and help teams fix the right thing.</p>
+                <p>Over the past eight years I've worked on marketplaces, fintech products, logistics platforms, and internal tools — mostly in situations where mistakes are expensive and users don't get second chances to trust you.</p>
+                <p>I've learned that design is usually the straightforward part. The harder work is diagnosing why something isn't working — a drop-off that nobody can explain, a flow that's technically correct but operationally useless, incentives that push users in the wrong direction — and then getting a cross-functional team to agree that's what we should fix first.</p>
+                <p>I lead design work that spans product strategy, UX, and delivery. Teams tend to bring me in when progress has stalled or when a product needs to go from "it works" to "people actually use it." I care about outcomes that hold up: better conversion, less friction, more trust, fewer support calls.</p>
+                <p>Most of what I work on now is mobile-first, at scale, in markets where the infrastructure doesn't always cooperate.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Case Studies -->
-    <section class="case-studies-section">
+    <section class="case-studies-section" id="work">
         <div class="container">
             <h2>Selected work</h2>
-            <div class="case-studies-list">
-                <a href="case-study-inventory.html" class="case-study-entry">
-                    <div class="case-study-entry-inner">
-                        <span class="case-study-year">2024</span>
-                        <h3>Inventory Management Redesign</h3>
-                        <p>An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
-                        <span class="case-study-arrow">View case study</span>
-                    </div>
+        </div>
+        <div class="case-studies-scroll">
+            <div class="case-studies-track">
+                <a href="case-study-inventory.html" class="cs-card">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
-                <a href="case-study-storefront.html" class="case-study-entry">
-                    <div class="case-study-entry-inner">
-                        <span class="case-study-year">2023</span>
-                        <h3>Seller Storefront</h3>
-                        <p>Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
-                        <span class="case-study-arrow">View case study</span>
-                    </div>
+                <a href="case-study-storefront.html" class="cs-card">
+                    <span class="cs-card-year">2023</span>
+                    <h3 class="cs-card-title">Seller Storefront</h3>
+                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
-                <a href="case-study-bank-transfer.html" class="case-study-entry">
-                    <div class="case-study-entry-inner">
-                        <span class="case-study-year">2022</span>
-                        <h3>Pay by Bank Transfer</h3>
-                        <p>Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
-                        <span class="case-study-arrow">View case study</span>
-                    </div>
+                <a href="case-study-bank-transfer.html" class="cs-card">
+                    <span class="cs-card-year">2022</span>
+                    <h3 class="cs-card-title">Pay by Bank Transfer</h3>
+                    <p class="cs-card-text">Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
-                <a href="case-study-verification.html" class="case-study-entry">
-                    <div class="case-study-entry-inner">
-                        <span class="case-study-year">2021</span>
-                        <h3>Verification Platform</h3>
-                        <p>Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
-                        <span class="case-study-arrow">View case study</span>
-                    </div>
+                <a href="case-study-verification.html" class="cs-card">
+                    <span class="cs-card-year">2021</span>
+                    <h3 class="cs-card-title">Verification Platform</h3>
+                    <p class="cs-card-text">Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
+                <!-- clones for seamless loop (aria-hidden, not focusable) -->
+                <a href="case-study-inventory.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-storefront.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2023</span>
+                    <h3 class="cs-card-title">Seller Storefront</h3>
+                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-bank-transfer.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2022</span>
+                    <h3 class="cs-card-title">Pay by Bank Transfer</h3>
+                    <p class="cs-card-text">Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-verification.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2021</span>
+                    <h3 class="cs-card-title">Verification Platform</h3>
+                    <p class="cs-card-text">Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section reveal">
+        <div class="container">
+            <h2>What people say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I saw him grow from a visual designer to a product designer, then to a senior product designer, and finally to my manager as the Product Design Lead."</p>
+                    <div class="testimonial-attribution">
+                        <img class="testimonial-avatar" src="images/denis-gachoki.jpg" alt="Denis Gachoki" width="40" height="40">
+                        <div>
+                            <p class="testimonial-name">Denis Gachoki</p>
+                            <p class="testimonial-role">Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"His ability to communicate design decisions clearly and effectively has been crucial in driving project success."</p>
+                    <div class="testimonial-attribution">
+                        <img class="testimonial-avatar" src="images/supreet-kumar.jpg" alt="Supreet Kumar" width="40" height="40">
+                        <div>
+                            <p class="testimonial-name">Supreet Kumar</p>
+                            <p class="testimonial-role">Senior Design Manager, IBM | NID, CUA™, CXA™</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="home-contact reveal" id="contact">
+        <div class="container">
+            <h2>Let's connect</h2>
+            <p>Open to collaborations, product design opportunities, and consulting projects.</p>
+            <a class="contact-email" data-user="hello" data-domain="samsonkirigua.com"></a>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X (Twitter)</a>
             </div>
         </div>
     </section>
@@ -99,10 +179,10 @@
         <div class="container">
             <div class="footer-content">
                 <ul class="footer-links">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
                 <div class="footer-social">
                     <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
@@ -114,7 +194,64 @@
 
     <script>
         document.querySelector('.nav-toggle')?.addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('open');
+            const isOpen = document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('.nav-toggle-label').textContent = isOpen ? 'Close' : 'Menu';
+            this.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Reveal obfuscated email
+        (function() {
+            var el = document.querySelector('.contact-email[data-user]');
+            if (el) {
+                var addr = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
+                el.href = 'mailto:' + addr;
+                el.textContent = addr;
+            }
+        })();
+
+        // Close mobile menu when an anchor nav link is tapped
+        document.querySelectorAll('.nav-links a[href*="#"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('open');
+                var toggle = document.querySelector('.nav-toggle');
+                toggle.querySelector('.nav-toggle-label').textContent = 'Menu';
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Section entrance animations
+        var revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            revealObserver.observe(el);
+        });
+
+        // Scroll spy — update active nav link
+        var sections = [
+            { id: 'about', href: 'index.html#about' },
+            { id: 'work', href: 'index.html#work' },
+            { id: 'contact', href: 'index.html#contact' }
+        ];
+        var navLinks = document.querySelectorAll('.nav-links a');
+        var spyObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var activeHref = 'index.html#' + entry.target.id;
+                    navLinks.forEach(function(a) {
+                        a.classList.toggle('active', a.getAttribute('href') === activeHref);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(function(s) {
+            var el = document.getElementById(s.id);
+            if (el) spyObserver.observe(el);
         });
     </script>
 </body>

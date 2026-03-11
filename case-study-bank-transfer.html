@@ -14,9 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay by Bank Transfer - Samson Kirigua</title>
     <meta name="description" content="Nigerian merchants didn't trust card payments. We gave them an alternative that worked.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,11 +28,12 @@
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="nav-name">Samson Kirigua</a>
-                <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
                 <ul class="nav-links">
-                    <li><a href="index.html">Work</a></li>
+                    <li><a href="index.html#hero">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -40,6 +44,7 @@
     <section class="case-study-header">
         <div class="container">
             <div class="content">
+                <a class="cs-back" href="index.html#work">← All work</a>
                 <h1>Pay by Bank Transfer</h1>
                 <p class="case-study-subtitle">Nigerian merchants didn't trust card payments. We gave them an alternative that worked.</p>
 
@@ -116,14 +121,60 @@
         </div>
     </section>
 
+    <!-- More work -->
+    <section class="case-studies-section">
+        <div class="container">
+            <h2>More work</h2>
+        </div>
+        <div class="case-studies-scroll">
+            <div class="case-studies-track case-studies-track--3">
+                <a href="case-study-inventory.html" class="cs-card">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-storefront.html" class="cs-card">
+                    <span class="cs-card-year">2023</span>
+                    <h3 class="cs-card-title">Seller Storefront</h3>
+                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-verification.html" class="cs-card">
+                    <span class="cs-card-year">2021</span>
+                    <h3 class="cs-card-title">Verification Platform</h3>
+                    <p class="cs-card-text">Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-inventory.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-storefront.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2023</span>
+                    <h3 class="cs-card-title">Seller Storefront</h3>
+                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-verification.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2021</span>
+                    <h3 class="cs-card-title">Verification Platform</h3>
+                    <p class="cs-card-text">Replacing four separate onboarding tools with one centralized KYC system across four countries.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <ul class="footer-links">
-                    <li><a href="index.html">Work</a></li>
+                    <li><a href="index.html#hero">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="footer-social">
@@ -136,7 +187,9 @@
 
     <script>
         document.querySelector('.nav-toggle')?.addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('open');
+            const isOpen = document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('.nav-toggle-label').textContent = isOpen ? 'Close' : 'Menu';
+            this.setAttribute('aria-expanded', String(isOpen));
         });
     </script>
 </body>
