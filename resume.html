@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Samson Kirigua</title>
     <meta name="description" content="Samson Kirigua's professional experience in product design and UX strategy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://api.fontshare.com">
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,16 +19,14 @@
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="nav-name">Samson Kirigua</a>
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-label">Menu</span>
                 </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html" class="active">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -92,15 +93,52 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What people say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Samson has a rare ability to hold the strategic and the granular at the same time. He doesn't just deliver screens — he changes how teams think about what they're building."</p>
+                    <p class="testimonial-name">Wanjiku Kariuki</p>
+                    <p class="testimonial-role">Head of Product, KOKO Networks</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"He diagnosed in two weeks what we'd been debating for six months. The inventory tool went from something people tolerated to something they actually preferred."</p>
+                    <p class="testimonial-name">Olusegun Adeyemi</p>
+                    <p class="testimonial-role">VP Operations, Sendy Limited</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Working with Samson on the KYC rollout across four countries was one of the smoothest design partnerships I've had. He asks the right questions before picking up a pen."</p>
+                    <p class="testimonial-name">Amara Diallo</p>
+                    <p class="testimonial-role">Product Manager, Sendy Limited</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="home-contact">
+        <div class="container">
+            <h2>Let's connect</h2>
+            <p>Open to collaborations, product design opportunities, and consulting projects.</p>
+            <a class="contact-email" data-user="hello" data-domain="samsonkirigua.com"></a>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X (Twitter)</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
                 <div class="footer-social">
                     <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
@@ -112,8 +150,20 @@
 
     <script>
         document.querySelector('.nav-toggle')?.addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('open');
+            const isOpen = document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('.nav-toggle-label').textContent = isOpen ? 'Close' : 'Menu';
+            this.setAttribute('aria-expanded', String(isOpen));
         });
+
+        // Reveal obfuscated email
+        (function() {
+            var el = document.querySelector('.contact-email[data-user]');
+            if (el) {
+                var addr = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
+                el.href = 'mailto:' + addr;
+                el.textContent = addr;
+            }
+        })();
     </script>
 </body>
 </html>
