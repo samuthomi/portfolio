@@ -74,18 +74,18 @@
             <div class="content">
                 <h2>The situation</h2>
                 <p>Jumba is a construction materials marketplace in Kenya. Buyers order through the Jumba app, and sellers list their products through a seller portal called Jumba Connect.</p>
-                <p>A marketplace without active sellers has little for buyers to order. Getting sellers from sign-up to selling was the problem I was brought in to look at.</p>
+                <p>Without sellers listing stock, buyers had little to order. Getting sellers from sign-up to selling was the problem I was brought in to look at.</p>
 
                 <h2>Where sellers dropped off</h2>
                 <p>I traced the onboarding funnel one step at a time. More than 50 sellers signed up. 15 went on to create an organisation. 3 completed a profile. Roughly 9 in 10 sellers were lost before they could list anything.</p>
-                <p>Listing was the biggest hurdle. Adding one product meant typing 40 to 60 fields by hand. For a seller with a full stock list, that is a long stretch of data entry before any sign that the platform will pay off. Sellers just want to sell, and Jumba Connect was one more sales channel for them.</p>
+                <p>Listing was the biggest hurdle. Adding one product meant typing 40 to 60 fields by hand. For a seller with a full stock list, that is a long stretch of data entry before a seller sees a single order. Sellers just want to sell, and Jumba Connect was one more sales channel for them.</p>
                 <figure class="cs-figure">
                     <!-- TODO: replace with <img src="images/..." alt="onboarding funnel, 50+ signups to 3 profiles"> -->
                     <div class="cs-figure-placeholder">Image: onboarding funnel, 50+ signups to 3 profiles</div>
                 </figure>
 
                 <h2>Solution approach</h2>
-                <p>I moved the sprint's goal from completed profiles to a seller's first sale. Profile completion told us whether sellers filled in forms. First sale told us whether Jumba Connect was working for them. With that as the goal, getting products listed quickly mattered more than a complete profile.</p>
+                <p>I moved the sprint's goal from completed profiles to a seller's first sale. Profile completion only showed that sellers filled in forms. A first sale would show Jumba Connect was working for them. With that as the goal, getting products listed quickly mattered more than a complete profile.</p>
                 <p>I then rebuilt onboarding around listing. The journey became: verify your phone, list products, see your shop, then finish setup. Profile, payout and KYC details moved later, after a seller had seen what their shop would look like.</p>
                 <figure class="cs-figure">
                     <!-- TODO: replace with <img src="images/..." alt="new onboarding order"> -->
@@ -105,7 +105,7 @@
 
                 <h2>The AI shopping prototype</h2>
                 <p>On the buyer side, I designed and built an AI-assisted OCR shopping feature in React. A buyer scans a materials list and the app builds a cart from it.</p>
-                <p>The first version landed with the team as "okay, meh". It was a technology demo, not a better way to shop. I changed the approach: every AI result became a suggestion the buyer confirms, and the flow was designed to cut the decisions in an order from more than 50 to around 10 to 15, using verification steps and progressive disclosure.</p>
+                <p>The team's reaction to the first version was "okay, meh". It showed off the technology but did not make shopping easier. I changed the approach: every AI result became a suggestion the buyer confirms, and the flow was designed to cut the decisions in an order from more than 50 to around 10 to 15, using verification steps and progressive disclosure.</p>
                 <p>I handed it over as a demo-ready prototype, with a stakeholder presentation, a user testing guide and developer documentation.</p>
                 <figure class="cs-figure">
                     <!-- TODO: replace with <img src="images/..." alt="scan-to-cart flow"> -->
@@ -113,7 +113,7 @@
                 </figure>
 
                 <h2>Working with the team</h2>
-                <p>I was the main design voice in sessions with the product, engineering, operations and sales leads, on search, seller onboarding, payments and the AI cart. I also mentored a junior designer through weekly design reviews, asked for several options before settling on one, and gave structured feedback on their work to the founder.</p>
+                <p>I represented design in sessions with the product, engineering, operations and sales leads, on search, seller onboarding, payments and the AI cart. I also mentored a junior designer through weekly design reviews, asked for several options before settling on one, and gave structured feedback on their work to the founder.</p>
 
                 <h2>Key decisions</h2>
                 <p><strong>Measure first sale, not profile completion.</strong> It kept the sprint on what sellers came to Jumba Connect for.</p>
@@ -121,7 +121,7 @@
                 <p><strong>Search the catalogue before creating anything.</strong> Sellers add only what is theirs, and the catalogue stays clean.</p>
                 <p><strong>Two listing paths.</strong> Guided listing for small shops, and a bulk table with catalogue matching for wholesalers.</p>
                 <p><strong>AI suggests, the buyer confirms.</strong> A misread item on a materials list goes straight into someone's order, so every scan result is checked before it reaches the cart.</p>
-                <p><strong>Design for phones that take a beating.</strong> Most users work on the go or on construction sites, on low-end or worn smartphones.</p>
+                <p><strong>Design for low-end and worn phones.</strong> Most users work on the go or on construction sites, on low-end or worn smartphones.</p>
 
                 <h2>Outcome</h2>
                 <p>The engagement ended in January 2026. Jumba had a search-first listing flow designed around first sale, and a working AI shopping prototype ready for development and user testing.</p>
