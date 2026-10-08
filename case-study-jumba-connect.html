@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXT3K9KYGM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NXT3K9KYGM');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumba Connect Seller Onboarding - Samson Kirigua</title>
+    <meta name="description" content="Sellers were signing up for Jumba Connect and then stopping. Of more than 50 signups, 3 finished a profile.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="nav-name">Samson Kirigua</a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <section class="case-study-header">
+        <div class="container">
+            <div class="content">
+                <a class="cs-back" href="index.html#work">← All work</a>
+                <h1>Jumba Connect Seller Onboarding</h1>
+                <p class="case-study-subtitle">Sellers were signing up for Jumba Connect and then stopping. Of more than 50 signups, 3 finished a profile.</p>
+
+                <div class="key-metrics">
+                    <div class="key-metric">
+                        <div class="key-metric-number">50+ to 3</div>
+                        <div class="key-metric-label">signups that became complete seller profiles</div>
+                    </div>
+                    <div class="key-metric">
+                        <div class="key-metric-number">40 to 60</div>
+                        <div class="key-metric-label">typed fields per product, replaced by a search-first listing flow</div>
+                    </div>
+                </div>
+
+                <div class="case-study-meta">
+                    <span class="case-study-meta-item"><strong>Team:</strong> Head of Product, engineering, operations and sales leads, and a junior product designer I mentored</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> Jul 2025 to Jan 2026</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Funnel analysis, UX strategy, interaction design, prototyping, design mentoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+        <div class="container">
+            <div class="content">
+                <h2>The situation</h2>
+                <p>Jumba is a construction materials marketplace in Kenya. Buyers order through the Jumba app, and sellers list their products through a seller portal called Jumba Connect.</p>
+                <p>A marketplace without active sellers has little for buyers to order. Getting sellers from sign-up to selling was the problem I was brought in to look at.</p>
+
+                <h2>Where sellers dropped off</h2>
+                <p>I traced the onboarding funnel one step at a time. More than 50 sellers signed up. 15 went on to create an organisation. 3 completed a profile. Roughly 9 in 10 sellers were lost before they could list anything.</p>
+                <p>Listing was the biggest hurdle. Adding one product meant typing 40 to 60 fields by hand. For a seller with a full stock list, that is a long stretch of data entry before any sign that the platform will pay off. Sellers just want to sell, and Jumba Connect was one more sales channel for them.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/..." alt="onboarding funnel, 50+ signups to 3 profiles"> -->
+                    <div class="cs-figure-placeholder">Image: onboarding funnel, 50+ signups to 3 profiles</div>
+                </figure>
+
+                <h2>Solution approach</h2>
+                <p>I moved the sprint's goal from completed profiles to a seller's first sale. Profile completion told us whether sellers filled in forms. First sale told us whether Jumba Connect was working for them. With that as the goal, getting products listed quickly mattered more than a complete profile.</p>
+                <p>I then rebuilt onboarding around listing. The journey became: verify your phone, list products, see your shop, then finish setup. Profile, payout and KYC details moved later, after a seller had seen what their shop would look like.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/..." alt="new onboarding order"> -->
+                    <div class="cs-figure-placeholder">Image: new onboarding order</div>
+                </figure>
+                <p>Listing itself became search-first. Most products sellers carry are not new, and Jumba already had a catalogue. A seller searches it, picks the product and adds only their own details, such as price and stock. They create a new product only when it is really missing, which also keeps duplicates out of the catalogue.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/..." alt="listing before and after"> -->
+                    <div class="cs-figure-placeholder">Image: listing before and after</div>
+                </figure>
+                <p>Sellers came in two shapes. A hardware shop might list 10 to 20 products by hand. A wholesaler works with hundreds of items, often in spreadsheets. I designed a guided path for the first and a bulk path for the second. The team's default for bulk was CSV upload. I pushed for an in-app table that works like a spreadsheet instead, because downloading, editing and re-uploading a file is extra work for the seller. Uploaded products are matched against the catalogue and sorted into matched, likely matched and unmatched, so obvious matches go straight through and the rest get a seller or Ops review.</p>
+                <p>For suppliers with more than one branch, price and stock are set per location, with defaults a seller can override.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/..." alt="bulk listing table"> -->
+                    <div class="cs-figure-placeholder">Image: bulk listing table</div>
+                </figure>
+
+                <h2>The AI shopping prototype</h2>
+                <p>On the buyer side, I designed and built an AI-assisted OCR shopping feature in React. A buyer scans a materials list and the app builds a cart from it.</p>
+                <p>The first version landed with the team as "okay, meh". It was a technology demo, not a better way to shop. I changed the approach: every AI result became a suggestion the buyer confirms, and the flow was designed to cut the decisions in an order from more than 50 to around 10 to 15, using verification steps and progressive disclosure.</p>
+                <p>I handed it over as a demo-ready prototype, with a stakeholder presentation, a user testing guide and developer documentation.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/..." alt="scan-to-cart flow"> -->
+                    <div class="cs-figure-placeholder">Image: scan-to-cart flow</div>
+                </figure>
+
+                <h2>Working with the team</h2>
+                <p>I was the main design voice in sessions with the product, engineering, operations and sales leads, on search, seller onboarding, payments and the AI cart. I also mentored a junior designer through weekly design reviews, asked for several options before settling on one, and gave structured feedback on their work to the founder.</p>
+
+                <h2>Key decisions</h2>
+                <p><strong>Measure first sale, not profile completion.</strong> It kept the sprint on what sellers came to Jumba Connect for.</p>
+                <p><strong>List first, paperwork later.</strong> Profile, payout and KYC details wait until a seller has seen their shop.</p>
+                <p><strong>Search the catalogue before creating anything.</strong> Sellers add only what is theirs, and the catalogue stays clean.</p>
+                <p><strong>Two listing paths.</strong> Guided listing for small shops, and a bulk table with catalogue matching for wholesalers.</p>
+                <p><strong>AI suggests, the buyer confirms.</strong> A misread item on a materials list goes straight into someone's order, so every scan result is checked before it reaches the cart.</p>
+                <p><strong>Design for phones that take a beating.</strong> Most users work on the go or on construction sites, on low-end or worn smartphones.</p>
+
+                <h2>Outcome</h2>
+                <p>The engagement ended in January 2026. Jumba had a search-first listing flow designed around first sale, and a working AI shopping prototype ready for development and user testing.</p>
+
+                <h2>Reflection</h2>
+                <p>Putting my demo in front of people early taught me quickly why my first solution would not work. It took my own bias out of the decision and opened the discussion to solutions that mattered more to the user.</p>
+                <p>On Jumba Connect, the lesson was to cut every requirement standing between a seller and their first sale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- More work -->
+    <section class="case-studies-section">
+        <div class="container">
+            <h2>More work</h2>
+        </div>
+        <div class="case-studies-scroll">
+            <div class="case-studies-track case-studies-track--3">
+                <a href="case-study-d2e.html" class="cs-card">
+                    <span class="cs-card-year">2026</span>
+                    <h3 class="cs-card-title">D2E Growth Companion</h3>
+                    <p class="cs-card-text">Testing an AI growth coach with small business owners, and finding three launch blockers before any customer did.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-inventory.html" class="cs-card">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-bank-transfer.html" class="cs-card">
+                    <span class="cs-card-year">2022</span>
+                    <h3 class="cs-card-title">Pay by Bank Transfer</h3>
+                    <p class="cs-card-text">Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-d2e.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2026</span>
+                    <h3 class="cs-card-title">D2E Growth Companion</h3>
+                    <p class="cs-card-text">Testing an AI growth coach with small business owners, and finding three launch blockers before any customer did.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-inventory.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2024</span>
+                    <h3 class="cs-card-title">Inventory Management Redesign</h3>
+                    <p class="cs-card-text">An internal tool had the right data but the wrong structure. I redesigned it around how operations teams actually work.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+                <a href="case-study-bank-transfer.html" class="cs-card" aria-hidden="true" tabindex="-1">
+                    <span class="cs-card-year">2022</span>
+                    <h3 class="cs-card-title">Pay by Bank Transfer</h3>
+                    <p class="cs-card-text">Introducing bank transfers as a payment method for Nigerian merchants who didn't trust card payments.</p>
+                    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/samsonmuthomi" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://x.com/samuthomi" target="_blank" rel="noopener">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            const isOpen = document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('.nav-toggle-label').textContent = isOpen ? 'Close' : 'Menu';
+            this.setAttribute('aria-expanded', String(isOpen));
+        });
+    </script>
+</body>
+</html>
