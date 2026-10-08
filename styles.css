@@ -1101,3 +1101,58 @@ strong {
     margin-bottom: var(--space-3);
     flex-shrink: 0;
 }
+
+/* Carousel heading with arrows */
+.cs-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+}
+.cs-heading h2 { margin-bottom: 0; }
+.cs-arrows {
+    display: flex;
+    gap: var(--space-1);
+    flex-shrink: 0;
+}
+.cs-arrows button {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--color-text);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.cs-arrows button:hover,
+.cs-arrows button:focus-visible {
+    background: var(--color-text);
+    color: var(--color-bg);
+}
+.cs-arrows button:focus-visible {
+    outline: 2px solid var(--color-text);
+    outline-offset: 3px;
+}
+.cs-arrows svg { width: 20px; height: 20px; }
+
+/* Script-driven carousel overrides the CSS loop at every width it runs */
+.case-studies-scroll.js-carousel {
+    overflow: hidden;
+    touch-action: pan-y;
+}
+.case-studies-scroll.js-carousel .case-studies-track {
+    animation: none;
+    will-change: transform;
+}
+.case-studies-scroll.js-carousel .cs-card[aria-hidden="true"] {
+    display: flex;
+}
+.case-studies-scroll.js-carousel .cs-card { user-select: none; }
+
+/* Reserve three lines for every card title so descriptions line up */
+.cs-card-title {
+    min-height: calc(1.75rem * 1.2 * 3);
+}
