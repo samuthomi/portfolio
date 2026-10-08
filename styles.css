@@ -22,6 +22,7 @@ html {
     --color-bg: #ffffff;
     --color-surface: #f1f2ea;
     --color-surface-alt: #f4f3f8;
+    --color-surface-deep: #e7e9dd;
     --color-border: rgba(37, 53, 51, 0.2);
     --color-border-dark: #253533;
 
@@ -146,22 +147,22 @@ strong {
 
 /* Navigation */
 .nav {
-    padding: var(--space-3) var(--space-5);
     position: sticky;
-    top: var(--space-2);          /* floating gap from viewport top */
-    margin: var(--space-2) auto 0;
-    width: calc(100% - 2 * var(--space-3));  /* 24px side margins */
-    max-width: var(--max-width);             /* caps at 940px = .container width */
-    background: var(--color-surface);
-    border-radius: 10px;
+    top: 0;
+    padding: var(--space-3) 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
     z-index: 100;
-    box-shadow: 0 2px 12px rgba(37, 53, 51, 0.1);
+}
+
+/* Hairline appears once the page scrolls */
+.nav.is-scrolled {
+    border-bottom-color: var(--color-border-dark);
 }
 
 .nav .container {
-    max-width: none;
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .nav-container {
@@ -333,13 +334,12 @@ strong {
     flex-direction: column;
     text-decoration: none;
     color: var(--color-text);
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background 0.2s ease;
     flex-shrink: 0;
 }
-.cs-card:hover {
-    background: var(--color-surface-alt);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(37, 53, 51, 0.1);
+.cs-card:hover,
+.cs-card:focus-visible {
+    background: var(--color-surface-deep);
 }
 
 .cs-card-year {
@@ -383,7 +383,8 @@ strong {
     align-self: flex-start;
     transition: background 0.2s ease, color 0.2s ease;
 }
-.cs-card:hover .cs-card-btn {
+.cs-card:hover .cs-card-btn,
+.cs-card:focus-visible .cs-card-btn {
     background: var(--color-text);
     color: var(--color-bg);
 }
@@ -891,12 +892,6 @@ strong {
 }
 
 @media (max-width: 768px) {
-    .nav {
-        width: auto;
-        margin-left: var(--space-3);
-        margin-right: var(--space-3);
-    }
-
     /* Always positioned as overlay — hidden via opacity/visibility, not display */
     .nav-links {
         display: flex;

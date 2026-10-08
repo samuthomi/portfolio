@@ -83,6 +83,10 @@
                 el.textContent = addr;
             }
         })();
+        const nav = document.querySelector('.nav');
+        const setNavRule = () => nav?.classList.toggle('is-scrolled', window.scrollY > 4);
+        setNavRule();
+        window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
 </body>
 </html>
