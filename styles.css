@@ -1092,3 +1092,12 @@ strong {
     opacity: 0.4;
     font-size: 0.875rem;
 }
+
+/* Card icon: Phosphor Light, sits above the year */
+.cs-card-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--color-text);
+    margin-bottom: var(--space-3);
+    flex-shrink: 0;
+}
