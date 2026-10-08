@@ -277,6 +277,10 @@
             var el = document.getElementById(s.id);
             if (el) spyObserver.observe(el);
         });
+        const nav = document.querySelector('.nav');
+        const setNavRule = () => nav?.classList.toggle('is-scrolled', window.scrollY > 4);
+        setNavRule();
+        window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
 </body>
 </html>
