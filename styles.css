@@ -1087,6 +1087,10 @@ strong {
     opacity: 0.4;
     font-size: 0.875rem;
 }
+/* Hide empty slots on the live site; a figure shows again once its placeholder is replaced with an <img> */
+.cs-figure:has(.cs-figure-placeholder) {
+    display: none;
+}
 
 /* Card icon: Phosphor Light, sits above the year */
 .cs-card-icon {
