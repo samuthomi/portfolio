@@ -1077,6 +1077,59 @@ strong {
     border-radius: 8px;
     display: block;
 }
+.cs-figure figcaption {
+    margin-top: var(--space-2);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+.cs-figure--framed img {
+    border: 1px solid var(--color-border);
+}
+.cs-figure--pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+}
+.cs-figure--pair img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: left top;
+}
+.cs-figure--pair figcaption {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+.cs-figure-scroll {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+.cs-figure--wide img {
+    width: 1500px;
+    max-width: none;
+}
+@media (max-width: 600px) {
+    .cs-figure--pair {
+        grid-template-columns: 1fr;
+    }
+}
+.cs-cover {
+    margin: var(--space-4) 0 0;
+}
+.case-study-header:has(.cs-cover) {
+    padding-bottom: 0;
+}
+/* Header rules: metrics and meta share one line; a cover image replaces the closing line */
+.case-study-header .key-metrics {
+    margin-bottom: 0;
+}
+.case-study-header .key-metrics + .case-study-meta {
+    border-top: 0;
+}
+.case-study-header:has(.cs-cover) .case-study-meta {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 .cs-figure-placeholder {
     aspect-ratio: 16 / 9;
     display: flex;
@@ -1154,4 +1207,78 @@ strong {
 /* Reserve three lines for every card title so descriptions line up */
 .cs-card-title {
     min-height: calc(1.75rem * 1.2 * 3);
+}
+
+/* Image lightbox (lightbox.js) */
+.cs-figure img[role="button"] {
+    cursor: zoom-in;
+}
+.cs-figure img[role="button"]:focus-visible {
+    outline: 2px solid var(--color-text);
+    outline-offset: 3px;
+}
+.lightbox {
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(20, 28, 27, 0.8);
+    color: var(--white);
+}
+.lightbox[open] {
+    display: flex;
+    flex-direction: column;
+}
+.lightbox::backdrop {
+    background: rgba(20, 28, 27, 0.8);
+}
+.lightbox-close {
+    align-self: flex-end;
+    margin: var(--space-2);
+    padding: 0.5rem 1rem;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--white);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 999px;
+    cursor: pointer;
+}
+.lightbox-close:hover,
+.lightbox-close:focus-visible {
+    background: var(--white);
+    color: var(--color-text);
+}
+.lightbox-stage {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    display: flex;
+    padding: 0 var(--space-2);
+}
+.lightbox-stage img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+.lightbox.is-zoomed .lightbox-stage img {
+    max-width: none;
+    max-height: none;
+    cursor: zoom-out;
+}
+.lightbox-caption {
+    margin: 0;
+    padding: var(--space-2);
+    font-size: 0.875rem;
+    text-align: center;
+    opacity: 0.8;
+}
+body:has(.lightbox[open]) {
+    overflow: hidden;
 }

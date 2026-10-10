@@ -67,6 +67,9 @@
                     <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 1 Product Manager, 4 Engineers</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Led all design work — research, strategy, UX, and UI</span>
                 </div>
+                <figure class="cs-figure cs-cover">
+                    <img src="images/verification-cover.webp" width="2000" height="919" alt="Sendy Verify dashboard on desktop and mobile, showing a truck application with its verification checks and submit actions.">
+                </figure>
             </div>
         </div>
     </section>
@@ -78,6 +81,10 @@
                 <h2>The situation</h2>
                 <p>Sendy started as a single product — motorcycle delivery — onboarding one type of partner. By 2021, the platform had grown to include Sendy Supply (B2B marketplace), Sendy Freight, and Sendy Credit, each onboarding different types of partners and customers with different KYC requirements. And Sendy was operating across four countries: Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
                 <p>Each product team had built its own verification process. There was no shared system.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/verification-entities.webp" width="1600" height="899" loading="lazy" alt="Grid of the entities needing verification: owner, driver, vehicle and B2B customer for Sendy Transport, business owner, individual owner, vehicle and B2B customer for Sendy Freight, seller and buyer for Sendy Supply, with a row for future business units.">
+                    <figcaption>Ten entity types across three business units, each verified through a separate process.</figcaption>
+                </figure>
 
                 <h2>What was breaking</h2>
                 <p>The fragmentation created three escalating problems.</p>
@@ -91,6 +98,11 @@
                 <h2>What I prioritized</h2>
                 <p>After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?</p>
                 <p>These weren't the only problems. But they were the ones that, if solved, would unlock the most operational capacity.</p>
+                <figure class="cs-figure cs-figure--pair cs-figure--framed">
+                    <img src="images/verification-sketch.webp" width="1200" height="795" loading="lazy" alt="Pencil sketch of the Verify app: a side menu with Pending, In Progress, Invalid Data, Review and Closed, beside a list of pending applications by type.">
+                    <img src="images/verification-wireframe.webp" width="1200" height="674" loading="lazy" alt="Wireframe of the same screen: the status menu on the left and a table of pending applications showing business unit, application type, contact person and date.">
+                    <figcaption>From first sketch to wireframe: one queue for every business unit, grouped by verification stage.</figcaption>
+                </figure>
 
                 <h2>Key decisions</h2>
 
@@ -99,7 +111,21 @@
                 </div>
 
                 <p><strong>Status communication via webhooks.</strong> Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.</p>
+                <figure class="cs-figure">
+                    <img src="images/verification-webhook.webp" width="1600" height="926" loading="lazy" alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit.">
+                    <figcaption>A customer submits business details once in the Credit app. The webhook returns each check's status and unlocks credit when verification completes.</figcaption>
+                </figure>
                 <p><strong>Make corrections self-service.</strong> Instead of routing every document error through support, we built a correction request flow — the verification team flags the issue, the applicant gets a notification with a link to an online form, and the process continues without a phone call.</p>
+                <figure class="cs-figure">
+                    <img src="images/verification-resubmit.webp" width="1600" height="1200" loading="lazy" alt="Two mobile screens: a failed verification notice on the partner app's home map, leading to a documents list with the registration certificate flagged for review.">
+                    <figcaption>A failed check appears in the partner's own app and takes them straight to the document to fix.</figcaption>
+                </figure>
+                <figure class="cs-figure cs-figure--wide cs-figure--framed">
+                    <div class="cs-figure-scroll" tabindex="0" role="group" aria-label="Correction flow diagram, scrolls sideways">
+                        <img src="images/verification-correction-flow.webp" width="2400" height="663" loading="lazy" alt="Flow diagram of a correction: the officer marks a section invalid with a reason, the application moves to the Incorrect Info tab and the applicant is notified in their own app, the applicant resubmits, and the application returns to the Review tab for a final recommendation.">
+                    </div>
+                    <figcaption>How a correction moves between the verification officer and the applicant. Scroll sideways to follow it.</figcaption>
+                </figure>
 
                 <h2>Outcome</h2>
 
@@ -212,5 +238,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
