@@ -52,6 +52,9 @@
                     <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep – Dec 2023)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, product strategy, UX and UI design</span>
                 </div>
+                <figure class="cs-figure cs-cover">
+                    <img src="images/storefront-cover.webp" width="2220" height="1100" alt="Collage of Seller Storefront mobile screens: the seller's storefront link, a product catalogue of handbags, a shopping cart, delivery options and checkout.">
+                </figure>
             </div>
         </div>
     </section>
@@ -71,7 +74,15 @@
                 <h2>How we validated</h2>
                 <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach — prototype quickly, test with real sellers, let their feedback define the backlog.</p>
                 <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted branding customization.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/storefront-setup-sketch.webp" width="2452" height="903" loading="lazy" alt="Hand-drawn sketches of storefront setup in four steps: store name, logo and colours, picking items to display, confirming descriptions and prices, then confirming the store link and sharing it.">
+                    <figcaption>The first-round setup flow, a four-step wizard: branding, items, prices, then the link. Sellers wanted fewer steps to get live.</figcaption>
+                </figure>
                 <p>What changed: we tightened the flow around momentum — publish first, configure later — and anchored the product around payment collection as the core value.</p>
+                <figure class="cs-figure">
+                    <img src="images/storefront-manager.webp" width="1100" height="1040" loading="lazy" alt="The Storefront tab in the seller app: a live storefront link with Open and Share buttons, options to share a product link or a shopping cart link, and customisation, offers and store performance marked as coming soon.">
+                    <figcaption>The Storefront tab in the seller app. The link is live and ready to share, while customisation is marked as coming soon.</figcaption>
+                </figure>
                 <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Discounts and bundling weren't extras — they were how sellers actually sell.</p>
 
                 <h2>Key decisions</h2>
@@ -83,10 +94,15 @@
                 <p><strong>Optimize for seller momentum, not completeness.</strong> Reduce steps. Get sellers to a shareable storefront fast. Configuration could come later.</p>
                 <p><strong>Treat trust mechanisms as core infrastructure.</strong> Payment on Delivery wasn't a "phase two" feature. It was foundational to whether sellers would adopt the product at all.</p>
                 <p><strong>Separate "must-have" from "expensive-to-build."</strong> Pricing configuration was important, but we named the dev cost honestly and planned it intentionally rather than sneaking scope into v1.</p>
-                <p><strong>Bake growth into the product.</strong> Discounts and bundling weren't feature requests — they were how sellers drive revenue. Designing without them would have been designing for a market that doesn't exist.</p>
+                <p><strong>Bake growth into the product.</strong> Discounts and bundling weren't feature requests — they were how sellers drive revenue. Designing without them would have been designing for a market that doesn't exist. Offers and discounts needed platform-wide backend support from other teams, so they stayed high priority but blocked. The Storefront tab shows them as coming soon.</p>
 
                 <h2>What shipped</h2>
                 <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalog, customize their page, and share links.</p>
+                <p><strong>Shared carts.</strong> Sellers were already taking orders from buyers over chat and closing them by hand. We gave them a way to do it faster: build the cart, send the customer a checkout link, and let the buyer complete the order. The buyer keeps full control of the cart items during checkout.</p>
+                <figure class="cs-figure">
+                    <img src="images/storefront-cart-link.webp" width="2190" height="1271" loading="lazy" alt="Four mobile screens: a storefront catalogue of handbags, a shopping cart with four items, a checkout summary with a Share checkout link button, and a chat conversation in which the seller sends the cart link to a customer.">
+                    <figcaption>A seller builds a cart and shares the checkout link over chat. The last screen is an illustration of the message a buyer would receive, not a product screen.</figcaption>
+                </figure>
 
                 <h2>What didn't ship</h2>
                 <p>The product was handed off for development but never released. Layoffs and shifting business priorities at Sendy killed the project before launch.</p>
@@ -189,5 +205,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
