@@ -1123,7 +1123,7 @@ strong {
 .case-study-header .key-metrics {
     margin-bottom: 0;
 }
-.case-study-header .case-study-meta {
+.case-study-header .key-metrics + .case-study-meta {
     border-top: 0;
 }
 .case-study-header:has(.cs-cover) .case-study-meta {
