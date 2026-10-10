@@ -1084,7 +1084,10 @@ strong {
     opacity: 0.7;
 }
 .cs-cover {
-    margin: var(--space-6) 0 0;
+    margin: var(--space-4) 0 0;
+}
+.case-study-header:has(.cs-cover) {
+    padding-bottom: 0;
 }
 .cs-figure-placeholder {
     aspect-ratio: 16 / 9;
