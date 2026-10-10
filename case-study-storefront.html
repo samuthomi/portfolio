@@ -52,6 +52,9 @@
                     <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep – Dec 2023)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, product strategy, UX and UI design</span>
                 </div>
+                <figure class="cs-figure cs-cover">
+                    <img src="images/storefront-cover.webp" width="2220" height="1100" alt="Collage of Seller Storefront mobile screens: the seller's storefront link, a product catalogue of handbags, a shopping cart, delivery options and checkout.">
+                </figure>
             </div>
         </div>
     </section>
@@ -71,7 +74,15 @@
                 <h2>How we validated</h2>
                 <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach — prototype quickly, test with real sellers, let their feedback define the backlog.</p>
                 <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted branding customization.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/storefront-setup-sketch.webp" width="2452" height="903" loading="lazy" alt="Hand-drawn sketches of storefront setup in four steps: store name, logo and colours, picking items to display, confirming descriptions and prices, then confirming the store link and sharing it.">
+                    <figcaption>Early sketches of storefront setup as a four-step wizard: branding, items, prices, then the link.</figcaption>
+                </figure>
                 <p>What changed: we tightened the flow around momentum — publish first, configure later — and anchored the product around payment collection as the core value.</p>
+                <figure class="cs-figure">
+                    <img src="images/storefront-manager.webp" width="1100" height="1040" loading="lazy" alt="The Storefront tab in the seller app: a live storefront link with Open and Share buttons, options to share a product link or a shopping cart link, and customisation, offers and store performance marked as coming soon.">
+                    <figcaption>The Storefront tab in the seller app. The link is live and ready to share, while customisation is marked as coming soon.</figcaption>
+                </figure>
                 <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Discounts and bundling weren't extras — they were how sellers actually sell.</p>
 
                 <h2>Key decisions</h2>
@@ -87,6 +98,10 @@
 
                 <h2>What shipped</h2>
                 <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalog, customize their page, and share links.</p>
+                <figure class="cs-figure">
+                    <img src="images/storefront-cart-link.webp" width="2190" height="1271" loading="lazy" alt="Four mobile screens: a storefront catalogue of handbags, a shopping cart with four items, a checkout summary with delivery and recipient details and a Share checkout link button, and a list of delivery options with prices.">
+                    <figcaption>A seller builds a cart for a customer and shares a checkout link. Delivery options and fees are shown to the buyer.</figcaption>
+                </figure>
 
                 <h2>What didn't ship</h2>
                 <p>The product was handed off for development but never released. Layoffs and shifting business priorities at Sendy killed the project before launch.</p>
@@ -189,5 +204,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
