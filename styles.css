@@ -1089,6 +1089,17 @@ strong {
 .case-study-header:has(.cs-cover) {
     padding-bottom: 0;
 }
+/* Header rules: metrics and meta share one line; a cover image replaces the closing line */
+.case-study-header .key-metrics {
+    margin-bottom: 0;
+}
+.case-study-header .case-study-meta {
+    border-top: 0;
+}
+.case-study-header:has(.cs-cover) .case-study-meta {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 .cs-figure-placeholder {
     aspect-ratio: 16 / 9;
     display: flex;
