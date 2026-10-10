@@ -1083,6 +1083,36 @@ strong {
     line-height: 1.5;
     opacity: 0.7;
 }
+.cs-figure--framed img {
+    border: 1px solid var(--color-border);
+}
+.cs-figure--pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+}
+.cs-figure--pair img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: left top;
+}
+.cs-figure--pair figcaption {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+.cs-figure-scroll {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+.cs-figure--wide img {
+    width: 1500px;
+    max-width: none;
+}
+@media (max-width: 600px) {
+    .cs-figure--pair {
+        grid-template-columns: 1fr;
+    }
+}
 .cs-cover {
     margin: var(--space-4) 0 0;
 }
