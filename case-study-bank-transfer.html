@@ -64,6 +64,12 @@
                     <span class="case-study-meta-item"><strong>Timeline:</strong> 12 weeks (Jul – Sep 2022)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, UX design, UI design, UX writing</span>
                 </div>
+                <figure class="cs-figure cs-cover">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/bank-transfer-cover-small.webp" width="1400" height="1060">
+                        <img src="images/bank-transfer-cover.webp" width="2220" height="1100" alt="Sendy web dashboard with a Pay by Bank dialog explaining how it works in three steps: get a unique bank account number, transfer funds at checkout, and receive confirmation within seconds.">
+                    </picture>
+                </figure>
             </div>
         </div>
     </section>
@@ -85,11 +91,23 @@
                 <p>The solution needed to cover three things: onboarding merchants to a virtual bank account (required by Nigerian banking regulations), verifying phone numbers for compliance, and designing the top-up and checkout flows.</p>
                 <p>We mapped user flows across all three areas and shared them with product squads, finance stakeholders, and OnePipe to align before building. This step caught problems early — unclear KYC requirements, the need for better onboarding guidance on how bank transfers work, and potential confirmation delays that could erode the trust we were trying to build.</p>
                 <p>We skipped wireframes — time was tight, and the flow discussions had already created enough shared understanding to move directly to UI design for mobile and web.</p>
+                <figure class="cs-figure">
+                    <img src="images/bank-transfer-setup.webp" width="1840" height="1110" loading="lazy" alt="Three mobile screens: an announcement introducing Pay by Bank, a How it works screen explaining the unique bank account, and the payment options list with Pay by Bank added and selected.">
+                    <figcaption>Setup in three screens: the announcement, how it works, and Pay by Bank added as a payment option.</figcaption>
+                </figure>
 
                 <h2>What broke during beta</h2>
                 <p>We ran a beta with five merchants. Two issues surfaced immediately.</p>
                 <p><strong>Confirmation delays.</strong> OnePipe had promised instant transfer confirmations. In practice, some took longer. Merchants sat staring at a screen not knowing if their payment went through — exactly the trust problem we were trying to solve. We added a countdown screen to set expectations and reduce anxiety.</p>
+                <figure class="cs-figure">
+                    <img src="images/bank-transfer-checkout.webp" width="1840" height="1110" loading="lazy" alt="Three mobile screens: bank transfer details with the account number to pay into, a Confirming your transfer message with a countdown timer, and a Transfer was successful confirmation.">
+                    <figcaption>Paying by transfer. The countdown in the middle was added after beta, when confirmations promised as instant took longer.</figcaption>
+                </figure>
                 <p><strong>Unnecessary blocking on insufficient funds.</strong> The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating and unnecessary — it added a step that didn't need to exist. We revised the flow so merchants could hit "Confirm Order" and only saw a prompt if funds were actually insufficient.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/bank-transfer-insufficient-funds.webp" width="2200" height="2097" loading="lazy" alt="Two checkout flows compared. The old approach disables Confirm order until the merchant tops up, taking five screens. The improved approach lets the merchant confirm first and prompts a transfer only when needed, taking four screens.">
+                    <figcaption>Before, a low balance disabled Confirm order and forced a top-up first. After, the merchant confirms and is asked to transfer only if funds are short.</figcaption>
+                </figure>
 
                 <h2>Key decisions</h2>
 
@@ -209,5 +227,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
