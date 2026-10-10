@@ -1225,7 +1225,7 @@ strong {
     margin: 0;
     padding: 0;
     border: 0;
-    background: rgba(20, 28, 27, 0.94);
+    background: rgba(20, 28, 27, 0.8);
     color: var(--white);
 }
 .lightbox[open] {
@@ -1233,7 +1233,7 @@ strong {
     flex-direction: column;
 }
 .lightbox::backdrop {
-    background: rgba(20, 28, 27, 0.94);
+    background: rgba(20, 28, 27, 0.8);
 }
 .lightbox-close {
     align-self: flex-end;
