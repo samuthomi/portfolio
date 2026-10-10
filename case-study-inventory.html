@@ -52,6 +52,9 @@
                     <span class="case-study-meta-item"><strong>Timeline:</strong> 8 weeks (Mar – Apr 2024)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, UX strategy, interaction design</span>
                 </div>
+                <figure class="cs-figure cs-cover">
+                    <img src="images/inventory-cover.webp" width="2000" height="1410" alt="KOKO inventory tool showing one shop's stock: a node total of 160 split into 40 in shop, 10 in transit and 30 missing, with shop details and counts of cookers and canisters.">
+                </figure>
             </div>
         </div>
     </section>
@@ -62,6 +65,11 @@
             <div class="content">
                 <h2>The situation</h2>
                 <p>KOKO Networks, a clean energy company, runs a high-volume retail operation — daily stock movements across a distributed network of agent shops and warehouses. The operations team had an inventory management tool that tracked everything. On paper, it worked.</p>
+                <figure class="cs-figure cs-figure--pair cs-figure--photos">
+                    <img src="images/inventory-field-stock.webp" width="768" height="576" loading="lazy" alt="Boxed KOKO cookers and fuel canisters stacked on shelves in an agent shop's storeroom.">
+                    <img src="images/inventory-field-shop.webp" width="757" height="568" loading="lazy" alt="A KOKO agent shop front with KOKO Upishi Smart signage above a gas dealer's shop.">
+                    <figcaption>Stock in the field: cookers and canisters in an agent shop's storeroom, and a KOKO agent shop front.</figcaption>
+                </figure>
                 <p>In practice, it was slowing everyone down.</p>
                 <p>Stock levels were hard to trust. Simple questions — what do we have, where is it, what's missing — required manual checks or pulling in an analyst. Teams spent more time reconciling data than making decisions. And as the network scaled, these inefficiencies became directly expensive: missed stock, delayed replenishment, and growing friction between field agents and central teams.</p>
 
@@ -72,15 +80,32 @@
 
                 <h2>What I did</h2>
                 <p>I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX, and operations — interviewing internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/inventory-persona.webp" width="2000" height="1125" loading="lazy" alt="Persona of an Agent Relationship Manager working from a regional office with frequent trade visits. Goals include tracking stock and flagging discrepancies, knowing accurate inventory levels per shop and transferring inventory between shops. Pain points are visibility of inventory in trade and ease of adjustments and transfers.">
+                    <figcaption>One of the personas from the interviews. The Agent Relationship Manager's pain points were visibility of inventory in trade and the ease of transfers.</figcaption>
+                </figure>
                 <p>The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.</p>
+                <figure class="cs-figure cs-figure--pair cs-figure--framed">
+                    <img src="images/inventory-wireframe-list.webp" width="1400" height="890" loading="lazy" alt="Wireframe of a shop list with a location selector, search, a filter button and a table of shops by category, agent type and location.">
+                    <img src="images/inventory-wireframe-detail.webp" width="1400" height="1048" loading="lazy" alt="Wireframe of a single shop's page with its node total and shop details, and a side panel listing cooker serial numbers with one marked as missing.">
+                    <figcaption>Wireframes of the two core views: find a shop, then see what it holds and what is missing.</figcaption>
+                </figure>
 
                 <h2>Key decisions</h2>
 
                 <div class="pull-quote">
                     <p>Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.</p>
                 </div>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/inventory-shop-list.webp" width="1440" height="1024" loading="lazy" alt="The Shop Inventory screen: a search by shop name or ID, a network filter, and a table of shops with category, shop type and neighbourhood, under an Inventory menu with five items.">
+                    <figcaption>Shop Inventory in the final design. Inventory sits under one menu with five destinations, and the list opens on search.</figcaption>
+                </figure>
 
                 <p><strong>Opinionated views over flexible ones.</strong> This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.</p>
+                <figure class="cs-figure cs-figure--framed">
+                    <img src="images/inventory-test-feedback.webp" width="2400" height="720" loading="lazy" alt="Board of sticky notes from usability tests with three participants, grouped under Overview, List and Shop details, and Transfers. Several notes ask for more filters, such as by cluster, agent type and shop category.">
+                    <figcaption>Usability test feedback from three participants, grouped by screen.</figcaption>
+                </figure>
                 <p><strong>Surface exceptions early.</strong> Rather than making teams hunt for problems, the redesign brought anomalies — low stock, mismatches, pending actions — to the surface where they could be caught before they became operational failures.</p>
 
                 <h2>Outcome</h2>
@@ -181,5 +206,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
