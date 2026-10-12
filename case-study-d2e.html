@@ -78,10 +78,10 @@
 
                 <h2>Running the demand test</h2>
                 <p>We ran the campaign in Kenya and Nigeria at the same time, so one test answered for both markets. I helped build the landing pages in three weeks, from strategy discussions to launch, and set up the A/B tests with the marketing team. The campaign then ran for 14 days, with a short extension after a brief payment disruption.</p>
-                <p>It brought in 424 leads against a target of 200. 91% of visitors were on a phone, so the product had to be built for mobile first. Most visitors skipped the top copy and went straight to the sign-up section, and 61.5% came back more than once before signing up. People were interested but not yet sure they could trust us.</p>
+                <p>The page asked for KES 1,490 a month, and borrowed its social proof from alumni of AMI's other programmes. It brought in 424 leads against a target of 200. 91% of visitors were on a phone, so the product had to be built for mobile first. Most visitors skipped the top copy and went straight to the sign-up section, and 61.5% came back more than once before signing up. People were interested but not yet sure they could trust us.</p>
                 <figure class="cs-figure">
-                    <!-- TODO: replace with <img src="images/..." alt="landing page and Hotjar scroll map"> -->
-                    <div class="cs-figure-placeholder">Image: landing page and Hotjar scroll map</div>
+                    <img src="images/d2e-landing-page.webp" width="1248" height="1700" loading="lazy" alt="The full mobile landing page beside an enlarged pricing card: KES 1,490 per month, with regular business check-ups, a growth roadmap, practical tools, peer circles and live guidance, and a Subscribe Now button.">
+                    <figcaption>The mobile landing page, with the pricing card enlarged. Owners signed up knowing the product would cost KES 1,490 a month.</figcaption>
                 </figure>
 
                 <h2>Solution approach</h2>
@@ -95,8 +95,8 @@
                 <p>An LLM generated the insights live. I designed the conversation and wrote the content that shaped it: a diagnostic to establish where each business stood, then weekly check-ins meant to feel like time with a coach. Testers reacted to what the product would actually say to them.</p>
                 <p>I tested with 7 SME owners between 21 and 30 January 2026, against four questions. Does it feel like a coach or a form? Are the insights accurate for their business? Does week two remember week one? Would they come back?</p>
                 <figure class="cs-figure">
-                    <!-- TODO: replace with <img src="images/..." alt="Loop 1 and Loop 2 screens"> -->
-                    <div class="cs-figure-placeholder">Image: Loop 1 and Loop 2 screens</div>
+                    <img src="images/d2e-testing.webp" width="1560" height="1024" loading="lazy" alt="Two photos from a testing session of a business owner holding a phone running the prototype. One shows a score of 52 out of 100 with an insight about the spreadsheet he started in Loop 1. The other shows a follow-up question asking what he could do this week to get ahead of peak times.">
+                    <figcaption>A tester working through Loop 2 on his own phone: an updated score with an insight built on last week, then a follow-up question.</figcaption>
                 </figure>
 
                 <h2>What testing found</h2>
@@ -116,15 +116,21 @@
                 <p>The sessions also showed who this is for. Founders 3 to 5 years in, without much operational structure, liked the weekly "homework". Owners with 7 or more years and their own tracking systems saw less value for themselves, though one said he would recommend it to the founders he mentors.</p>
 
                 <h2>Key decisions</h2>
-                <p><strong>Ask for the business model instead of guessing it.</strong> One direct question up front: B2B, B2C, mixed or infrastructure. One wrong guess undermined every insight that followed.</p>
+                <p><strong>Ask for the business model instead of guessing it.</strong> Two direct questions up front: what you sell, and who you sell to. One wrong guess undermined every insight that followed.</p>
+                <figure class="cs-figure">
+                    <img src="images/d2e-business-model.webp" width="1400" height="953" loading="lazy" alt="Two mobile screens. The first asks what best describes what you sell: products, services, both, or digital. The second asks which is most like your business: serving individual customers, businesses, both, or government and NGOs.">
+                    <figcaption>Two questions added after testing, so the AI starts from the owner's own answer instead of a guess.</figcaption>
+                </figure>
                 <p><strong>Put an example in every reflection prompt.</strong> "What did you discover? Example: 'Corporate clients pay in 7 days'."</p>
                 <p><strong>Say where the data goes, at the moment of return.</strong> "Your data stays private. We don't share unless you choose to."</p>
                 <p><strong>Make memory visible.</strong> "Last week you discovered [X]. Let's build on that." The product already carried last week forward, but 2 of 7 owners only noticed when we pointed it out.</p>
                 <p><strong>Design for the phone.</strong> One question per screen, no PDFs or spreadsheets, chat-style interaction where it fits.</p>
                 <p><strong>Launch to the segment that wanted it.</strong> Newer founders, 3 to 5 years in business, rather than every SME owner.</p>
-                <figure class="cs-figure">
-                    <!-- TODO: replace with <img src="images/..." alt="the three fixes, before and after"> -->
-                    <div class="cs-figure-placeholder">Image: the three fixes, before and after</div>
+                <figure class="cs-figure cs-figure--wide">
+                    <div class="cs-figure-scroll" tabindex="0" role="group" aria-label="Weekly loop screens, scrolls sideways">
+                        <img src="images/d2e-loop.webp" width="2520" height="953" loading="lazy" alt="Five mobile screens of the weekly loop: a diagnostic question about what feels most stuck, a finance score of 68 with an insight about cash visibility, a five-minute action, a record of what the owner did, and the next week's check-in showing the score rising from 68 to 72 with a note that last week's work is showing up.">
+                    </div>
+                    <figcaption>The loop after testing: one small action, a record prompt with an example, and a week-two check-in that names what last week found. Scroll sideways to follow it.</figcaption>
                 </figure>
 
                 <h2>Outcome</h2>
@@ -225,5 +231,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
