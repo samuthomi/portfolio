@@ -79,10 +79,6 @@
                 <h2>Running the demand test</h2>
                 <p>We ran the campaign in Kenya and Nigeria at the same time, so one test answered for both markets. I helped build the landing pages in three weeks, from strategy discussions to launch, and set up the A/B tests with the marketing team. The campaign then ran for 14 days, with a short extension after a brief payment disruption.</p>
                 <p>It brought in 424 leads against a target of 200. 91% of visitors were on a phone, so the product had to be built for mobile first. Most visitors skipped the top copy and went straight to the sign-up section, and 61.5% came back more than once before signing up. People were interested but not yet sure they could trust us.</p>
-                <figure class="cs-figure">
-                    <!-- TODO: replace with <img src="images/..." alt="landing page and Hotjar scroll map"> -->
-                    <div class="cs-figure-placeholder">Image: landing page and Hotjar scroll map</div>
-                </figure>
 
                 <h2>Solution approach</h2>
                 <p>The PM and I shaped the value proposition, then I designed and built the prototype: a short weekly loop. An owner answers a few diagnostic questions, gets a score and an AI-written insight, picks one small action and records what they found. The next week picks up from there.</p>
@@ -94,9 +90,11 @@
                 </ol>
                 <p>The insights were generated live by an LLM from AMI's Finance and Sales content, so testers reacted to what the product would actually say to them.</p>
                 <p>I tested with 7 SME owners between 21 and 30 January 2026, against four questions. Does it feel like a coach or a form? Are the insights accurate for their business? Does week two remember week one? Would they come back?</p>
-                <figure class="cs-figure">
-                    <!-- TODO: replace with <img src="images/..." alt="Loop 1 and Loop 2 screens"> -->
-                    <div class="cs-figure-placeholder">Image: Loop 1 and Loop 2 screens</div>
+                <figure class="cs-figure cs-figure--wide">
+                    <div class="cs-figure-scroll" tabindex="0" role="group" aria-label="Weekly loop screens, scrolls sideways">
+                        <img src="images/d2e-loop.webp" width="2520" height="953" loading="lazy" alt="Five mobile screens of the weekly loop: a diagnostic question about what feels most stuck, a finance score of 68 with an insight about cash visibility, a five-minute action, a record of what the owner did, and the next week's check-in showing the score rising from 68 to 72 with a note that last week's work is showing up.">
+                    </div>
+                    <figcaption>The weekly loop: a question, a score with an insight, one small action, a record of what they did, then next week's check-in building on it. Scroll sideways to follow it.</figcaption>
                 </figure>
 
                 <h2>What testing found</h2>
@@ -225,5 +223,6 @@
         window.addEventListener('scroll', setNavRule, { passive: true });
     </script>
     <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
 </body>
 </html>
