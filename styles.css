@@ -1143,6 +1143,18 @@ strong {
     opacity: 0.4;
     font-size: 0.875rem;
 }
+/* Work-in-progress slots stay visible and say so */
+.cs-figure.cs-figure--wip:has(.cs-figure-placeholder) {
+    display: block;
+}
+.cs-figure--wip .cs-figure-placeholder {
+    aspect-ratio: auto;
+    min-height: 120px;
+    padding: var(--space-3);
+    text-align: center;
+    opacity: 0.6;
+    background: var(--color-surface);
+}
 /* Hide empty slots on the live site; a figure shows again once its placeholder is replaced with an <img> */
 .cs-figure:has(.cs-figure-placeholder) {
     display: none;
