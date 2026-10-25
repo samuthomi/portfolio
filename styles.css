@@ -299,7 +299,7 @@ strong {
 
 @keyframes cards-scroll {
     to {
-        transform: translateX(calc(-6 * (var(--cs-card-w) + var(--space-4))));
+        transform: translateX(calc(-7 * (var(--cs-card-w) + var(--space-4))));
     }
 }
 
