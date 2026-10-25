@@ -64,9 +64,9 @@
                 </div>
 
                 <div class="case-study-meta">
-                    <span class="case-study-meta-item"><strong>Team:</strong> Two product managers, a visual designer, the CPTO on tech, a business consultant, the marketing team and me</span>
+                    <span class="case-study-meta-item"><strong>Team:</strong> A product manager, the CEO, the CPTO, the Director of Marketing, the marketing team and me</span>
                     <span class="case-study-meta-item"><strong>Timeline:</strong> Jun 2025 to Feb 2026</span>
-                    <span class="case-study-meta-item"><strong>My role:</strong> Customer research, value proposition (with the PM), UX and conversation design, prototype build, user testing, landing page build, A/B test setup</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Customer research, value proposition (with the PM), UX, conversation and visual design, prototype build, user testing, landing page design and build, A/B test setup</span>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
                 <p>The loop is the product. Everything else, including AI assistance, nudges, reporting and community, sits on top as an optional layer that improves the experience without the loop depending on it. Finance was our first test area, but the loop was built to carry sales, operations, digital and people as well.</p>
 
                 <h2>Testing demand</h2>
-                <p>Before building further, we needed to know people would sign up. We ran the campaign in Kenya and Nigeria at the same time, so one test answered for both markets. I helped build the landing pages in three weeks, from strategy discussions to launch, and set up the A/B tests with the marketing team. The campaign ran for 14 days, with a short extension after a brief payment disruption.</p>
+                <p>Before building further, we needed to know people would sign up. We ran the campaign in Kenya and Nigeria at the same time, so one test answered for both markets. I designed and built the landing pages and their graphics in three weeks, from strategy discussions to launch, and set up the A/B tests with the marketing team, who supplied the social imagery. The campaign ran for 14 days, with a short extension after a brief payment disruption.</p>
                 <p>The page asked for a small monthly fee, and borrowed its social proof from alumni of AMI's other programmes. It brought in <strong>424 leads against a target of 200.</strong></p>
                 <p>The numbers also told us how to build. 91% of visitors were on a phone, so the product had to be mobile first. Most visitors skipped the top copy and went straight to the sign-up section, and 61.5% came back more than once before signing up. People were interested, but not yet sure they could trust us. Trust became a design problem from day one.</p>
                 <figure class="cs-figure">
@@ -127,7 +127,13 @@
                 </ol>
                 <p>The first insight arrives after 4 questions. Everything after that, choosing an action and recording a result, is the owner acting on something they already find useful.</p>
                 <p>I designed the conversation and wrote the content that shaped it. The diagnostic establishes where the business stands in plain language, with one question per screen. The check-ins are written to feel like time with a coach: they ask, they remember, and they suggest one thing at a time.</p>
-                <p>For the prototype, an LLM generated the insights live, so owners reacted to what the product would actually say to them about their own business. The architecture kept AI as an optional layer, so the loop would still work if the insights came from simpler logic.</p>
+                <p>For the prototype, an LLM generated the insights live, so owners reacted to what the product would actually say to them about their own business. I kept it on a short lead. It was not a chatbot, and owners never "talked to the AI". Each step asked it for one job: read rough answers, return an insight of one or two sentences, and suggest one action. No teaching, no theory, no open-ended advice.</p>
+                <p>The voice was analytical, not motivational. These owners already run businesses, so "working capital" landed better than "money management", and praise without substance read as patronising. The test I wrote for every line was whether the owner would feel seen, not surveyed.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/d2e-insight-rules.webp" alt="..."> -->
+                    <div class="cs-figure-placeholder">Image: one owner's answers beside the insight and action they produced, annotated with the rules the AI followed</div>
+                </figure>
+                <p>The architecture kept AI as an optional layer, so the loop would still work if the insights came from simpler logic.</p>
 
                 <h2>What testing found</h2>
                 <p>I tested with 7 SME owners between 21 and 30 January 2026, against four questions. Does it feel like a coach or a form? Are the insights accurate for their business? Does week two remember week one? Would they come back?</p>
@@ -168,6 +174,25 @@
                         <img src="images/d2e-loop.webp" width="2520" height="953" loading="lazy" alt="Five mobile screens of the weekly loop: a diagnostic question about what feels most stuck, a finance score of 68 with an insight about cash visibility, a five-minute action, a record of what the owner did, and the next week's check-in showing the score rising from 68 to 72 with a note that last week's work is showing up.">
                     </div>
                     <figcaption>The loop after testing: one small action, a record prompt with an example, and a week-two check-in that names what last week found. Scroll sideways to follow it.</figcaption>
+                </figure>
+
+                <h2>Designing the conversation for launch</h2>
+                <p>Fixing the three blockers changed more than three screens. Testing showed that the words carried most of the weight, so I redesigned how the conversation opens, what it calls things, and how it invites owners back.</p>
+                <p><strong>Open with the owner's words, then confirm.</strong> The first screen asks one open question: "What's the one thing in your business that feels most stuck right now?" The AI suggests an area, such as "This sounds like a Finance challenge. Does that feel right?", and the owner confirms or picks from a list. I rejected a plain list, because testers described symptoms, not categories. "I can't make payroll" doesn't obviously read as Finance to everyone. I also rejected letting the AI route silently, because a wrong guess after a thoughtful answer costs trust with no way back. The confirmation adds one tap and gives every misread a recovery path. Answers outside the product's scope, such as a lawsuit, get an honest reply that names what the product can and can't help with.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/d2e-entry-flow.webp" alt="..."> -->
+                    <div class="cs-figure-placeholder">Image: entry flow, open question to AI suggestion to confirm or choose from the list, with the out-of-scope branch</div>
+                </figure>
+                <p><strong>Name things the way owners think.</strong> "Readiness score" became "Practice score". Readiness implies the owner isn't ready yet, and these owners are already operating. Rounds became "Check-in" plus a date, not "Week 3" or "Loop 3". A week number turns a missed week into a visible failure, and a date gives the same sense of progress without demanding a rhythm.</p>
+                <p><strong>Invite owners back without guilt.</strong> Research told us these owners were already "doing everything", so the next check-in is triggered by what they did, not by the calendar. Finishing an action earns the invitation: "Your last Finance action is complete. See how it affected your score." If nothing happens for a week, there is one nudge that names their action, then silence. There are no streaks and no "you missed" messages. Coming back after a month gets "Good to have you back" and a record that is still intact.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/d2e-return-states.webp" alt="..."> -->
+                    <div class="cs-figure-placeholder">Image: the Home screen across five loop states, from fresh user to returning after a gap</div>
+                </figure>
+                <p><strong>Let the words change as the record grows.</strong> The line after each check-in reads differently the first time, the second, the third and after a gap. "That's the starting point. Next time, we'll compare" becomes "Last check-in you started tracking sales. This time you added expenses." The product shows memory in its words, which was the fix for the 2 of 7 owners who missed it.</p>
+                <figure class="cs-figure">
+                    <!-- TODO: replace with <img src="images/d2e-copy-system.webp" alt="..."> -->
+                    <div class="cs-figure-placeholder">Image: the same record message across first, second and third check-ins, a score drop and a long gap</div>
                 </figure>
 
                 <h2>Outcome</h2>
