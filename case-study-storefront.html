@@ -33,7 +33,7 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
                 <p class="case-study-subtitle">A new product that had to earn trust before it could earn revenue.</p>
                 <div class="case-study-meta">
                     <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 6 Engineers</span>
-                    <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep – Dec 2023)</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep to Dec 2023)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, product strategy, UX and UI design</span>
                 </div>
                 <figure class="cs-figure cs-cover">
@@ -65,25 +65,25 @@
             <div class="content">
                 <h2>The situation</h2>
                 <p>A year after launching Sendy Fulfillment, sellers had adopted warehouse storage because it cut delivery times and simplified their operations. That adoption created the next opportunity: help sellers move from stored inventory to completed sales without extra manual work.</p>
-                <p>The concept was a self-checkout storefront — sellers publish a product page from their warehouse inventory, customers buy directly, Sendy handles delivery. The full sales loop, automated.</p>
+                <p>The concept was a self-checkout storefront. Sellers publish a product page from their warehouse inventory, customers buy directly and Sendy handles delivery.</p>
 
                 <h2>What was actually at risk</h2>
                 <p>This wasn't a "design a storefront page" brief. The risk was building something that didn't match how sellers actually build trust, set prices, and close payments in the real world.</p>
                 <p>Before we could design anything, we needed to validate: would sellers trust Sendy to collect payments on their behalf? What payment options were non-negotiable? What needed to be configurable for sellers to run a real business through this? And what was the smallest version that would still work in-market?</p>
 
                 <h2>How we validated</h2>
-                <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach — prototype quickly, test with real sellers, let their feedback define the backlog.</p>
+                <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach: prototype quickly, test with real sellers and let their feedback set the backlog.</p>
                 <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted branding customization.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/storefront-setup-sketch.webp" width="2452" height="903" loading="lazy" alt="Hand-drawn sketches of storefront setup in four steps: store name, logo and colours, picking items to display, confirming descriptions and prices, then confirming the store link and sharing it.">
                     <figcaption>The first-round setup flow, a four-step wizard: branding, items, prices, then the link. Sellers wanted fewer steps to get live.</figcaption>
                 </figure>
-                <p>What changed: we tightened the flow around momentum — publish first, configure later — and anchored the product around payment collection as the core value.</p>
+                <p>What changed: we tightened the flow so sellers publish first and configure later, and anchored the product around payment collection as the core value.</p>
                 <figure class="cs-figure">
                     <img src="images/storefront-manager.webp" width="1100" height="1040" loading="lazy" alt="The Storefront tab in the seller app: a live storefront link with Open and Share buttons, options to share a product link or a shopping cart link, and customisation, offers and store performance marked as coming soon.">
                     <figcaption>The Storefront tab in the seller app. The link is live and ready to share, while customisation is marked as coming soon.</figcaption>
                 </figure>
-                <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Discounts and bundling weren't extras — they were how sellers actually sell.</p>
+                <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Sellers relied on discounts and bundles to make sales.</p>
 
                 <h2>Key decisions</h2>
 
@@ -92,9 +92,9 @@
                 </div>
 
                 <p><strong>Optimize for seller momentum, not completeness.</strong> Reduce steps. Get sellers to a shareable storefront fast. Configuration could come later.</p>
-                <p><strong>Treat trust mechanisms as core infrastructure.</strong> Payment on Delivery wasn't a "phase two" feature. It was foundational to whether sellers would adopt the product at all.</p>
+                <p><strong>Treat trust mechanisms as core infrastructure.</strong> Sellers told us they would not adopt the product without Payment on Delivery, so it moved out of phase two.</p>
                 <p><strong>Separate "must-have" from "expensive-to-build."</strong> Pricing configuration was important, but we named the dev cost honestly and planned it intentionally rather than sneaking scope into v1.</p>
-                <p><strong>Bake growth into the product.</strong> Discounts and bundling weren't feature requests — they were how sellers drive revenue. Designing without them would have been designing for a market that doesn't exist. Offers and discounts needed platform-wide backend support from other teams, so they stayed high priority but blocked. The Storefront tab shows them as coming soon.</p>
+                <p><strong>Bake growth into the product.</strong> Sellers use discounts and bundles to drive revenue, so a storefront without them would not fit how they sell. Offers and discounts needed platform-wide backend support from other teams, so they stayed high priority but blocked. The Storefront tab shows them as coming soon.</p>
 
                 <h2>What shipped</h2>
                 <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalog, customize their page, and share links.</p>
@@ -108,7 +108,7 @@
                 <p>The product was handed off for development but never released. Layoffs and shifting business priorities at Sendy killed the project before launch.</p>
 
                 <div class="pull-quote">
-                    <p>Even without a release, the work validated what a storefront needed to be viable in this market — trust, payment flexibility, lightweight setup, and seller-controlled pricing. That clarity was the real output.</p>
+                    <p>Even without a release, the work validated what a storefront needed to work in this market: payment options customers trust, a light setup, and pricing sellers control.</p>
                 </div>
 
                 <h2>Reflection</h2>
@@ -182,7 +182,7 @@
             <div class="footer-content">
                 <ul class="footer-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="footer-social">
