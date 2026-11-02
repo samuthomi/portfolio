@@ -33,7 +33,7 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
 
                 <div class="case-study-meta">
                     <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 1 Product Manager, 4 Engineers</span>
-                    <span class="case-study-meta-item"><strong>My role:</strong> Led all design work — research, strategy, UX, and UI</span>
+                    <span class="case-study-meta-item"><strong>My role:</strong> Led all design work: research, strategy, UX and UI</span>
                 </div>
                 <figure class="cs-figure cs-cover">
                     <img src="images/verification-cover.webp" width="2000" height="919" alt="Sendy Verify dashboard on desktop and mobile, showing a truck application with its verification checks and submit actions.">
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="content">
                 <h2>The situation</h2>
-                <p>Sendy started as a single product — motorcycle delivery — onboarding one type of partner. By 2021, the platform had grown to include Sendy Supply (B2B marketplace), Sendy Freight, and Sendy Credit, each onboarding different types of partners and customers with different KYC requirements. And Sendy was operating across four countries: Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
+                <p>Sendy started as a single product, motorcycle delivery, onboarding one type of partner. By 2021, the platform had grown to include Sendy Supply (B2B marketplace), Sendy Freight, and Sendy Credit, each onboarding different types of partners and customers with different KYC requirements. And Sendy was operating across four countries: Kenya, Uganda, Nigeria, and Côte d'Ivoire.</p>
                 <p>Each product team had built its own verification process. There was no shared system.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/verification-entities.webp" width="1600" height="899" loading="lazy" alt="Grid of the entities needing verification: owner, driver, vehicle and B2B customer for Sendy Transport, business owner, individual owner, vehicle and B2B customer for Sendy Freight, seller and buyer for Sendy Supply, with a row for future business units.">
@@ -88,12 +88,12 @@
 
                 <h2>What was breaking</h2>
                 <p>The fragmentation created three escalating problems.</p>
-                <p><strong>Operations teams were drowning.</strong> Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types — lending customers, 3PL fleet owners, freight companies — was taking two to four weeks.</p>
+                <p><strong>Operations teams were drowning.</strong> Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.</p>
                 <p><strong>There was no source of truth.</strong> Team members stored application documents in personal Google Drives because there was no centralized system or clear process for document management.</p>
                 <p><strong>Business risk was accumulating.</strong> Insurance claims for damaged or lost goods couldn't be finalized because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.</p>
 
                 <h2>Research</h2>
-                <p>I ran group interviews with operations teams — chosen deliberately over individual interviews because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.</p>
+                <p>I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.</p>
 
                 <h2>What I prioritized</h2>
                 <p>After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?</p>
@@ -107,7 +107,7 @@
                 <h2>Key decisions</h2>
 
                 <div class="pull-quote">
-                    <p>Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first — any Sendy product could connect to it and have their users verified through the same workflow.</p>
+                    <p>Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.</p>
                 </div>
 
                 <p><strong>Status communication via webhooks.</strong> Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.</p>
@@ -115,7 +115,7 @@
                     <img src="images/verification-webhook.webp" width="1600" height="926" loading="lazy" alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit.">
                     <figcaption>A customer submits business details once in the Credit app. The webhook returns each check's status and unlocks credit when verification completes.</figcaption>
                 </figure>
-                <p><strong>Make corrections self-service.</strong> Instead of routing every document error through support, we built a correction request flow — the verification team flags the issue, the applicant gets a notification with a link to an online form, and the process continues without a phone call.</p>
+                <p><strong>Make corrections self-service.</strong> Instead of routing every document error through support, we built a correction request flow. The verification team flags the issue, the applicant gets a notification with a link to an online form, and the process continues without a phone call.</p>
                 <figure class="cs-figure">
                     <img src="images/verification-resubmit.webp" width="1600" height="1200" loading="lazy" alt="Two mobile screens: a failed verification notice on the partner app's home map, leading to a documents list with the registration certificate flagged for review.">
                     <figcaption>A failed check appears in the partner's own app and takes them straight to the document to fix.</figcaption>
@@ -144,8 +144,8 @@
                     </div>
                 </div>
 
-                <p>KYC verification for financing customers dropped from one week to 24 hours. Support calls related to KYC corrections and document updates fell by roughly 20% — about 600 fewer calls per month. The system processed over 3,000 applications in its first quarter.</p>
-                <p>More importantly, Sendy now had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow — turning onboarding from a per-team cost into shared infrastructure.</p>
+                <p>KYC verification for financing customers dropped from one week to 24 hours. Support calls related to KYC corrections and document updates fell by roughly 20% , about 600 fewer calls per month. The system processed over 3,000 applications in its first quarter.</p>
+                <p>Sendy also had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.</p>
             </div>
         </div>
     </section>
@@ -174,7 +174,7 @@
                     <svg class="cs-card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M26.22,94.41A6,6,0,0,0,26,96v16A38,38,0,0,0,42,143V216a6,6,0,0,0,6,6H208a6,6,0,0,0,6-6V143A38,38,0,0,0,230,112V96a5.91,5.91,0,0,0-.23-1.64L215.43,44.15A14.07,14.07,0,0,0,202,34H54A14.07,14.07,0,0,0,40.57,44.15Zm25.89-47A2,2,0,0,1,54,46H202a2,2,0,0,1,1.92,1.45L216.05,90H40ZM102,102h52v10a26,26,0,0,1-52,0Zm-64,0H90v10a26,26,0,0,1-38.18,23,6,6,0,0,0-1.65-1A26,26,0,0,1,38,112ZM202,210H54V148.66a38,38,0,0,0,42-16.21,37.95,37.95,0,0,0,64,0,38,38,0,0,0,42,16.21Zm3.83-76a6,6,0,0,0-1.65,1A26,26,0,0,1,166,112V102h52v10A26,26,0,0,1,205.83,134Z"/></svg>
                     <span class="cs-card-year">2023</span>
                     <h3 class="cs-card-title">Seller Storefront</h3>
-                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <p class="cs-card-text">A self-checkout product sellers could trust to collect payments, shelved before launch.</p>
                     <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
                 <a href="case-study-bank-transfer.html" class="cs-card">
@@ -195,7 +195,7 @@
                     <svg class="cs-card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M26.22,94.41A6,6,0,0,0,26,96v16A38,38,0,0,0,42,143V216a6,6,0,0,0,6,6H208a6,6,0,0,0,6-6V143A38,38,0,0,0,230,112V96a5.91,5.91,0,0,0-.23-1.64L215.43,44.15A14.07,14.07,0,0,0,202,34H54A14.07,14.07,0,0,0,40.57,44.15Zm25.89-47A2,2,0,0,1,54,46H202a2,2,0,0,1,1.92,1.45L216.05,90H40ZM102,102h52v10a26,26,0,0,1-52,0Zm-64,0H90v10a26,26,0,0,1-38.18,23,6,6,0,0,0-1.65-1A26,26,0,0,1,38,112ZM202,210H54V148.66a38,38,0,0,0,42-16.21,37.95,37.95,0,0,0,64,0,38,38,0,0,0,42,16.21Zm3.83-76a6,6,0,0,0-1.65,1A26,26,0,0,1,166,112V102h52v10A26,26,0,0,1,205.83,134Z"/></svg>
                     <span class="cs-card-year">2023</span>
                     <h3 class="cs-card-title">Seller Storefront</h3>
-                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <p class="cs-card-text">A self-checkout product sellers could trust to collect payments, shelved before launch.</p>
                     <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
                 <a href="case-study-bank-transfer.html" class="cs-card" aria-hidden="true" tabindex="-1">
@@ -215,7 +215,7 @@
             <div class="footer-content">
                 <ul class="footer-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="footer-social">

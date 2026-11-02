@@ -33,7 +33,7 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
 
                 <div class="case-study-meta">
                     <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 1 Product Manager, 4 Engineers</span>
-                    <span class="case-study-meta-item"><strong>Timeline:</strong> 12 weeks (Jul – Sep 2022)</span>
+                    <span class="case-study-meta-item"><strong>Timeline:</strong> 12 weeks (Jul to Sep 2022)</span>
                     <span class="case-study-meta-item"><strong>My role:</strong> Research, UX design, UI design, UX writing</span>
                 </div>
                 <figure class="cs-figure cs-cover">
@@ -79,18 +79,18 @@
         <div class="container">
             <div class="content">
                 <h2>The situation</h2>
-                <p>Sendy had expanded into Nigeria and merchants were adopting the platform quickly for deliveries. But payments were a friction point. Card payments — the primary method available — had reliability issues that merchants knew from experience. Mobile money, unlike in Kenya, wasn't widely adopted in Nigeria for business transactions.</p>
+                <p>Sendy had expanded into Nigeria and merchants were adopting the platform quickly for deliveries. But payments were a friction point. Card payments were the main option, and merchants knew from experience how often they failed. Mobile money, unlike in Kenya, wasn't widely adopted in Nigeria for business transactions.</p>
                 <p>We partnered with OnePipe, a Nigerian fintech, to introduce bank transfers as an alternative payment method. The goal was simple: give merchants a payment option they already trusted.</p>
 
                 <h2>What we learned from merchants</h2>
-                <p>I led remote research with 8 Nigerian merchants — a new challenge, since I was designing from Nairobi for users in Lagos. Scheduling was unpredictable; merchants were often on the move or rescheduled last minute. My teammates in Nigeria were critical for recruiting participants and navigating the logistics.</p>
-                <p>The findings were clear. Most of our merchants were early-stage entrepreneurs who valued Sendy because it removed logistics complexity from their businesses. Every merchant preferred bank transfers over card payments — they'd been burned by failed card transactions before. Two specifically mentioned preferring PayPal deposits to debit cards because of higher success rates.</p>
-                <p>The signal was unambiguous: bank transfers weren't just a nice-to-have. They were what merchants expected.</p>
+                <p>I led remote research with 8 Nigerian merchants. It was new for me to design from Nairobi for users in Lagos. Scheduling was unpredictable; merchants were often on the move or rescheduled last minute. My teammates in Nigeria were critical for recruiting participants and navigating the logistics.</p>
+                <p>The findings were clear. Most of our merchants were early-stage entrepreneurs who valued Sendy because it removed logistics complexity from their businesses. Every merchant preferred bank transfers to card payments, because failed card transactions had burned them before. Two specifically mentioned preferring PayPal deposits to debit cards because of higher success rates.</p>
+                <p>Merchants expected bank transfers, and card payments had already let them down.</p>
 
                 <h2>Solution approach</h2>
                 <p>The solution needed to cover three things: onboarding merchants to a virtual bank account (required by Nigerian banking regulations), verifying phone numbers for compliance, and designing the top-up and checkout flows.</p>
-                <p>We mapped user flows across all three areas and shared them with product squads, finance stakeholders, and OnePipe to align before building. This step caught problems early — unclear KYC requirements, the need for better onboarding guidance on how bank transfers work, and potential confirmation delays that could erode the trust we were trying to build.</p>
-                <p>We skipped wireframes — time was tight, and the flow discussions had already created enough shared understanding to move directly to UI design for mobile and web.</p>
+                <p>We mapped user flows across all three areas and shared them with product squads, finance stakeholders, and OnePipe to align before building. This caught problems early: unclear KYC requirements, the need for better onboarding guidance on how bank transfers work, and potential confirmation delays that could erode the trust we were trying to build.</p>
+                <p>We skipped wireframes. Time was tight, and the flow discussions had already created enough shared understanding to move directly to UI design for mobile and web.</p>
                 <figure class="cs-figure">
                     <img src="images/bank-transfer-setup.webp" width="1840" height="1110" loading="lazy" alt="Three mobile screens: an announcement introducing Pay by Bank, a How it works screen explaining the unique bank account, and the payment options list with Pay by Bank added and selected.">
                     <figcaption>Setup in three screens: the announcement, how it works, and Pay by Bank added as a payment option.</figcaption>
@@ -98,12 +98,12 @@
 
                 <h2>What broke during beta</h2>
                 <p>We ran a beta with five merchants. Two issues surfaced immediately.</p>
-                <p><strong>Confirmation delays.</strong> OnePipe had promised instant transfer confirmations. In practice, some took longer. Merchants sat staring at a screen not knowing if their payment went through — exactly the trust problem we were trying to solve. We added a countdown screen to set expectations and reduce anxiety.</p>
+                <p><strong>Confirmation delays.</strong> OnePipe had promised instant transfer confirmations. In practice, some took longer. Merchants sat staring at a screen not knowing if their payment went through, which was the trust problem we set out to solve. We added a countdown screen to set expectations and reduce anxiety.</p>
                 <figure class="cs-figure">
                     <img src="images/bank-transfer-checkout.webp" width="1840" height="1110" loading="lazy" alt="Three mobile screens: bank transfer details with the account number to pay into, a Confirming your transfer message with a countdown timer, and a Transfer was successful confirmation.">
                     <figcaption>Paying by transfer. The countdown in the middle was added after beta, when confirmations promised as instant took longer.</figcaption>
                 </figure>
-                <p><strong>Unnecessary blocking on insufficient funds.</strong> The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating and unnecessary — it added a step that didn't need to exist. We revised the flow so merchants could hit "Confirm Order" and only saw a prompt if funds were actually insufficient.</p>
+                <p><strong>Unnecessary blocking on insufficient funds.</strong> The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating because it added a step nobody needed. We revised the flow so merchants could hit "Confirm Order" and only saw a prompt if funds were actually insufficient.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/bank-transfer-insufficient-funds.webp" width="2200" height="2097" loading="lazy" alt="Two checkout flows compared. The old approach disables Confirm order until the merchant tops up, taking five screens. The improved approach lets the merchant confirm first and prompts a transfer only when needed, taking four screens.">
                     <figcaption>Before, a low balance disabled Confirm order and forced a top-up first. After, the merchant confirms and is asked to transfer only if funds are short.</figcaption>
@@ -130,11 +130,11 @@
                     </div>
                 </div>
 
-                <p>Pay by Bank launched to Nigerian merchants after a two-week development sprint following the beta fixes. Within the first month, over 200 merchants were actively using bank transfers with a 90% success rate — significantly higher than the card payment experience it complemented.</p>
+                <p>Pay by Bank launched to Nigerian merchants after a two-week development sprint following the beta fixes. Within the first month, over 200 merchants were actively using bank transfers with a 90% success rate, well above what card payments achieved.</p>
 
                 <h2>Reflection</h2>
-                <p>This was my first time leading design for a payment system in a market I wasn't physically in. The remote research was harder than expected — not because the insights were different, but because the logistics of reaching busy merchants in Lagos from Nairobi required more flexibility and more trust in teammates on the ground.</p>
-                <p>The biggest lesson: payment methods aren't features. They're trust infrastructure. Getting the happy path right is the easy part. The real design work is in what happens when confirmation is slow, funds are short, or the merchant's past experience with digital payments has been bad.</p>
+                <p>This was my first time leading design for a payment system in a market I wasn't physically in. The remote research was harder than I expected. Reaching busy merchants in Lagos from Nairobi took more flexibility, and more trust in teammates on the ground.</p>
+                <p>The biggest lesson: merchants choose a payment method based on whether they trust it to work, so every delay and unclear status costs you adoption. Getting the happy path right is the easy part. The real design work is in what happens when confirmation is slow, funds are short, or the merchant's past experience with digital payments has been bad.</p>
             </div>
         </div>
     </section>
@@ -163,7 +163,7 @@
                     <svg class="cs-card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M26.22,94.41A6,6,0,0,0,26,96v16A38,38,0,0,0,42,143V216a6,6,0,0,0,6,6H208a6,6,0,0,0,6-6V143A38,38,0,0,0,230,112V96a5.91,5.91,0,0,0-.23-1.64L215.43,44.15A14.07,14.07,0,0,0,202,34H54A14.07,14.07,0,0,0,40.57,44.15Zm25.89-47A2,2,0,0,1,54,46H202a2,2,0,0,1,1.92,1.45L216.05,90H40ZM102,102h52v10a26,26,0,0,1-52,0Zm-64,0H90v10a26,26,0,0,1-38.18,23,6,6,0,0,0-1.65-1A26,26,0,0,1,38,112ZM202,210H54V148.66a38,38,0,0,0,42-16.21,37.95,37.95,0,0,0,64,0,38,38,0,0,0,42,16.21Zm3.83-76a6,6,0,0,0-1.65,1A26,26,0,0,1,166,112V102h52v10A26,26,0,0,1,205.83,134Z"/></svg>
                     <span class="cs-card-year">2023</span>
                     <h3 class="cs-card-title">Seller Storefront</h3>
-                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <p class="cs-card-text">A self-checkout product sellers could trust to collect payments, shelved before launch.</p>
                     <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
                 <a href="case-study-verification.html" class="cs-card">
@@ -184,7 +184,7 @@
                     <svg class="cs-card-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M26.22,94.41A6,6,0,0,0,26,96v16A38,38,0,0,0,42,143V216a6,6,0,0,0,6,6H208a6,6,0,0,0,6-6V143A38,38,0,0,0,230,112V96a5.91,5.91,0,0,0-.23-1.64L215.43,44.15A14.07,14.07,0,0,0,202,34H54A14.07,14.07,0,0,0,40.57,44.15Zm25.89-47A2,2,0,0,1,54,46H202a2,2,0,0,1,1.92,1.45L216.05,90H40ZM102,102h52v10a26,26,0,0,1-52,0Zm-64,0H90v10a26,26,0,0,1-38.18,23,6,6,0,0,0-1.65-1A26,26,0,0,1,38,112ZM202,210H54V148.66a38,38,0,0,0,42-16.21,37.95,37.95,0,0,0,64,0,38,38,0,0,0,42,16.21Zm3.83-76a6,6,0,0,0-1.65,1A26,26,0,0,1,166,112V102h52v10A26,26,0,0,1,205.83,134Z"/></svg>
                     <span class="cs-card-year">2023</span>
                     <h3 class="cs-card-title">Seller Storefront</h3>
-                    <p class="cs-card-text">Designing a self-checkout product sellers would trust enough to collect payments through — then watching it get shelved before launch.</p>
+                    <p class="cs-card-text">A self-checkout product sellers could trust to collect payments, shelved before launch.</p>
                     <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
                 </a>
                 <a href="case-study-verification.html" class="cs-card" aria-hidden="true" tabindex="-1">
@@ -204,7 +204,7 @@
             <div class="footer-content">
                 <ul class="footer-links">
                     <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="footer-social">

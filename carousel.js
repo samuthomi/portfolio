@@ -11,6 +11,9 @@
         const nextBtn = section.querySelector('[data-carousel-next]');
         if (!scroller || !track) return;
 
+        // On phones the homepage list stacks vertically; no carousel needed.
+        if (section.hasAttribute('data-stack-mobile') && window.matchMedia('(max-width: 768px)').matches) return;
+
         // Very wide screens show every card at once: keep native layout, hide arrows.
         if (window.innerWidth >= 1940) {
             section.querySelectorAll('.cs-arrows').forEach(function (a) { a.hidden = true; });
