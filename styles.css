@@ -1358,3 +1358,25 @@ body:has(.lightbox[open]) {
     margin-top: calc(-1 * var(--space-2));
     margin-bottom: var(--space-4);
 }
+
+/* Homepage selected work: 2 x 2 grid, one column on phones */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+.work-grid .cs-card {
+    width: auto;
+    min-height: 0;
+}
+.work-grid .cs-card-cover {
+    aspect-ratio: 4 / 3;
+}
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+    .work-grid .cs-card { width: auto; }
+}
+.case-studies-section .cs-heading { margin-bottom: var(--space-5); }
