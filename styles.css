@@ -1351,3 +1351,10 @@ body:has(.lightbox[open]) {
     text-transform: uppercase;
 }
 .hero-cta:hover, .hero-cta:focus-visible { opacity: 0.85; }
+
+.hero-role {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: calc(-1 * var(--space-2));
+    margin-bottom: var(--space-4);
+}
