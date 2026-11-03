@@ -4,6 +4,7 @@ title: "Inventory Management Redesign"
 pageTitle: "Inventory Management Redesign - Samson Kirigua"
 description: "The tool had the data. It just didn't match how anyone actually worked."
 subtitle: "The tool had the data. It just didn't match how anyone actually worked."
+previewDescription: "Redesigning KOKO's inventory tool around the questions warehouse and distribution teams ask every day, so everyone works from the same stock figures."
 year: 2024
 order: 6
 listed: false
@@ -45,7 +46,7 @@ Stock levels were hard to trust. Simple questions like what we have, where it is
 
 The system was built around how inventory was stored in the database, not how operations teams actually thought about stock. The result:
 
-Critical actions were buried behind dense navigation. Teams couldn't discover key insights without guidance. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.
+Critical actions were buried behind dense navigation. Teams couldn't find what they needed without help. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.
 
 <Figure variant="framed" src="/images/inventory-old-ui.webp" width={1800} height={976} alt="The old KOKO admin tool: a Shop List under the Cooker Distribution Service menu, with a wide table of available and required quantities per shop and a panel of seven filter groups." caption="The old tool. The shop stock list sat under Cooker Distribution Service, with a wide table and seven filter groups." />
 
@@ -53,11 +54,11 @@ The tool had the features. People couldn't find their way to them.
 
 ## What I did
 
-I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.
+I was brought in to work out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapped how they made decisions day to day, and found where the system's structure diverged from how people actually worked.
 
 <Figure variant="framed" src="/images/inventory-persona.webp" width={2000} height={1125} alt="Persona of an Agent Relationship Manager working from a regional office with frequent trade visits. Goals include tracking stock and flagging discrepancies, knowing accurate inventory levels per shop and transferring inventory between shops. Pain points are visibility of inventory in trade and ease of adjustments and transfers." caption="One of the personas from the interviews. The Agent Relationship Manager's pain points were visibility of inventory in trade and the ease of transfers." />
 
-The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.
+The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training.
 
 <Figure variant="pair framed"
   images={[
@@ -70,13 +71,13 @@ The focus was deliberately narrow: surface the information and actions that matt
 
 <PullQuote>
 
-Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.
+Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were played down. High-impact workflows were surfaced and simplified.
 
 </PullQuote>
 
 <Figure variant="framed" src="/images/inventory-shop-list.webp" width={1440} height={1024} alt="The Shop Inventory screen: a search by shop name or ID, a network filter, and a table of shops with category, shop type and neighbourhood, under an Inventory menu with five items." caption="Shop Inventory in the final design. Inventory sits under one menu with five destinations, and the list opens on search." />
 
-**Opinionated views over flexible ones.** This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.
+**Firm defaults over flexible views.** This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.
 
 <Figure variant="framed" src="/images/inventory-usability-test.webp" width={2930} height={1942} alt="A prototype of the Shop Inventory screen during a usability test, with the filter panel open on agent type." caption="The prototype in a usability test, with a participant working through the filters." />
 

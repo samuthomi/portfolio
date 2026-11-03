@@ -2,8 +2,9 @@
 slug: "case-study-verification"
 title: "Verification Platform"
 pageTitle: "Verification Platform - Samson Kirigua"
-description: "Four countries, multiple products, zero shared onboarding infrastructure. We built one."
-subtitle: "Four countries, multiple products, zero shared onboarding infrastructure. We built one."
+description: "Four countries, several products and no shared way to verify anyone. We built one."
+subtitle: "Four countries, several products and no shared way to verify anyone. We built one."
+previewDescription: "One KYC platform replaced four separate onboarding tools across Kenya, Uganda, Nigeria and Côte d'Ivoire. Verification time fell from a week to 24 hours."
 year: 2021
 order: 3
 listed: true
@@ -51,21 +52,21 @@ Each product team had built its own verification process. There was no shared sy
 
 The fragmentation created three escalating problems.
 
-**Operations teams were drowning.** Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.
+**Operations teams were overloaded.** Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.
 
-**There was no source of truth.** Team members stored application documents in personal Google Drives because there was no centralized system or clear process for document management.
+**There was no single record.** Team members stored application documents in personal Google Drives because there was no central system or clear process for document management.
 
-**Business risk was accumulating.** Insurance claims for damaged or lost goods couldn't be finalized because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.
+**Business risk was accumulating.** Insurance claims for damaged or lost goods couldn't be finalised because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.
 
 ## Research
 
-I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.
+I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias towards particular problems. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.
 
-## What I prioritized
+## What I prioritised
 
 After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?
 
-These weren't the only problems. But they were the ones that, if solved, would unlock the most operational capacity.
+These weren't the only problems. But they were the ones that, if solved, would free up the most time for operations.
 
 <Figure variant="pair framed"
   images={[
@@ -78,11 +79,11 @@ These weren't the only problems. But they were the ones that, if solved, would u
 
 <PullQuote>
 
-Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.
+One platform for every product. The aim was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.
 
 </PullQuote>
 
-**Status communication via webhooks.** Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.
+**Status communication via webhooks.** Partners and customers submitting applications through various Sendy apps needed to see where their application stood as it changed. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.
 
 <Figure src="/images/verification-webhook.webp" width={1600} height={926} alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit." caption="A customer submits business details once in the Credit app. The webhook returns each check's status and unlocks credit when verification completes." />
 
@@ -104,4 +105,4 @@ Build a platform, not a tool. The whole point was to stop every product team fro
 
 KYC verification for financing customers dropped from one week to 24 hours. Applications now sat in one queue with their stage visible, and a correction no longer waited on a phone call. Support calls about KYC corrections and document updates fell by roughly 20%, about 600 fewer calls a month, which is the work the self-service correction flow took off the support team. The platform processed over 3,000 applications in its first quarter.
 
-Sendy also had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.
+Sendy also had one trusted record of verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.
