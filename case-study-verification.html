@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Platform - Samson Kirigua</title>
-    <meta name="description" content="Four countries, multiple products, zero shared onboarding infrastructure. We built one.">
+    <meta name="description" content="Four countries, several products and no shared way to verify anyone. We built one.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
             <div class="content">
                 <a class="cs-back" href="index.html#work">← All work</a>
                 <h1>Verification Platform</h1>
-                <p class="case-study-subtitle">Four countries, multiple products, zero shared onboarding infrastructure. We built one.</p>
+                <p class="case-study-subtitle">Four countries, several products and no shared way to verify anyone. We built one.</p>
 
                 <div class="key-metrics">
                     <div class="key-metric">
@@ -88,16 +88,16 @@
 
                 <h2>What was breaking</h2>
                 <p>The fragmentation created three escalating problems.</p>
-                <p><strong>Operations teams were drowning.</strong> Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.</p>
-                <p><strong>There was no source of truth.</strong> Team members stored application documents in personal Google Drives because there was no centralized system or clear process for document management.</p>
-                <p><strong>Business risk was accumulating.</strong> Insurance claims for damaged or lost goods couldn't be finalized because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.</p>
+                <p><strong>Operations teams were overloaded.</strong> Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.</p>
+                <p><strong>There was no single record.</strong> Team members stored application documents in personal Google Drives because there was no central system or clear process for document management.</p>
+                <p><strong>Business risk was accumulating.</strong> Insurance claims for damaged or lost goods couldn't be finalised because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.</p>
 
                 <h2>Research</h2>
-                <p>I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.</p>
+                <p>I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias towards particular problems. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.</p>
 
-                <h2>What I prioritized</h2>
+                <h2>What I prioritised</h2>
                 <p>After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?</p>
-                <p>These weren't the only problems. But they were the ones that, if solved, would unlock the most operational capacity.</p>
+                <p>These weren't the only problems. But they were the ones that, if solved, would free up the most time for operations.</p>
                 <figure class="cs-figure cs-figure--pair cs-figure--framed">
                     <img src="images/verification-sketch.webp" width="1200" height="795" loading="lazy" alt="Pencil sketch of the Verify app: a side menu with Pending, In Progress, Invalid Data, Review and Closed, beside a list of pending applications by type.">
                     <img src="images/verification-wireframe.webp" width="1200" height="674" loading="lazy" alt="Wireframe of the same screen: the status menu on the left and a table of pending applications showing business unit, application type, contact person and date.">
@@ -107,10 +107,10 @@
                 <h2>Key decisions</h2>
 
                 <div class="pull-quote">
-                    <p>Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.</p>
+                    <p>One platform for every product. The aim was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.</p>
                 </div>
 
-                <p><strong>Status communication via webhooks.</strong> Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.</p>
+                <p><strong>Status communication via webhooks.</strong> Partners and customers submitting applications through various Sendy apps needed to see where their application stood as it changed. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.</p>
                 <figure class="cs-figure">
                     <img src="images/verification-webhook.webp" width="1600" height="926" loading="lazy" alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit.">
                     <figcaption>A customer submits business details once in the Credit app. The webhook returns each check's status and unlocks credit when verification completes.</figcaption>
@@ -145,7 +145,7 @@
                 </div>
 
                 <p>KYC verification for financing customers dropped from one week to 24 hours. Applications now sat in one queue with their stage visible, and a correction no longer waited on a phone call. Support calls about KYC corrections and document updates fell by roughly 20%, about 600 fewer calls a month, which is the work the self-service correction flow took off the support team. The platform processed over 3,000 applications in its first quarter.</p>
-                <p>Sendy also had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.</p>
+                <p>Sendy also had one trusted record of verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.</p>
             </div>
         </div>
     </section>

@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Storefront - Samson Kirigua</title>
-    <meta name="description" content="A new product that had to earn trust before it could earn revenue.">
+    <meta name="description" content="Sellers had to trust Sendy with their payments before a storefront could make them any money.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
             <div class="content">
                 <a class="cs-back" href="index.html#work">← All work</a>
                 <h1>Seller Storefront</h1>
-                <p class="case-study-subtitle">A new product that had to earn trust before it could earn revenue.</p>
+                <p class="case-study-subtitle">Sellers had to trust Sendy with their payments before a storefront could make them any money.</p>
                 <div class="case-study-meta">
                     <span class="case-study-meta-item"><strong>Team:</strong> 1 Designer, 6 Engineers</span>
                     <span class="case-study-meta-item"><strong>Timeline:</strong> 16 weeks (Sep to Dec 2023)</span>
@@ -68,12 +68,12 @@
                 <p>The concept was a self-checkout storefront. Sellers publish a product page from their warehouse inventory, customers buy directly and Sendy handles delivery.</p>
 
                 <h2>What was actually at risk</h2>
-                <p>This wasn't a "design a storefront page" brief. The risk was building something that didn't match how sellers actually build trust, set prices, and close payments in the real world.</p>
-                <p>Before we could design anything, we needed to validate: would sellers trust Sendy to collect payments on their behalf? What payment options were non-negotiable? What needed to be configurable for sellers to run a real business through this? And what was the smallest version that would still work in-market?</p>
+                <p>The design work was the smaller part. The bigger risk was building something that didn't match how sellers win customers' trust, set prices and get paid.</p>
+                <p>Before we could design anything, we needed to answer four questions: would sellers trust Sendy to collect payments on their behalf? What payment options were non-negotiable? What needed to be configurable for sellers to run a real business through this? And what was the smallest version that would still work for real sellers?</p>
 
                 <h2>How we validated</h2>
-                <p>Because this was a new product concept with no existing user behavior to reference, I pushed for a demo-first approach: prototype quickly, test with real sellers and let their feedback set the backlog.</p>
-                <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted branding customization.</p>
+                <p>Because this was a new product concept with no existing user behaviour to learn from, I pushed for a demo-first approach: prototype quickly, test with real sellers and let their feedback set the backlog.</p>
+                <p><strong>First round (5 sellers):</strong> I built a rough mobile prototype and tested the core flow. Setup and checkout felt intuitive, but sellers wanted fewer steps to get live. They were excited about Sendy collecting payments. Some wanted to customise the branding.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/storefront-setup-sketch.webp" width="2452" height="903" loading="lazy" alt="Hand-drawn sketches of storefront setup in four steps: store name, logo and colours, picking items to display, confirming descriptions and prices, then confirming the store link and sharing it.">
                     <figcaption>The first-round setup flow, a four-step wizard: branding, items, prices, then the link. Sellers wanted fewer steps to get live.</figcaption>
@@ -83,21 +83,21 @@
                     <img src="images/storefront-manager.webp" width="1100" height="1040" loading="lazy" alt="The Storefront tab in the seller app: a live storefront link with Open and Share buttons, options to share a product link or a shopping cart link, and customisation, offers and store performance marked as coming soon.">
                     <figcaption>The Storefront tab in the seller app. The link is live and ready to share, while customisation is marked as coming soon.</figcaption>
                 </figure>
-                <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round surfaced harder truths: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfillment fees to customers, but pricing configuration would be expensive to build. Sellers relied on discounts and bundles to make sales.</p>
+                <p><strong>Second round (20 sellers):</strong> With more confidence in the direction, we tested a higher-fidelity prototype to shape the first release. This round raised harder findings: Payment on Delivery (cash or mobile money) was essential for customer trust. Sellers wanted to pass fulfilment fees to customers, but pricing configuration would be expensive to build. Sellers relied on discounts and bundles to make sales.</p>
 
                 <h2>Key decisions</h2>
 
                 <div class="pull-quote">
-                    <p>This project became a sequence of product decisions, not a UI exercise.</p>
+                    <p>Most of what followed were product decisions about scope and trust.</p>
                 </div>
 
-                <p><strong>Optimize for seller momentum, not completeness.</strong> Reduce steps. Get sellers to a shareable storefront fast. Configuration could come later.</p>
-                <p><strong>Treat trust mechanisms as core infrastructure.</strong> Sellers told us they would not adopt the product without Payment on Delivery, so it moved out of phase two.</p>
-                <p><strong>Separate "must-have" from "expensive-to-build."</strong> Pricing configuration was important, but we named the dev cost honestly and planned it intentionally rather than sneaking scope into v1.</p>
-                <p><strong>Bake growth into the product.</strong> Sellers use discounts and bundles to drive revenue, so a storefront without them would not fit how they sell. Offers and discounts needed platform-wide backend support from other teams, so they stayed high priority but blocked. The Storefront tab shows them as coming soon.</p>
+                <p><strong>Get sellers live first.</strong> Reduce steps. Get sellers to a shareable storefront fast. Configuration could come later.</p>
+                <p><strong>Build in the payment option customers trust.</strong> Sellers told us they would not adopt the product without Payment on Delivery, so it moved out of phase two.</p>
+                <p><strong>Keep essential features apart from expensive ones.</strong> Pricing configuration was important, but we were open about the build cost and planned it for later rather than squeezing it into the first release.</p>
+                <p><strong>Plan for how sellers make sales.</strong> Sellers use discounts and bundles to drive revenue, so a storefront without them would not fit how they sell. Offers and discounts needed platform-wide backend support from other teams, so they stayed high priority but blocked. The Storefront tab shows them as coming soon.</p>
 
                 <h2>What shipped</h2>
-                <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalog, customize their page, and share links.</p>
+                <p>The final design included a desktop and mobile storefront where customers could browse and order, and a new Storefront tab inside the Sendy Fulfillment app for sellers to manage their catalogue, customise their page and share links.</p>
                 <p><strong>Shared carts.</strong> Sellers were already taking orders from buyers over chat and closing them by hand. We gave them a way to do it faster: build the cart, send the customer a checkout link, and let the buyer complete the order. The buyer keeps full control of the cart items during checkout.</p>
                 <figure class="cs-figure">
                     <img src="images/storefront-cart-link.webp" width="2190" height="1271" loading="lazy" alt="Four mobile screens: a storefront catalogue of handbags, a shopping cart with four items, a checkout summary with a Share checkout link button, and a chat conversation in which the seller sends the cart link to a customer.">
@@ -105,14 +105,14 @@
                 </figure>
 
                 <h2>What didn't ship</h2>
-                <p>The product was handed off for development but never released. Layoffs and shifting business priorities at Sendy killed the project before launch.</p>
+                <p>The product was handed off for development but never released. Layoffs and changing business priorities at Sendy ended the project before launch.</p>
 
                 <div class="pull-quote">
                     <p>Even without a release, the work validated what a storefront needed to work in this market: payment options customers trust, a light setup, and pricing sellers control.</p>
                 </div>
 
                 <h2>Reflection</h2>
-                <p>Involving sellers early and often kept us focused on problems that mattered to them. Without that signal, we would have built something that looked good but wouldn't have been adopted.</p>
+                <p>Involving sellers early and often kept us focused on problems that mattered to them. Without them, we would have built something that looked good and that sellers would not have used.</p>
             </div>
         </div>
     </section>

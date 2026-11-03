@@ -76,7 +76,7 @@
 
                 <h2>Why it was broken</h2>
                 <p>The system was built around how inventory was stored in the database, not how operations teams actually thought about stock. The result:</p>
-                <p>Critical actions were buried behind dense navigation. Teams couldn't discover key insights without guidance. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.</p>
+                <p>Critical actions were buried behind dense navigation. Teams couldn't find what they needed without help. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/inventory-old-ui.webp" width="1800" height="976" loading="lazy" alt="The old KOKO admin tool: a Shop List under the Cooker Distribution Service menu, with a wide table of available and required quantities per shop and a panel of seven filter groups.">
                     <figcaption>The old tool. The shop stock list sat under Cooker Distribution Service, with a wide table and seven filter groups.</figcaption>
@@ -84,12 +84,12 @@
                 <p>The tool had the features. People couldn't find their way to them.</p>
 
                 <h2>What I did</h2>
-                <p>I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.</p>
+                <p>I was brought in to work out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapped how they made decisions day to day, and found where the system's structure diverged from how people actually worked.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/inventory-persona.webp" width="2000" height="1125" loading="lazy" alt="Persona of an Agent Relationship Manager working from a regional office with frequent trade visits. Goals include tracking stock and flagging discrepancies, knowing accurate inventory levels per shop and transferring inventory between shops. Pain points are visibility of inventory in trade and ease of adjustments and transfers.">
                     <figcaption>One of the personas from the interviews. The Agent Relationship Manager's pain points were visibility of inventory in trade and the ease of transfers.</figcaption>
                 </figure>
-                <p>The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.</p>
+                <p>The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training.</p>
                 <figure class="cs-figure cs-figure--pair cs-figure--framed">
                     <img src="images/inventory-wireframe-list.webp" width="1400" height="890" loading="lazy" alt="Wireframe of a shop list with a location selector, search, a filter button and a table of shops by category, agent type and location.">
                     <img src="images/inventory-wireframe-detail.webp" width="1400" height="1048" loading="lazy" alt="Wireframe of a single shop's page with its node total and shop details, and a side panel listing cooker serial numbers with one marked as missing.">
@@ -99,14 +99,14 @@
                 <h2>Key decisions</h2>
 
                 <div class="pull-quote">
-                    <p>Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.</p>
+                    <p>Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were played down. High-impact workflows were surfaced and simplified.</p>
                 </div>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/inventory-shop-list.webp" width="1440" height="1024" loading="lazy" alt="The Shop Inventory screen: a search by shop name or ID, a network filter, and a table of shops with category, shop type and neighbourhood, under an Inventory menu with five items.">
                     <figcaption>Shop Inventory in the final design. Inventory sits under one menu with five destinations, and the list opens on search.</figcaption>
                 </figure>
 
-                <p><strong>Opinionated views over flexible ones.</strong> This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.</p>
+                <p><strong>Firm defaults over flexible views.</strong> This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.</p>
                 <figure class="cs-figure cs-figure--framed">
                     <img src="images/inventory-usability-test.webp" width="2930" height="1942" loading="lazy" alt="A prototype of the Shop Inventory screen during a usability test, with the filter panel open on agent type.">
                     <figcaption>The prototype in a usability test, with a participant working through the filters.</figcaption>
