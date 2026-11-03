@@ -1380,3 +1380,13 @@ body:has(.lightbox[open]) {
     .work-grid .cs-card { width: auto; }
 }
 .case-studies-section .cs-heading { margin-bottom: var(--space-5); }
+
+/* More work on case study pages: three columns, one on phones */
+.work-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.work-grid--3 .cs-card-title { font-size: 1.25rem; }
+@media (max-width: 960px) {
+    .work-grid--3 { grid-template-columns: 1fr; }
+}
+.work-grid--3 .cs-card-body { padding: var(--space-4); }
