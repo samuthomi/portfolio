@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { satteri } from '@astrojs/markdown-satteri';
 
 export default defineConfig({
   site: 'https://samsonkirigua.com',
@@ -13,6 +14,6 @@ export default defineConfig({
   // Keep whitespace between tags as written, so inline spacing matches the old pages.
   compressHTML: false,
   // Leave quotes and apostrophes exactly as typed in the content files.
-  markdown: { smartypants: false },
+  markdown: { processor: satteri({ features: { smartPunctuation: false } }) },
   integrations: [mdx()],
 });
