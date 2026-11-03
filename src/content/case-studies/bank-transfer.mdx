@@ -4,6 +4,7 @@ title: "Pay by Bank Transfer"
 pageTitle: "Pay by Bank Transfer - Samson Kirigua"
 description: "Nigerian merchants didn't trust card payments. We gave them an alternative that worked."
 subtitle: "Nigerian merchants didn't trust card payments. We gave them an alternative that worked."
+previewDescription: "Nigerian merchants didn't trust card payments, so we added bank transfers. 90% payment success and 200+ merchants in the first 30 days."
 year: 2022
 order: 2
 listed: true
@@ -48,11 +49,9 @@ We partnered with OnePipe, a Nigerian fintech, to introduce bank transfers as an
 
 ## What we learned from merchants
 
-I led remote research with 8 Nigerian merchants. It was new for me to design from Nairobi for users in Lagos. Scheduling was unpredictable; merchants were often on the move or rescheduled last minute. My teammates in Nigeria were critical for recruiting participants and navigating the logistics.
+I led remote research with 8 Nigerian merchants. It was new for me to design from Nairobi for users in Lagos. Scheduling was unpredictable; merchants were often on the move or rescheduled last minute. My teammates in Nigeria were essential for recruiting participants and handling the logistics.
 
-The findings were clear. Most of our merchants were early-stage entrepreneurs who valued Sendy because it removed logistics complexity from their businesses. Every merchant preferred bank transfers to card payments, because failed card transactions had burned them before. Two specifically mentioned preferring PayPal deposits to debit cards because of higher success rates.
-
-Merchants expected bank transfers, and card payments had already let them down.
+The findings were clear. Most of our merchants were early-stage entrepreneurs who valued Sendy because it removed logistics complexity from their businesses. Every merchant preferred bank transfers to card payments, because failed card transactions had let them down before. Two specifically mentioned preferring PayPal deposits to debit cards because of higher success rates.
 
 ## Solution approach
 
@@ -72,7 +71,7 @@ We ran a beta with five merchants. Two issues surfaced immediately.
 
 <Figure src="/images/bank-transfer-checkout.webp" width={1840} height={1110} alt="Three mobile screens: bank transfer details with the account number to pay into, a Confirming your transfer message with a countdown timer, and a Transfer was successful confirmation." caption="Paying by transfer. The countdown in the middle was added after beta, when confirmations promised as instant took longer." />
 
-**Unnecessary blocking on insufficient funds.** The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating because it added a step nobody needed. We revised the flow so merchants could hit "Confirm Order" and only saw a prompt if funds were actually insufficient.
+**Unnecessary blocking on insufficient funds.** The original flow prevented merchants from proceeding if their balance was too low. Beta testers found this frustrating because it added a step nobody needed. We revised the flow so merchants could tap "Confirm Order" and only saw a prompt if funds were actually insufficient.
 
 <Figure variant="framed" src="/images/bank-transfer-insufficient-funds.webp" width={2200} height={2097} alt="Two checkout flows compared. The old approach disables Confirm order until the merchant tops up, taking five screens. The improved approach lets the merchant confirm first and prompts a transfer only when needed, taking four screens." caption="Before, a low balance disabled Confirm order and forced a top-up first. After, the merchant confirms and is asked to transfer only if funds are short." />
 
@@ -80,11 +79,11 @@ We ran a beta with five merchants. Two issues surfaced immediately.
 
 <PullQuote>
 
-Design for trust recovery, not just trust. The countdown timer wasn't in any spec. It came from watching real merchants lose confidence during a delay we hadn't anticipated. Designing for payment trust means designing for the moment things feel uncertain, not just the moment they succeed.
+Design for the uncertain moment. The countdown timer wasn't in any spec. It came from watching real merchants lose confidence during a delay we hadn't expected. Merchants decide whether to trust a payment method in the moments that feel uncertain, more than in the ones that go smoothly.
 
 </PullQuote>
 
-**Remove friction that exists to protect the system, not the user.** The insufficient funds block protected Sendy from failed transactions. But from the merchant's perspective, it was a wall. We shifted the check to a less disruptive moment without adding risk.
+**Move checks that protect the system out of the merchant's way.** The insufficient funds block protected Sendy from failed transactions. But for the merchant, it was a dead end. We shifted the check to a less disruptive moment without adding risk.
 
 ## Outcome
 
@@ -101,4 +100,4 @@ Pay by Bank launched to Nigerian merchants after a two-week development sprint f
 
 This was my first time leading design for a payment system in a market I wasn't physically in. The remote research was harder than I expected. Reaching busy merchants in Lagos from Nairobi took more flexibility, and more trust in teammates on the ground.
 
-The biggest lesson: merchants choose a payment method based on whether they trust it to work, so every delay and unclear status costs you adoption. Getting the happy path right is the easy part. The real design work is in what happens when confirmation is slow, funds are short, or the merchant's past experience with digital payments has been bad.
+The biggest lesson: merchants choose a payment method based on whether they trust it to work, so every delay and unclear status costs you adoption. Designing for a payment that goes through is the easy part. The real design work is in what happens when confirmation is slow, funds are short, or the merchant's past experience with digital payments has been bad.

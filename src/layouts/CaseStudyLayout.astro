@@ -13,7 +13,18 @@ const moreWork = data.moreWork.map((slug) => {
   return found;
 });
 ---
-<BaseLayout title={data.pageTitle} description={data.description} nav="case-study" noindex={data.noindex}>
+<BaseLayout
+  title={data.pageTitle}
+  description={data.description}
+  nav="case-study"
+  noindex={data.noindex}
+  preview={{
+    description: data.previewDescription ?? data.description,
+    image: `/images/og/${data.slug}.jpg`,
+    imageAlt: data.cover?.alt ?? data.card?.thumbAlt,
+    type: 'article',
+  }}
+>
   <!-- Case Study Header -->
   <section class="case-study-header">
     <div class="container">

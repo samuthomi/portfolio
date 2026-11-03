@@ -12,6 +12,8 @@ const caseStudies = defineCollection({
     pageTitle: z.string(),
     description: z.string(),
     subtitle: z.string().optional(),
+    // Shown when the link is shared. The image is /images/og/<slug>.jpg (1200x630).
+    previewDescription: z.string().optional(),
     year: z.number().int(),
     order: z.number(),
     listed: z.boolean(),

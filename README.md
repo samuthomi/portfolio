@@ -41,6 +41,8 @@ npx wrangler pages dev dist
 4. Fill in `card` (thumbnail, text and result line) if the study appears in any grid.
 5. `moreWork` lists the three studies shown at the bottom of the page, by slug.
 6. Write the story in Markdown below the details. Use `<Figure />`, `<ScrollFigure />`, `<PullQuote>` and `<KeyMetrics />` for images, scrolling diagrams, quotes and metric blocks. The existing files show each one in use.
+7. Set `previewDescription`, the line people see when the link is shared on LinkedIn, WhatsApp or Slack. Keep it under about 160 characters and include the result.
+8. Add a link preview image at `public/images/og/<slug>.jpg`, 1200 by 630 pixels. A crop of the cover works well. Without it, shared links show no image.
 
 Put images in `public/images/` and refer to them as `/images/file-name.webp`, with their real `width` and `height`.
 
