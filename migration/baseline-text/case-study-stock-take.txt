@@ -1,0 +1,61 @@
+Samson Kirigua
+Home
+About
+Contact
+← All work
+Stock Take App
+When counts can't be checked at the shop, missing stock turns into disputes.
+1,500+
+shops to scroll through, cut to the few nearby by location
+At the shop
+where missing stock now shows, instead of in a reconciliation days later
+Feb 2025
+shipped, with the core decisions intact after operations and engineering reviews
+Team: 2 Designers, 1 PM, 3 Engineers
+Timeline: 12 weeks (Jun to Sep 2024)
+My role: Research, product strategy, UX and UI design
+The situation
+KOKO's agent shops held cookers and fuel canisters that still belonged to KOKO until they were sold. The system regularly showed more stock than the shops actually held, so stock was going missing and nobody could pin down where.
+Field teams already had a stock take app, but it worked against them. They struggled to find the right shop in a list of 1,500+, and often arrived knowing little about it: who ran it, how to reach them, when it was last counted. Stock was scanned only for what was found, and reconciliation happened later, away from the shop. In the worst cases, items had to be carried out of the shop for the scanners to read them, which disrupted the agent's business in the middle of trading.
+When items turned up missing after the fact, it became a dispute between shop owners and the distribution team. Unsold stock that disappeared was a direct loss for KOKO.
+What was actually at risk
+A count that only records what's present can't show what's absent.
+The job was to make the gap between assigned and actual stock visible while the field team was still standing in the shop, without disrupting the shop to get there.
+How we learned
+I visited agent shops and warehouses to watch counts happen. Two things shaped the design. Stock was often kept in dark storerooms or poorly lit shops, where scanning failed. And the infrared scanners weren't always reliable or available, so a count depended on hardware that might not cooperate.
+Key decisions
+Show expected stock, not just scanned stock. The app showed what each shop should hold against what was scanned. Missing items surfaced at the shop, in front of the shop owner, rather than in a reconciliation days later.
+Left, scanned items grouped by product before the count is validated. Right, recent stock takes by shop, with the status of each product.
+Find the right shop fast, and give context before the count. The shop list was filtered by the field team member's current location, so they chose from a few nearby shops instead of scrolling through 1,500+. Before starting, they saw the shop's details: agent phone number, shop type, location, shop ID and the last stock take date. It confirmed they were counting the right shop, and gave them what they needed to open the conversation with the agent before scanning anything.
+Left, shop details shown before the count starts. Right, the field team picks which product to count.
+Scan stock where it sits. Field teams could switch between the infrared scanner and the phone camera, and turn on the phone's flashlight from the scan screen. Stock no longer had to leave the storeroom to be counted.
+The scan screen keeps a running list of scanned items, so the field team can see progress without leaving the count.
+Design for the device, not the mock-up. The app ran on low-end Android phones with poor screen legibility. I cut on-screen content hard, sized text for field conditions, and gave even small actions clear touch targets.
+Always show where a count stands. Counts worked offline, and the field team saw their status when connectivity dropped or a reconciliation was needed.
+What shipped
+The app went through many reviews with operations and engineering, and the core decisions held because each traced back to what we saw in the field. Field teams who tested it before launch responded well. It shipped in February 2025, after I left KOKO.
+Reflection
+I left before usage data came in. The two numbers I would have tracked are count completion time and the rate of disputed discrepancies, which show whether field data had become trustworthy.
+More work
+2026
+D2E Growth Companion
+Testing an AI growth coach with small business owners, and finding three launch blockers before any customer did.
+424 leads in 14 days against a target of 200
+VIEW CASE STUDY
+→
+2022
+Pay by Bank Transfer
+Adding bank transfers for Nigerian merchants who didn't trust card payments.
+90% payment success, 200+ merchants in 30 days
+VIEW CASE STUDY
+→
+2021
+Verification Platform
+Replacing four separate onboarding tools with one KYC system across four countries.
+Verification time cut from a week to 24 hours
+VIEW CASE STUDY
+→
+Home
+About
+Contact
+LinkedIn

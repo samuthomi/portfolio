@@ -1,0 +1,107 @@
+---
+slug: "case-study-verification"
+title: "Verification Platform"
+pageTitle: "Verification Platform - Samson Kirigua"
+description: "Four countries, multiple products, zero shared onboarding infrastructure. We built one."
+subtitle: "Four countries, multiple products, zero shared onboarding infrastructure. We built one."
+year: 2021
+order: 3
+listed: true
+noindex: false
+metrics:
+  - number: "24hrs"
+    label: "KYC verification time, down from 1 week"
+  - number: "20%"
+    label: "reduction in support calls (~600 fewer calls/month)"
+  - number: "3,000+"
+    label: "applications processed in the first quarter"
+meta:
+  team: "1 Designer, 1 Product Manager, 4 Engineers"
+  role: "Led all design work: research, strategy, UX and UI"
+cover:
+  src: "/images/verification-cover.webp"
+  width: 2000
+  height: 919
+  alt: "Sendy Verify dashboard on desktop and mobile, showing a truck application with its verification checks and submit actions."
+card:
+  thumb: "/images/verification-thumb.webp"
+  thumbAlt: "Driver app home screen with a failed verification notice and a link to fix documents"
+  text: "Replacing four separate onboarding tools with one KYC system across four countries."
+  result: "Verification time cut from a week to 24 hours"
+moreWork:
+  - case-study-d2e
+  - case-study-bank-transfer
+  - case-study-stock-take
+---
+
+import Figure from '../../components/Figure.astro';
+import ScrollFigure from '../../components/ScrollFigure.astro';
+import PullQuote from '../../components/PullQuote.astro';
+import KeyMetrics from '../../components/KeyMetrics.astro';
+
+## The situation
+
+Sendy started as a single product, motorcycle delivery, onboarding one type of partner. By 2021, the platform had grown to include Sendy Supply (B2B marketplace), Sendy Freight, and Sendy Credit, each onboarding different types of partners and customers with different KYC requirements. And Sendy was operating across four countries: Kenya, Uganda, Nigeria, and Côte d'Ivoire.
+
+Each product team had built its own verification process. There was no shared system.
+
+<Figure variant="framed" src="/images/verification-entities.webp" width={1600} height={899} alt="Grid of the entities needing verification: owner, driver, vehicle and B2B customer for Sendy Transport, business owner, individual owner, vehicle and B2B customer for Sendy Freight, seller and buyer for Sendy Supply, with a row for future business units." caption="Ten entity types across three business units, each verified through a separate process." />
+
+## What was breaking
+
+The fragmentation created three escalating problems.
+
+**Operations teams were drowning.** Staff jumped between multiple admin tools to manage incoming applications. Onboarding new partner types such as lending customers, 3PL fleet owners and freight companies took two to four weeks.
+
+**There was no source of truth.** Team members stored application documents in personal Google Drives because there was no centralized system or clear process for document management.
+
+**Business risk was accumulating.** Insurance claims for damaged or lost goods couldn't be finalized because supporting documents couldn't be found. This was a direct financial liability that grew as the platform scaled.
+
+## Research
+
+I ran group interviews with operations teams rather than one-to-ones, because I needed the team's collective knowledge of process bottlenecks, not individual perspectives that might carry bias toward specific pain points. I supplemented this with a review of process documents, onboarding reports, and actual application submissions to fill gaps the interviews didn't cover.
+
+## What I prioritized
+
+After presenting findings to my squad, we scoped the first version around four questions: How do teams see all applications and their verification stages? How do we notify applicants of progress and request corrections? How do we handle documents that expire and need periodic re-upload? And how do we control access based on who's logged in?
+
+These weren't the only problems. But they were the ones that, if solved, would unlock the most operational capacity.
+
+<Figure variant="pair framed"
+  images={[
+    { src: "/images/verification-sketch.webp", width: 1200, height: 795, alt: "Pencil sketch of the Verify app: a side menu with Pending, In Progress, Invalid Data, Review and Closed, beside a list of pending applications by type." },
+    { src: "/images/verification-wireframe.webp", width: 1200, height: 674, alt: "Wireframe of the same screen: the status menu on the left and a table of pending applications showing business unit, application type, contact person and date." },
+  ]} caption="From first sketch to wireframe: one queue for every business unit, grouped by verification stage."
+/>
+
+## Key decisions
+
+<PullQuote>
+
+Build a platform, not a tool. The whole point was to stop every product team from building their own verification system. The architecture had to be integration-first, so any Sendy product could connect to it and have their users verified through the same workflow.
+
+</PullQuote>
+
+**Status communication via webhooks.** Partners and customers submitting applications through various Sendy apps needed real-time visibility into their application status. Rather than building notification UI into the verification tool itself, we pushed status updates via webhooks to all customer-facing Sendy apps. I coordinated with designers across product squads to align on how these status messages would appear in each app.
+
+<Figure src="/images/verification-webhook.webp" width={1600} height={926} alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit." caption="A customer submits business details once in the Credit app. The webhook returns each check's status and unlocks credit when verification completes." />
+
+**Make corrections self-service.** Instead of routing every document error through support, we built a correction request flow. The verification team flags the issue, the applicant gets a notification with a link to an online form, and the process continues without a phone call.
+
+<Figure src="/images/verification-resubmit.webp" width={1600} height={1200} alt="Two mobile screens: a failed verification notice on the partner app's home map, leading to a documents list with the registration certificate flagged for review." caption="A failed check appears in the partner's own app and takes them straight to the document to fix." />
+
+<ScrollFigure variant="wide framed" label="Correction flow diagram, scrolls sideways" src="/images/verification-correction-flow.webp" width={2400} height={663} alt="Flow diagram of a correction: the officer marks a section invalid with a reason, the application moves to the Incorrect Info tab and the applicant is notified in their own app, the applicant resubmits, and the application returns to the Review tab for a final recommendation." caption="How a correction moves between the verification officer and the applicant. Scroll sideways to follow it." />
+
+## Outcome
+
+<KeyMetrics
+  items={[
+    { number: "24hrs", label: "verification time (from 1 week)" },
+    { number: "20%", label: "reduction in support calls (~600/month)" },
+    { number: "3,000+", label: "applications in first quarter" },
+  ]}
+/>
+
+KYC verification for financing customers dropped from one week to 24 hours. Applications now sat in one queue with their stage visible, and a correction no longer waited on a phone call. Support calls about KYC corrections and document updates fell by roughly 20%, about 600 fewer calls a month, which is the work the self-service correction flow took off the support team. The platform processed over 3,000 applications in its first quarter.
+
+Sendy also had a single source of truth for verification data across all business units. And any new product Sendy launched could integrate with the platform from day one, using the same workflow, instead of each team building its own onboarding.

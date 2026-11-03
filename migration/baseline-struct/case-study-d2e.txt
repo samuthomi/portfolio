@@ -1,0 +1,239 @@
+{
+ "title": "D2E Growth Companion - Samson Kirigua",
+ "metas": [
+  "<meta charset=\"UTF-8\">",
+  "<meta name=\"description\" content=\"Small business owners told us they were stuck, not short of courses. We designed a weekly growth companion that gives them one useful insight in 4 questions, so they have a reason to come back.\">",
+  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+ ],
+ "links": [
+  "preconnect https://fonts.googleapis.com",
+  "preconnect https://fonts.gstatic.com crossorigin",
+  "stylesheet https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap",
+  "preconnect https://api.fontshare.com",
+  "preconnect https://api.fontshare.com crossorigin",
+  "stylesheet https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap"
+ ]
+}
+body
+  nav class="nav"
+    div class="container"
+      div class="nav-container"
+        a class="nav-name" href="/"
+        button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+          span class="nav-toggle-label"
+        ul class="nav-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+  section class="case-study-header"
+    div class="container"
+      div class="content"
+        a class="cs-back" href="/#work"
+        h1
+        p class="case-study-subtitle"
+        div class="key-metrics"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+        div class="case-study-meta"
+          span class="case-study-meta-item"
+            strong
+          span class="case-study-meta-item"
+            strong
+          span class="case-study-meta-item"
+            strong
+  section class="case-study-content"
+    div class="container"
+      div class="content"
+        h2
+        p
+        p
+        h2
+        p
+        p
+        ul
+          li
+            strong
+          li
+            strong
+          li
+            strong
+          li
+            strong
+        p
+        p
+          em
+        p
+        h2
+        p
+        p
+          strong
+        p
+        h2
+        p
+        p
+        ol
+          li
+            strong
+          li
+            strong
+          li
+            strong
+          li
+            strong
+        p
+        h2
+        p
+        p
+          strong
+        p
+        figure class="cs-figure"
+          img src="/images/d2e-landing-page.webp" alt="The full mobile landing page beside an enlarged pricing card: KES 1,490 per month, with regular business check-ups, a growth roadmap, practical tools, peer circles and live guidance, with a Subscribe Now button." width="1248" height="1700" loading="eager" aria-label="View larger: The full mobile landing page beside an enlarged pricing card: KES 1,490 per month, with regular business check-ups, a growth roadmap, practical tools, peer circles and live guidance, with a Subscribe Now button." role="button" tabindex="0"
+          figcaption
+        h2
+        p
+        ol
+          li
+            strong
+          li
+            strong
+          li
+            strong
+        p
+        p
+        p
+        p
+        figure class="cs-figure"
+          img src="/images/d2e-insight-rules.webp" alt="Three columns. On the left, an outdoor tour operator's diagnostic answers: stock is stuck because funds are limited, money coming in is unpredictable, and the hardest thing is cash flow timing between inventory purchases and sales. In the middle, the screen the AI returned: a score of 55, needs attention, an insight that quotes unpredictable and limited funds back and names the real issue as packages and gear sales not being synced, and one next step to map six months of bookings in under 10 minutes. On the right, the rules it followed: start from her words, name the real cause in two sentences, one action with a time limit, and week two picks up the thread. A final note shows where it slipped: classic cash trap judges more than it informs, and the week-two insight ran long." width="2100" height="1430" loading="eager" aria-label="View larger: Three columns. On the left, an outdoor tour operator's diagnostic answers: stock is stuck because funds are limited, money coming in is unpredictable, and the hardest thing is cash flow timing between inventory purchases and sales. In the middle, the screen the AI returned: a score of 55, needs attention, an insight that quotes unpredictable and limited funds back and names the real issue as packages and gear sales not being synced, and one next step to map six months of bookings in under 10 minutes. On the right, the rules it followed: start from her words, name the real cause in two sentences, one action with a time limit, and week two picks up the thread. A final note shows where it slipped: classic cash trap judges more than it informs, and the week-two insight ran long." role="button" tabindex="0"
+          figcaption
+        p
+        h2
+        p
+        figure class="cs-figure"
+          img src="/images/d2e-testing.webp" alt="Two photos from a testing session of a business owner holding a phone running the prototype. One shows a score of 52 out of 100 with an insight about the spreadsheet he started in Loop 1. The other shows a follow-up question asking what he could do this week to get ahead of peak times." width="1560" height="1024" loading="eager" aria-label="View larger: Two photos from a testing session of a business owner holding a phone running the prototype. One shows a score of 52 out of 100 with an insight about the spreadsheet he started in Loop 1. The other shows a follow-up question asking what he could do this week to get ahead of peak times." role="button" tabindex="0"
+          figcaption
+        p
+        ul
+          li
+            strong
+          li
+            strong
+          li
+            strong
+          li
+            strong
+        p
+        ol
+          li
+            strong
+          li
+            strong
+          li
+            strong
+        p
+        p
+        h2
+        p
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/d2e-business-model.webp" alt="Two mobile screens. The first asks what best describes what you sell: products, services, both, or digital. The second asks which is most like your business: serving individual customers, businesses, both, or government and NGOs." width="1400" height="953" loading="eager" aria-label="View larger: Two mobile screens. The first asks what best describes what you sell: products, services, both, or digital. The second asks which is most like your business: serving individual customers, businesses, both, or government and NGOs." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/d2e-capture.webp" alt="Two mobile screens. The first, Record what you did, offers three options: add a photo, add a note, or just tap Done. The second confirms You completed the action, and says details can be added later from the Finance page." width="1400" height="953" loading="eager" aria-label="View larger: Two mobile screens. The first, Record what you did, offers three options: add a photo, add a note, or just tap Done. The second confirms You completed the action, and says details can be added later from the Finance page." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        p
+          strong
+        p
+          strong
+        p
+          strong
+        figure class="cs-figure cs-figure--wide"
+          div class="cs-figure-scroll" aria-label="Weekly loop screens, scrolls sideways" role="group" tabindex="0"
+            img src="/images/d2e-loop.webp" alt="Five mobile screens of the weekly loop: a diagnostic question about what feels most stuck, a finance score of 68 with an insight about cash visibility, a five-minute action, a record of what the owner did, and the next week's check-in showing the score rising from 68 to 72 with a note that last week's work is showing up." width="2520" height="953" loading="eager" aria-label="View larger: Five mobile screens of the weekly loop: a diagnostic question about what feels most stuck, a finance score of 68 with an insight about cash visibility, a five-minute action, a record of what the owner did, and the next week's check-in showing the score rising from 68 to 72 with a note that last week's work is showing up." role="button" tabindex="0"
+          figcaption
+        h2
+        p
+        p
+          strong
+        figure class="cs-figure cs-figure--wide"
+          div class="cs-figure-scroll" aria-label="Entry flow screens, scrolls sideways" role="group" tabindex="0"
+            img src="/images/d2e-entry-flow.webp" alt="Two paths through the first screens. In the first, Amina answers what feels most stuck with: I'm constantly short on cash even though I'm making sales. The product replies: This sounds like a Finance challenge. Does that feel right? She picks No, show me options, and chooses Operations from a list of five areas. In the second, she answers: I'm being sued by a former employee. The product replies that legal issues need expert help and sit outside what it can support, and offers to help stabilise finance, sales, team, strategy or operations while she handles it." width="2266" height="953" loading="eager" aria-label="View larger: Two paths through the first screens. In the first, Amina answers what feels most stuck with: I'm constantly short on cash even though I'm making sales. The product replies: This sounds like a Finance challenge. Does that feel right? She picks No, show me options, and chooses Operations from a list of five areas. In the second, she answers: I'm being sued by a former employee. The product replies that legal issues need expert help and sit outside what it can support, and offers to help stabilise finance, sales, team, strategy or operations while she handles it." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        p
+          strong
+        figure class="cs-figure cs-figure--wide"
+          div class="cs-figure-scroll" aria-label="Return screens, scrolls sideways" role="group" tabindex="0"
+            img src="/images/d2e-return-states.webp" alt="Four mobile screens. A check-in complete screen for Finance with the practice score updated. Home after the check-in, with the overall score up 3 points, a note that Sales might need attention next, and Sales marked as recommended. A What's next screen offering to check in on another area or finish for today, with a note that progress is saved. Home for an owner returning after a gap, headed Good to have you back, with a Take a check-in button and each area showing its score and last check-in." width="1828" height="953" loading="eager" aria-label="View larger: Four mobile screens. A check-in complete screen for Finance with the practice score updated. Home after the check-in, with the overall score up 3 points, a note that Sales might need attention next, and Sales marked as recommended. A What's next screen offering to check in on another area or finish for today, with a note that progress is saved. Home for an owner returning after a gap, headed Good to have you back, with a Take a check-in button and each area showing its score and last check-in." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        figure class="cs-figure cs-figure--wide"
+          div class="cs-figure-scroll" aria-label="Record message variations, scrolls sideways" role="group" tabindex="0"
+            img src="/images/d2e-copy-system.webp" alt="Five versions of the Record what you did screen, each with a different message. Second check-in: Last check-in you started tracking sales. This time you added expenses. Third check-in: Your third Finance check-in. These practices are becoming a habit. After a month: Your Finance practices have been consistent for a month, up 12 points since you started. After a score drop: Showing up matters, especially when things shift. This check-in is part of the recovery. After a 3-week gap: No gap erases what you built. Your previous records are still here." width="2255" height="953" loading="eager" aria-label="View larger: Five versions of the Record what you did screen, each with a different message. Second check-in: Last check-in you started tracking sales. This time you added expenses. Third check-in: Your third Finance check-in. These practices are becoming a habit. After a month: Your Finance practices have been consistent for a month, up 12 points since you started. After a score drop: Showing up matters, especially when things shift. This check-in is part of the recovery. After a 3-week gap: No gap erases what you built. Your previous records are still here." role="button" tabindex="0"
+          figcaption
+        h2
+        p
+        p
+        h2
+        p
+        p
+  section class="case-studies-section"
+    div class="container"
+      div class="cs-heading"
+        h2
+      div class="work-grid work-grid--3"
+        a class="cs-card cs-card--media" href="/case-study-bank-transfer"
+          img class="cs-card-cover" src="/images/bank-transfer-thumb.webp" alt="Bank Transfer details screen showing the merchant's unique account number" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-verification"
+          img class="cs-card-cover" src="/images/verification-thumb.webp" alt="Driver app home screen with a failed verification notice and a link to fix documents" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-stock-take"
+          img class="cs-card-cover" src="/images/stocktake-thumb.webp" alt="Stock take screen listing expected kit serial numbers for a shop before validation" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+  footer class="footer"
+    div class="container"
+      div class="footer-content"
+        ul class="footer-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+        div class="footer-social"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"

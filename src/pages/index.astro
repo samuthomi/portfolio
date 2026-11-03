@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CaseStudyCard from '../components/CaseStudyCard.astro';
+
+const listed = (await getCollection('caseStudies'))
+  .filter((s) => s.data.listed)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout
+  title="Samson Kirigua, Senior Product Designer"
+  description="I help product teams find out why users drop off, make the case for what to fix first, and design the fix."
+  nav="home"
+  og={{
+    title: 'Samson Kirigua, Senior Product Designer',
+    description: 'I help product teams find out why users drop off, make the case for what to fix first, and design the fix.',
+    url: 'https://samsonkirigua.com/',
+    type: 'website',
+  }}
+>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="container">
+        <h1 class="hero-name">Samson Kirigua</h1>
+        <p class="hero-role">Senior Product Designer</p>
+        <p class="hero-tagline">I help product teams find out why users drop off, make the case for what to fix first, and design the fix.</p>
+        <p class="hero-meta">
+            <span>Nairobi, Kenya (UTC+3)</span>
+            <span>8 years in product design, after 5 in visual design</span>
+            <span>Fintech, clean energy, logistics and marketplaces</span>
+        </p>
+        <a class="hero-cta" href="#work">See the work <span aria-hidden="true">↓</span></a>
+    </div>
+</section>
+
+<!-- Case Studies -->
+<section class="case-studies-section" id="work">
+    <div class="container">
+        <div class="cs-heading">
+            <h2>Selected work</h2>
+        </div>
+        <div class="work-grid">
+                {listed.map((s) => <CaseStudyCard study={s} />)}
+            </div>
+        </div>
+    </section>
+
+<!-- About -->
+<section class="home-about reveal" id="about">
+    <div class="container">
+        <h2>About</h2>
+        <div class="content">
+            <p>I find out why users drop off, then design the fix. I've done this for eight years across fintech, clean energy, logistics, marketplaces and internal tools, mostly where a broken flow costs money and users rarely give you a second chance.</p>
+            <p>At AMI, I made each stage of the CapPlus diagnostic funnel visible. Conversion to a completed diagnostic rose from about 36% to around 50% by September 2026, a gain shared with marketing and sourcing. AMI's Solutions team now uses the same funnel structure on other projects.</p>
+            <p>I lead while I design. At Sendy I grew from visual designer to Product Design Lead, built the design system for all of Sendy's apps from scratch, and managed three designers while still owning payments design. At KOKO Networks I led another team of three while leading the stock take app redesign.</p>
+            <p>I work best with teams whose users sign up but don't stay, or who want evidence before committing to a big build.</p>            </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section reveal">
+    <div class="container">
+        <h2>What people say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"I saw him grow from a visual designer to a product designer, then to a senior product designer, and finally to my manager as the Product Design Lead."</p>
+                <div class="testimonial-attribution">
+                    <img class="testimonial-avatar" src="/images/denis-gachoki.jpg" alt="Denis Gachoki" width="40" height="40">
+                    <div>
+                        <p class="testimonial-name">Denis Gachoki</p>
+                        <p class="testimonial-role">Product Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-quote">"His ability to communicate design decisions clearly and effectively has been crucial in driving project success."</p>
+                <div class="testimonial-attribution">
+                    <img class="testimonial-avatar" src="/images/supreet-kumar.jpg" alt="Supreet Kumar" width="40" height="40">
+                    <div>
+                        <p class="testimonial-name">Supreet Kumar</p>
+                        <p class="testimonial-role">Senior Design Manager, IBM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="home-contact reveal" id="contact">
+    <div class="container">
+        <h2>Let's connect</h2>
+        <p>Open to senior and lead product design roles, including remote.</p>
+        <a class="contact-email" data-user="hello" data-domain="samsonkirigua.com"></a>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+    <script>
+        import '../scripts/home';
+    </script>
+</BaseLayout>

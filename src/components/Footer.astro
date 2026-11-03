@@ -1,0 +1,42 @@
+---
+import type { NavVariant } from './Nav.astro';
+interface Props { variant: NavVariant }
+const { variant } = Astro.props;
+
+const links: Record<NavVariant, { href: string; label: string }[]> = {
+  home: [
+    { href: '/', label: 'Home' },
+    { href: '/#work', label: 'Work' },
+    { href: '/#about', label: 'About' },
+    { href: '/#contact', label: 'Contact' },
+  ],
+  'case-study': [
+    { href: '/#hero', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
+  ],
+  resume: [
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/#work', label: 'Work' },
+    { href: '/#contact', label: 'Contact' },
+  ],
+  contact: [
+    { href: '/', label: 'Work' },
+    { href: '/#about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
+  ],
+};
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <ul class="footer-links">
+        {links[variant].map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>

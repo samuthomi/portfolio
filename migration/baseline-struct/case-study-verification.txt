@@ -1,0 +1,153 @@
+{
+ "title": "Verification Platform - Samson Kirigua",
+ "metas": [
+  "<meta charset=\"UTF-8\">",
+  "<meta name=\"description\" content=\"Four countries, multiple products, zero shared onboarding infrastructure. We built one.\">",
+  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+ ],
+ "links": [
+  "preconnect https://fonts.googleapis.com",
+  "preconnect https://fonts.gstatic.com crossorigin",
+  "stylesheet https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap",
+  "preconnect https://api.fontshare.com",
+  "preconnect https://api.fontshare.com crossorigin",
+  "stylesheet https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap"
+ ]
+}
+body
+  nav class="nav"
+    div class="container"
+      div class="nav-container"
+        a class="nav-name" href="/"
+        button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+          span class="nav-toggle-label"
+        ul class="nav-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+  section class="case-study-header"
+    div class="container"
+      div class="content"
+        a class="cs-back" href="/#work"
+        h1
+        p class="case-study-subtitle"
+        div class="key-metrics"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+        div class="case-study-meta"
+          span class="case-study-meta-item"
+            strong
+          span class="case-study-meta-item"
+            strong
+        figure class="cs-figure cs-cover"
+          img src="/images/verification-cover.webp" alt="Sendy Verify dashboard on desktop and mobile, showing a truck application with its verification checks and submit actions." width="2000" height="919" aria-label="View larger: Sendy Verify dashboard on desktop and mobile, showing a truck application with its verification checks and submit actions." role="button" tabindex="0"
+  section class="case-study-content"
+    div class="container"
+      div class="content"
+        h2
+        p
+        p
+        figure class="cs-figure cs-figure--framed"
+          img src="/images/verification-entities.webp" alt="Grid of the entities needing verification: owner, driver, vehicle and B2B customer for Sendy Transport, business owner, individual owner, vehicle and B2B customer for Sendy Freight, seller and buyer for Sendy Supply, with a row for future business units." width="1600" height="899" loading="eager" aria-label="View larger: Grid of the entities needing verification: owner, driver, vehicle and B2B customer for Sendy Transport, business owner, individual owner, vehicle and B2B customer for Sendy Freight, seller and buyer for Sendy Supply, with a row for future business units." role="button" tabindex="0"
+          figcaption
+        h2
+        p
+        p
+          strong
+        p
+          strong
+        p
+          strong
+        h2
+        p
+        h2
+        p
+        p
+        figure class="cs-figure cs-figure--pair cs-figure--framed"
+          img src="/images/verification-sketch.webp" alt="Pencil sketch of the Verify app: a side menu with Pending, In Progress, Invalid Data, Review and Closed, beside a list of pending applications by type." width="1200" height="795" loading="eager" aria-label="View larger: Pencil sketch of the Verify app: a side menu with Pending, In Progress, Invalid Data, Review and Closed, beside a list of pending applications by type." role="button" tabindex="0"
+          img src="/images/verification-wireframe.webp" alt="Wireframe of the same screen: the status menu on the left and a table of pending applications showing business unit, application type, contact person and date." width="1200" height="674" loading="eager" aria-label="View larger: Wireframe of the same screen: the status menu on the left and a table of pending applications showing business unit, application type, contact person and date." role="button" tabindex="0"
+          figcaption
+        h2
+        div class="pull-quote"
+          p
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/verification-webhook.webp" alt="Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit." width="1600" height="926" loading="eager" aria-label="View larger: Three mobile screens: a business profile at 60% completion, verification checks in progress, and a confirmation showing KES 50,000 available credit." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/verification-resubmit.webp" alt="Two mobile screens: a failed verification notice on the partner app's home map, leading to a documents list with the registration certificate flagged for review." width="1600" height="1200" loading="eager" aria-label="View larger: Two mobile screens: a failed verification notice on the partner app's home map, leading to a documents list with the registration certificate flagged for review." role="button" tabindex="0"
+          figcaption
+        figure class="cs-figure cs-figure--wide cs-figure--framed"
+          div class="cs-figure-scroll" aria-label="Correction flow diagram, scrolls sideways" role="group" tabindex="0"
+            img src="/images/verification-correction-flow.webp" alt="Flow diagram of a correction: the officer marks a section invalid with a reason, the application moves to the Incorrect Info tab and the applicant is notified in their own app, the applicant resubmits, and the application returns to the Review tab for a final recommendation." width="2400" height="663" loading="eager" aria-label="View larger: Flow diagram of a correction: the officer marks a section invalid with a reason, the application moves to the Incorrect Info tab and the applicant is notified in their own app, the applicant resubmits, and the application returns to the Review tab for a final recommendation." role="button" tabindex="0"
+          figcaption
+        h2
+        div class="key-metrics"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+        p
+        p
+  section class="case-studies-section"
+    div class="container"
+      div class="cs-heading"
+        h2
+      div class="work-grid work-grid--3"
+        a class="cs-card cs-card--media" href="/case-study-d2e"
+          img class="cs-card-cover" src="/images/d2e-thumb.webp" alt="D2E check-in result: an overall practice score of 68, with Sales flagged as needing attention" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-bank-transfer"
+          img class="cs-card-cover" src="/images/bank-transfer-thumb.webp" alt="Bank Transfer details screen showing the merchant's unique account number" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-stock-take"
+          img class="cs-card-cover" src="/images/stocktake-thumb.webp" alt="Stock take screen listing expected kit serial numbers for a shop before validation" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+  footer class="footer"
+    div class="container"
+      div class="footer-content"
+        ul class="footer-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+        div class="footer-social"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"

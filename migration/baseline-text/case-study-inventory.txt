@@ -1,0 +1,57 @@
+Samson Kirigua
+Home
+About
+Contact
+← All work
+Inventory Management Redesign
+The tool had the data. It just didn't match how anyone actually worked.
+Team: 2 Product Designers, 1 Product Manager, 6 Engineers
+Timeline: 8 weeks (Mar to Apr 2024)
+My role: Research, UX strategy, interaction design
+The situation
+KOKO Networks, a clean energy company, runs a high-volume retail operation, with stock moving daily across a network of agent shops and warehouses. The operations team had an inventory management tool that tracked everything. On paper, it worked.
+Stock in the field: cookers and canisters in an agent shop's storeroom, and a KOKO agent shop front.
+In practice, it was slowing everyone down.
+Stock levels were hard to trust. Simple questions like what we have, where it is and what's missing needed manual checks or an analyst. Teams spent more time reconciling data than making decisions. And as the network scaled, these inefficiencies became directly expensive: missed stock, delayed replenishment, and growing friction between field agents and central teams.
+Why it was broken
+The system was built around how inventory was stored in the database, not how operations teams actually thought about stock. The result:
+Critical actions were buried behind dense navigation. Teams couldn't discover key insights without guidance. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.
+The old tool. The shop stock list sat under Cooker Distribution Service, with a wide table and seven filter groups.
+The tool had the features. People couldn't find their way to them.
+What I did
+I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.
+One of the personas from the interviews. The Agent Relationship Manager's pain points were visibility of inventory in trade and the ease of transfers.
+The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.
+Wireframes of the two core views: find a shop, then see what it holds and what is missing.
+Key decisions
+Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.
+Shop Inventory in the final design. Inventory sits under one menu with five destinations, and the list opens on search.
+Opinionated views over flexible ones. This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.
+The prototype in a usability test, with a participant working through the filters.
+Usability test feedback from three participants, grouped by screen.
+Surface exceptions early. Rather than making teams hunt for problems, the redesign brought low stock, mismatches and pending actions to the surface where they could be caught before they became operational failures.
+Outcome
+I tested the prototype with three operations staff. Most of their feedback asked for more ways to filter, by cluster, agent type and shop category, rather than a different layout. That told me the structure held up and the remaining gaps were in finding specific shops.
+More work
+2026
+D2E Growth Companion
+Testing an AI growth coach with small business owners, and finding three launch blockers before any customer did.
+424 leads in 14 days against a target of 200
+VIEW CASE STUDY
+→
+2022
+Pay by Bank Transfer
+Adding bank transfers for Nigerian merchants who didn't trust card payments.
+90% payment success, 200+ merchants in 30 days
+VIEW CASE STUDY
+→
+2021
+Verification Platform
+Replacing four separate onboarding tools with one KYC system across four countries.
+Verification time cut from a week to 24 hours
+VIEW CASE STUDY
+→
+Home
+About
+Contact
+LinkedIn

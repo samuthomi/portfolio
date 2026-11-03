@@ -1,0 +1,48 @@
+---
+// Four variants, matching the four hand-written navs from before the migration.
+export type NavVariant = 'home' | 'case-study' | 'resume' | 'contact';
+interface Props { variant: NavVariant }
+const { variant } = Astro.props;
+
+const links: Record<NavVariant, { href: string; label: string; active?: boolean }[]> = {
+  home: [
+    { href: '#hero', label: 'Home', active: true },
+    { href: '/#work', label: 'Work' },
+    { href: '/#about', label: 'About' },
+    { href: '/#contact', label: 'Contact' },
+  ],
+  'case-study': [
+    { href: '/#hero', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/contact', label: 'Contact' },
+  ],
+  resume: [
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/#work', label: 'Work' },
+    { href: '/#contact', label: 'Contact' },
+  ],
+  contact: [
+    { href: '/', label: 'Work' },
+    { href: '/#about', label: 'About' },
+    { href: '/contact', label: 'Contact', active: true },
+  ],
+};
+---
+<nav class="nav">
+  <div class="container">
+    <div class="nav-container">
+      <a href="/" class="nav-name">Samson Kirigua</a>
+      {variant === 'contact' ? (
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      ) : (
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      )}
+      <ul class="nav-links">
+        {links[variant].map((l) => <li><a href={l.href} class={l.active ? 'active' : undefined}>{l.label}</a></li>)}
+      </ul>
+    </div>
+  </div>
+</nav>

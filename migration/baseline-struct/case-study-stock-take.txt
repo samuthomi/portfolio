@@ -1,0 +1,136 @@
+{
+ "title": "Stock Take App - Samson Kirigua",
+ "metas": [
+  "<meta charset=\"UTF-8\">",
+  "<meta name=\"description\" content=\"When counts can't be checked at the shop, missing stock turns into disputes.\">",
+  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+ ],
+ "links": [
+  "preconnect https://fonts.googleapis.com",
+  "preconnect https://fonts.gstatic.com crossorigin",
+  "stylesheet https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap",
+  "preconnect https://api.fontshare.com",
+  "preconnect https://api.fontshare.com crossorigin",
+  "stylesheet https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap"
+ ]
+}
+body
+  nav class="nav"
+    div class="container"
+      div class="nav-container"
+        a class="nav-name" href="/"
+        button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+          span class="nav-toggle-label"
+        ul class="nav-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+  section class="case-study-header"
+    div class="container"
+      div class="content"
+        a class="cs-back" href="/#work"
+        h1
+        p class="case-study-subtitle"
+        div class="key-metrics"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+          div class="key-metric"
+            div class="key-metric-number"
+            div class="key-metric-label"
+        div class="case-study-meta"
+          span class="case-study-meta-item"
+            strong
+          span class="case-study-meta-item"
+            strong
+          span class="case-study-meta-item"
+            strong
+        figure class="cs-figure cs-cover"
+          img src="/images/stocktake-cover.webp" alt="Four Android screens from the stock take app: the home screen with recent stock takes, shop selection with shop details, the barcode scanner with scanned items, and a shop summary ready to validate." width="2220" height="1100" aria-label="View larger: Four Android screens from the stock take app: the home screen with recent stock takes, shop selection with shop details, the barcode scanner with scanned items, and a shop summary ready to validate." role="button" tabindex="0"
+  section class="case-study-content"
+    div class="container"
+      div class="content"
+        h2
+        p
+        p
+        p
+        h2
+        div class="pull-quote"
+          p
+        p
+        h2
+        p
+        h2
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/stocktake-expected-stock.webp" alt="Two screens: a shop summary listing scanned canisters and kits by serial number with a Validate stock button, and the home screen listing recent stock takes by shop with a status icon beside each product." width="2000" height="1300" loading="eager" aria-label="View larger: Two screens: a shop summary listing scanned canisters and kits by serial number with a Validate stock button, and the home screen listing recent stock takes by shop with a status icon beside each product." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/stocktake-shop-context.webp" alt="Two screens: shop selection showing the agent's phone number, shop type, location, shop ID and last stock take date, and a product picker for canisters or kits." width="2000" height="1300" loading="eager" aria-label="View larger: Two screens: shop selection showing the agent's phone number, shop type, location, shop ID and last stock take date, and a product picker for canisters or kits." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        figure class="cs-figure"
+          img src="/images/stocktake-scan.webp" alt="The scan screen: a camera viewfinder over a barcode, with a sheet below listing scanned serial numbers and buttons to switch product or finish scanning." width="2000" height="1300" loading="eager" aria-label="View larger: The scan screen: a camera viewfinder over a barcode, with a sheet below listing scanned serial numbers and buttons to switch product or finish scanning." role="button" tabindex="0"
+          figcaption
+        p
+          strong
+        p
+          strong
+        h2
+        p
+        h2
+        p
+  section class="case-studies-section"
+    div class="container"
+      div class="cs-heading"
+        h2
+      div class="work-grid work-grid--3"
+        a class="cs-card cs-card--media" href="/case-study-d2e"
+          img class="cs-card-cover" src="/images/d2e-thumb.webp" alt="D2E check-in result: an overall practice score of 68, with Sales flagged as needing attention" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-bank-transfer"
+          img class="cs-card-cover" src="/images/bank-transfer-thumb.webp" alt="Bank Transfer details screen showing the merchant's unique account number" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+        a class="cs-card cs-card--media" href="/case-study-verification"
+          img class="cs-card-cover" src="/images/verification-thumb.webp" alt="Driver app home screen with a failed verification notice and a link to fix documents" width="1600" height="1200" loading="eager"
+          div class="cs-card-body"
+            span class="cs-card-year"
+            h3 class="cs-card-title"
+            p class="cs-card-text"
+            p class="cs-card-result"
+            span class="cs-card-btn"
+              span aria-hidden="true"
+  footer class="footer"
+    div class="container"
+      div class="footer-content"
+        ul class="footer-links"
+          li
+            a href="/#hero"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+        div class="footer-social"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"

@@ -1,0 +1,89 @@
+---
+slug: "case-study-inventory"
+title: "Inventory Management Redesign"
+pageTitle: "Inventory Management Redesign - Samson Kirigua"
+description: "The tool had the data. It just didn't match how anyone actually worked."
+subtitle: "The tool had the data. It just didn't match how anyone actually worked."
+year: 2024
+order: 6
+listed: false
+noindex: true
+meta:
+  team: "2 Product Designers, 1 Product Manager, 6 Engineers"
+  timeline: "8 weeks (Mar to Apr 2024)"
+  role: "Research, UX strategy, interaction design"
+cover:
+  src: "/images/inventory-cover.webp"
+  width: 2000
+  height: 1410
+  alt: "KOKO inventory tool showing one shop's stock: a node total of 160 split into 40 in shop, 10 in transit and 30 missing, with shop details and counts of cookers and canisters."
+moreWork:
+  - case-study-d2e
+  - case-study-bank-transfer
+  - case-study-verification
+---
+
+import Figure from '../../components/Figure.astro';
+import PullQuote from '../../components/PullQuote.astro';
+
+## The situation
+
+KOKO Networks, a clean energy company, runs a high-volume retail operation, with stock moving daily across a network of agent shops and warehouses. The operations team had an inventory management tool that tracked everything. On paper, it worked.
+
+<Figure variant="pair photos"
+  images={[
+    { src: "/images/inventory-field-stock.webp", width: 768, height: 576, alt: "Boxed KOKO cookers and fuel canisters stacked on shelves in an agent shop's storeroom." },
+    { src: "/images/inventory-field-shop.webp", width: 757, height: 568, alt: "A KOKO agent shop front with KOKO Upishi Smart signage above a gas dealer's shop." },
+  ]} caption="Stock in the field: cookers and canisters in an agent shop's storeroom, and a KOKO agent shop front."
+/>
+
+In practice, it was slowing everyone down.
+
+Stock levels were hard to trust. Simple questions like what we have, where it is and what's missing needed manual checks or an analyst. Teams spent more time reconciling data than making decisions. And as the network scaled, these inefficiencies became directly expensive: missed stock, delayed replenishment, and growing friction between field agents and central teams.
+
+## Why it was broken
+
+The system was built around how inventory was stored in the database, not how operations teams actually thought about stock. The result:
+
+Critical actions were buried behind dense navigation. Teams couldn't discover key insights without guidance. The interface assumed familiarity that new team members didn't have. High-frequency tasks carried unnecessary cognitive load.
+
+<Figure variant="framed" src="/images/inventory-old-ui.webp" width={1800} height={976} alt="The old KOKO admin tool: a Shop List under the Cooker Distribution Service menu, with a wide table of available and required quantities per shop and a panel of seven filter groups." caption="The old tool. The shop stock list sat under Cooker Distribution Service, with a wide table and seven filter groups." />
+
+The tool had the features. People couldn't find their way to them.
+
+## What I did
+
+I was brought in to figure out why an essential tool was creating friction despite having the right data underneath. My work sat between product, UX and operations. I interviewed internal users, mapping actual decision workflows, and identifying where the system's structure diverged from how people actually worked.
+
+<Figure variant="framed" src="/images/inventory-persona.webp" width={2000} height={1125} alt="Persona of an Agent Relationship Manager working from a regional office with frequent trade visits. Goals include tracking stock and flagging discrepancies, knowing accurate inventory levels per shop and transferring inventory between shops. Pain points are visibility of inventory in trade and ease of adjustments and transfers." caption="One of the personas from the interviews. The Agent Relationship Manager's pain points were visibility of inventory in trade and the ease of transfers." />
+
+The focus was deliberately narrow: surface the information and actions that mattered most in daily workflows, reduce cognitive load on high-frequency tasks, and make the tool usable without training or hand-holding.
+
+<Figure variant="pair framed"
+  images={[
+    { src: "/images/inventory-wireframe-list.webp", width: 1400, height: 890, alt: "Wireframe of a shop list with a location selector, search, a filter button and a table of shops by category, agent type and location." },
+    { src: "/images/inventory-wireframe-detail.webp", width: 1400, height: 1048, alt: "Wireframe of a single shop's page with its node total and shop details, and a side panel listing cooker serial numbers with one marked as missing." },
+  ]} caption="Wireframes of the two core views: find a shop, then see what it holds and what is missing."
+/>
+
+## Key decisions
+
+<PullQuote>
+
+Clarity over configurability. Instead of exposing everything the system could do, I reshaped the experience around what teams needed to see and act on daily. Features that were technically powerful but rarely used were de-emphasized. High-impact workflows were surfaced and simplified.
+
+</PullQuote>
+
+<Figure variant="framed" src="/images/inventory-shop-list.webp" width={1440} height={1024} alt="The Shop Inventory screen: a search by shop name or ID, a network filter, and a table of shops with category, shop type and neighbourhood, under an Inventory menu with five items." caption="Shop Inventory in the final design. Inventory sits under one menu with five destinations, and the list opens on search." />
+
+**Opinionated views over flexible ones.** This meant saying no to configurability that added complexity, and yes to default views that helped teams act faster. Not every user wanted the same thing, but every user needed to answer the same core questions quickly.
+
+<Figure variant="framed" src="/images/inventory-usability-test.webp" width={2930} height={1942} alt="A prototype of the Shop Inventory screen during a usability test, with the filter panel open on agent type." caption="The prototype in a usability test, with a participant working through the filters." />
+
+<Figure variant="framed" src="/images/inventory-test-feedback.webp" width={2400} height={720} alt="Board of sticky notes from usability tests with three participants, grouped under Overview, List and Shop details, and Transfers. Several notes ask for more filters, such as by cluster, agent type and shop category." caption="Usability test feedback from three participants, grouped by screen." />
+
+**Surface exceptions early.** Rather than making teams hunt for problems, the redesign brought low stock, mismatches and pending actions to the surface where they could be caught before they became operational failures.
+
+## Outcome
+
+I tested the prototype with three operations staff. Most of their feedback asked for more ways to filter, by cluster, agent type and shop category, rather than a different layout. That told me the structure held up and the remaining gaps were in finding specific shops.

@@ -1,0 +1,87 @@
+---
+slug: "case-study-stock-take"
+title: "Stock Take App"
+pageTitle: "Stock Take App - Samson Kirigua"
+description: "When counts can't be checked at the shop, missing stock turns into disputes."
+subtitle: "When counts can't be checked at the shop, missing stock turns into disputes."
+year: 2024
+order: 4
+listed: true
+noindex: false
+metrics:
+  - number: "1,500+"
+    label: "shops to scroll through, cut to the few nearby by location"
+  - number: "At the shop"
+    label: "where missing stock now shows, instead of in a reconciliation days later"
+  - number: "Feb 2025"
+    label: "shipped, with the core decisions intact after operations and engineering reviews"
+meta:
+  team: "2 Designers, 1 PM, 3 Engineers"
+  timeline: "12 weeks (Jun to Sep 2024)"
+  role: "Research, product strategy, UX and UI design"
+cover:
+  src: "/images/stocktake-cover.webp"
+  width: 2220
+  height: 1100
+  alt: "Four Android screens from the stock take app: the home screen with recent stock takes, shop selection with shop details, the barcode scanner with scanned items, and a shop summary ready to validate."
+card:
+  thumb: "/images/stocktake-thumb.webp"
+  thumbAlt: "Stock take screen listing expected kit serial numbers for a shop before validation"
+  text: "Field teams could count what was in a shop but not what was missing. I rebuilt the count around expected stock, so gaps showed up at the counter."
+  result: "Shop search cut from 1,500+ to the few nearby"
+moreWork:
+  - case-study-d2e
+  - case-study-bank-transfer
+  - case-study-verification
+---
+
+import Figure from '../../components/Figure.astro';
+import PullQuote from '../../components/PullQuote.astro';
+
+## The situation
+
+KOKO's agent shops held cookers and fuel canisters that still belonged to KOKO until they were sold. The system regularly showed more stock than the shops actually held, so stock was going missing and nobody could pin down where.
+
+Field teams already had a stock take app, but it worked against them. They struggled to find the right shop in a list of 1,500+, and often arrived knowing little about it: who ran it, how to reach them, when it was last counted. Stock was scanned only for what was found, and reconciliation happened later, away from the shop. In the worst cases, items had to be carried out of the shop for the scanners to read them, which disrupted the agent's business in the middle of trading.
+
+When items turned up missing after the fact, it became a dispute between shop owners and the distribution team. Unsold stock that disappeared was a direct loss for KOKO.
+
+## What was actually at risk
+
+<PullQuote>
+
+A count that only records what's present can't show what's absent.
+
+</PullQuote>
+
+The job was to make the gap between assigned and actual stock visible while the field team was still standing in the shop, without disrupting the shop to get there.
+
+## How we learned
+
+I visited agent shops and warehouses to watch counts happen. Two things shaped the design. Stock was often kept in dark storerooms or poorly lit shops, where scanning failed. And the infrared scanners weren't always reliable or available, so a count depended on hardware that might not cooperate.
+
+## Key decisions
+
+**Show expected stock, not just scanned stock.** The app showed what each shop should hold against what was scanned. Missing items surfaced at the shop, in front of the shop owner, rather than in a reconciliation days later.
+
+<Figure src="/images/stocktake-expected-stock.webp" width={2000} height={1300} alt="Two screens: a shop summary listing scanned canisters and kits by serial number with a Validate stock button, and the home screen listing recent stock takes by shop with a status icon beside each product." caption="Left, scanned items grouped by product before the count is validated. Right, recent stock takes by shop, with the status of each product." />
+
+**Find the right shop fast, and give context before the count.** The shop list was filtered by the field team member's current location, so they chose from a few nearby shops instead of scrolling through 1,500+. Before starting, they saw the shop's details: agent phone number, shop type, location, shop ID and the last stock take date. It confirmed they were counting the right shop, and gave them what they needed to open the conversation with the agent before scanning anything.
+
+<Figure src="/images/stocktake-shop-context.webp" width={2000} height={1300} alt="Two screens: shop selection showing the agent's phone number, shop type, location, shop ID and last stock take date, and a product picker for canisters or kits." caption="Left, shop details shown before the count starts. Right, the field team picks which product to count." />
+
+**Scan stock where it sits.** Field teams could switch between the infrared scanner and the phone camera, and turn on the phone's flashlight from the scan screen. Stock no longer had to leave the storeroom to be counted.
+
+<Figure src="/images/stocktake-scan.webp" width={2000} height={1300} alt="The scan screen: a camera viewfinder over a barcode, with a sheet below listing scanned serial numbers and buttons to switch product or finish scanning." caption="The scan screen keeps a running list of scanned items, so the field team can see progress without leaving the count." />
+
+**Design for the device, not the mock-up.** The app ran on low-end Android phones with poor screen legibility. I cut on-screen content hard, sized text for field conditions, and gave even small actions clear touch targets.
+
+**Always show where a count stands.** Counts worked offline, and the field team saw their status when connectivity dropped or a reconciliation was needed.
+
+## What shipped
+
+The app went through many reviews with operations and engineering, and the core decisions held because each traced back to what we saw in the field. Field teams who tested it before launch responded well. It shipped in February 2025, after I left KOKO.
+
+## Reflection
+
+I left before usage data came in. The two numbers I would have tracked are count completion time and the rate of disputed discrepancies, which show whether field data had become trustworthy.
