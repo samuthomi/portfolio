@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { study: CollectionEntry<'caseStudies'> }
+const { slug, year, title, card } = Astro.props.study.data;
+if (!card) throw new Error(`${slug} has no card in its frontmatter, so it cannot appear in a grid`);
+---
+<a href={`/${slug}`} class="cs-card cs-card--media">
+  <img class="cs-card-cover" src={card.thumb} alt={card.thumbAlt} loading="lazy" width="1600" height="1200">
+  <div class="cs-card-body">
+    <span class="cs-card-year">{year}</span>
+    <h3 class="cs-card-title">{title}</h3>
+    <p class="cs-card-text">{card.text}</p>
+    <p class="cs-card-result">{card.result}</p>
+    <span class="cs-card-btn">View case study <span aria-hidden="true">→</span></span>
+  </div>
+</a>

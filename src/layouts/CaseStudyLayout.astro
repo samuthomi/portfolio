@@ -1,0 +1,70 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import KeyMetrics from '../components/KeyMetrics.astro';
+import CaseStudyCard from '../components/CaseStudyCard.astro';
+
+interface Props { study: CollectionEntry<'caseStudies'> }
+const { data } = Astro.props.study;
+const all = await getCollection('caseStudies');
+const moreWork = data.moreWork.map((slug) => {
+  const found = all.find((s) => s.data.slug === slug);
+  if (!found) throw new Error(`${data.slug}: moreWork lists ${slug}, which has no content file`);
+  return found;
+});
+---
+<BaseLayout title={data.pageTitle} description={data.description} nav="case-study" noindex={data.noindex}>
+  <!-- Case Study Header -->
+  <section class="case-study-header">
+    <div class="container">
+      <div class="content">
+        <a class="cs-back" href="/#work">← All work</a>
+        <h1>{data.title}</h1>
+        {data.subtitle && <p class="case-study-subtitle">{data.subtitle}</p>}
+        {data.metrics && <KeyMetrics items={data.metrics} />}
+        <div class="case-study-meta">
+          <span class="case-study-meta-item"><strong>Team:</strong> {data.meta.team}</span>
+          {data.meta.timeline && <span class="case-study-meta-item"><strong>Timeline:</strong> {data.meta.timeline}</span>}
+          <span class="case-study-meta-item"><strong>My role:</strong> {data.meta.role}</span>
+        </div>
+        {data.cover && (
+          <figure class="cs-figure cs-cover">
+            {data.cover.mobileSrc ? (
+              <picture>
+                <source media="(max-width: 600px)" srcset={data.cover.mobileSrc} width={data.cover.mobileWidth} height={data.cover.mobileHeight}>
+                <img src={data.cover.src} width={data.cover.width} height={data.cover.height} alt={data.cover.alt}>
+              </picture>
+            ) : (
+              <img src={data.cover.src} width={data.cover.width} height={data.cover.height} alt={data.cover.alt}>
+            )}
+          </figure>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <section class="case-study-content">
+    <div class="container">
+      <div class="content">
+        <slot />
+      </div>
+    </div>
+  </section>
+
+  <!-- More work -->
+  <section class="case-studies-section">
+    <div class="container">
+      <div class="cs-heading">
+        <h2>More work</h2>
+      </div>
+      <div class="work-grid work-grid--3">
+        {moreWork.map((s) => <CaseStudyCard study={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import '../scripts/lightbox';
+  </script>
+</BaseLayout>

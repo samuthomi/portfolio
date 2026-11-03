@@ -1,0 +1,111 @@
+{
+ "title": "Resume - Samson Kirigua",
+ "metas": [
+  "<meta charset=\"UTF-8\">",
+  "<meta name=\"description\" content=\"Samson Kirigua's professional experience in product design.\">",
+  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+ ],
+ "links": [
+  "preconnect https://fonts.googleapis.com",
+  "preconnect https://fonts.gstatic.com crossorigin",
+  "stylesheet https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap",
+  "preconnect https://api.fontshare.com",
+  "preconnect https://api.fontshare.com crossorigin",
+  "stylesheet https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap"
+ ]
+}
+body
+  nav class="nav"
+    div class="container"
+      div class="nav-container"
+        a class="nav-name" href="/"
+        button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+          span class="nav-toggle-label"
+        ul class="nav-links"
+          li
+            a href="/"
+          li
+            a href="/#about"
+          li
+            a href="/#work"
+          li
+            a href="/#contact"
+  section class="page-header"
+    div class="container"
+      div class="content"
+        h1
+        p class="resume-intro"
+  section class="about-content"
+    div class="container"
+      div class="content"
+        div class="resume-section"
+          h2
+          div class="experience-item"
+            div class="experience-header"
+              h3 class="experience-title"
+              span class="experience-date"
+            p class="experience-company"
+            p class="experience-description"
+          div class="experience-item"
+            div class="experience-header"
+              h3 class="experience-title"
+              span class="experience-date"
+            p class="experience-company"
+            p class="experience-description"
+          div class="experience-item"
+            div class="experience-header"
+              h3 class="experience-title"
+              span class="experience-date"
+            p class="experience-company"
+            p class="experience-description"
+          div class="experience-item"
+            div class="experience-header"
+              h3 class="experience-title"
+              span class="experience-date"
+            p class="experience-company"
+            p class="experience-description"
+        div class="resume-section"
+          h2
+          p class="skills-list"
+        div class="resume-section"
+          h2
+          p class="skills-list"
+  section class="testimonials-section"
+    div class="container"
+      h2
+      div class="testimonials-grid"
+        div class="testimonial-card"
+          p class="testimonial-quote"
+          div class="testimonial-attribution"
+            img class="testimonial-avatar" src="/images/denis-gachoki.jpg" alt="Denis Gachoki" width="40" height="40"
+            div
+              p class="testimonial-name"
+              p class="testimonial-role"
+        div class="testimonial-card"
+          p class="testimonial-quote"
+          div class="testimonial-attribution"
+            img class="testimonial-avatar" src="/images/supreet-kumar.jpg" alt="Supreet Kumar" width="40" height="40"
+            div
+              p class="testimonial-name"
+              p class="testimonial-role"
+  section class="home-contact"
+    div class="container"
+      h2
+      p
+      a class="contact-email" href="mailto:hello@samsonkirigua.com" data-user="hello" data-domain="samsonkirigua.com"
+      div class="contact-links"
+        a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"
+  footer class="footer"
+    div class="container"
+      div class="footer-content"
+        ul class="footer-links"
+          li
+            a href="/"
+          li
+            a href="/#about"
+          li
+            a href="/#work"
+          li
+            a href="/#contact"
+        div class="footer-social"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"

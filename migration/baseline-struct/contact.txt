@@ -1,0 +1,49 @@
+{
+ "title": "Contact - Samson Kirigua",
+ "metas": [
+  "<meta charset=\"UTF-8\">",
+  "<meta name=\"description\" content=\"Get in touch with Samson Kirigua for product design opportunities.\">",
+  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+ ],
+ "links": [
+  "preconnect https://fonts.googleapis.com",
+  "preconnect https://fonts.gstatic.com crossorigin",
+  "stylesheet https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap",
+  "preconnect https://api.fontshare.com",
+  "preconnect https://api.fontshare.com crossorigin",
+  "stylesheet https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600&display=swap"
+ ]
+}
+body
+  nav class="nav"
+    div class="container"
+      div class="nav-container"
+        a class="nav-name" href="/"
+        button class="nav-toggle" aria-label="Toggle navigation"
+        ul class="nav-links"
+          li
+            a href="/"
+          li
+            a href="/#about"
+          li
+            a class="active" href="/contact"
+  section class="contact-section"
+    div class="container"
+      div class="content"
+        h1
+        p
+        a class="contact-email" href="mailto:hello@samsonkirigua.com" data-user="hello" data-domain="samsonkirigua.com"
+        div class="contact-links"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"
+  footer class="footer"
+    div class="container"
+      div class="footer-content"
+        ul class="footer-links"
+          li
+            a href="/"
+          li
+            a href="/#about"
+          li
+            a href="/contact"
+        div class="footer-social"
+          a href="https://www.linkedin.com/in/samsonkirigua/" target="_blank" rel="noopener"

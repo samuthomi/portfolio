@@ -1,0 +1,20 @@
+---
+// A wide image inside a horizontal scroll strip. label describes the strip for screen readers.
+interface Props {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  label: string;
+  variant?: string;
+  caption?: string;
+}
+const { src, width, height, alt, label, variant, caption } = Astro.props;
+const classes = ['cs-figure', ...(variant ? variant.split(/\s+/).map((v) => `cs-figure--${v}`) : [])].join(' ');
+---
+<figure class={classes}>
+  <div class="cs-figure-scroll" tabindex="0" role="group" aria-label={label}>
+    <img src={src} width={width} height={height} loading="lazy" alt={alt}>
+  </div>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

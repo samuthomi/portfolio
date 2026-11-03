@@ -1,0 +1,12 @@
+---
+interface Props { items: { number: string; label: string }[] }
+const { items } = Astro.props;
+---
+<div class="key-metrics">
+  {items.map((m) => (
+    <div class="key-metric">
+      <div class="key-metric-number">{m.number}</div>
+      <div class="key-metric-label">{m.label}</div>
+    </div>
+  ))}
+</div>

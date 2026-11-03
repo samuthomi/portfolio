@@ -1,0 +1,40 @@
+# Recorded 2026-11-03 against the pre-Astro site (commit 0aeb9c2) served by `wrangler pages dev`,
+# which emulates Cloudflare Pages routing. The live site was not reachable from the build sandbox.
+/ 200 
+/index.html 308 /
+/case-study-d2e 200 
+/case-study-d2e.html 308 /case-study-d2e
+/case-study-d2e/ 308 /case-study-d2e
+/case-study-bank-transfer 200 
+/case-study-bank-transfer.html 308 /case-study-bank-transfer
+/case-study-bank-transfer/ 308 /case-study-bank-transfer
+/case-study-verification 200 
+/case-study-verification.html 308 /case-study-verification
+/case-study-verification/ 308 /case-study-verification
+/case-study-stock-take 200 
+/case-study-stock-take.html 308 /case-study-stock-take
+/case-study-stock-take/ 308 /case-study-stock-take
+/case-study-storefront 200 
+/case-study-storefront.html 308 /case-study-storefront
+/case-study-storefront/ 308 /case-study-storefront
+/case-study-inventory 200 
+/case-study-inventory.html 308 /case-study-inventory
+/case-study-inventory/ 308 /case-study-inventory
+/resume 200 
+/resume.html 308 /resume
+/resume/ 308 /resume
+/contact 200 
+/contact.html 308 /contact
+/contact/ 308 /contact
+/case-study-jumba-connect 301 /#work
+/case-study-jumba-connect.html 301 /#work
+/images/d2e-thumb.webp 200 
+/images/bank-transfer-cover.webp 200 
+/images/bank-transfer-cover-small.webp 200 
+/images/verification-cover.webp 200 
+/images/stocktake-cover.webp 200 
+/images/storefront-cover.webp 200 
+/images/inventory-cover.webp 200 
+/images/denis-gachoki.jpg 200 
+/images/supreet-kumar.jpg 200 
+/images/d2e-loop.webp 200 
